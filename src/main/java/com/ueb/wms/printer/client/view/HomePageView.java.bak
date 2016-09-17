@@ -1,0 +1,196 @@
+package com.ueb.wms.printer.client.view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingConstants;
+import javax.swing.border.LineBorder;
+import javax.swing.border.TitledBorder;
+
+import org.springframework.stereotype.Component;
+
+@SuppressWarnings("serial")
+@Component("homePageView")
+public class HomePageView extends JPanel implements IBaseView {
+	public HomePageView() {
+	}
+
+	private final Font font = new Font("微软雅黑", Font.PLAIN, 12);
+
+	private void initContainer() {
+		this.setBorder(new LineBorder(Color.GRAY, 1));
+		this.setFont(font);
+		this.setLayout(new BorderLayout(0, 5));
+	}
+
+	private void showResource() {
+		Box vbox = Box.createVerticalBox();
+		vbox.add(this.createServerPanel());
+		vbox.add(Box.createVerticalStrut(10));
+		// vbox.add(this.createButtonPanel());
+		// vbox.add(Box.createVerticalStrut(15));
+		vbox.add(this.createTplTypePanel());
+
+		this.add(vbox, BorderLayout.NORTH);
+		this.add(new JPanel(), BorderLayout.CENTER);
+	}
+
+	private JPanel createServerPanel() {
+		TitledBorder serverBorder = BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "服务器信息");
+		serverBorder.setTitleFont(font);
+
+		JLabel serverNameLl = new JLabel("服务器名称:", SwingConstants.RIGHT);
+		serverNameLl.setFont(font);
+		serverNameLl.setPreferredSize(new Dimension(100, 0));
+		JTextField serverNameTf = new JTextField();
+		serverNameTf.setFont(font);
+		serverNameTf.setPreferredSize(new Dimension(0, 26));
+		Box nameBox = Box.createHorizontalBox();
+		nameBox.add(Box.createHorizontalStrut(20));
+		nameBox.add(serverNameLl);
+		nameBox.add(Box.createHorizontalStrut(10));
+		nameBox.add(serverNameTf);
+		nameBox.add(Box.createHorizontalStrut(20));
+
+		JLabel serverPortLl = new JLabel("服务器端口:", SwingConstants.RIGHT);
+		serverPortLl.setFont(font);
+		serverPortLl.setPreferredSize(new Dimension(100, 0));
+		JTextField serverPortTf = new JTextField();
+		serverPortTf.setFont(font);
+		serverPortTf.setPreferredSize(new Dimension(0, 26));
+		Box portBox = Box.createHorizontalBox();
+		portBox.add(Box.createHorizontalStrut(20));
+		portBox.add(serverPortLl);
+		portBox.add(Box.createHorizontalStrut(10));
+		portBox.add(serverPortTf);
+		portBox.add(Box.createHorizontalStrut(20));
+
+		// JLabel timeOutLl = new JLabel("连接超时时间(秒):", SwingConstants.RIGHT);
+		// timeOutLl.setFont(font);
+		// timeOutLl.setPreferredSize(new Dimension(100, 0));
+		// JTextField timeOutTf = new JTextField();
+		// timeOutTf.setPreferredSize(new Dimension(0, 26));
+		// timeOutTf.setFont(font);
+		// Box timeOutBox = Box.createHorizontalBox();
+		// timeOutBox.add(Box.createHorizontalStrut(20));
+		// timeOutBox.add(timeOutLl);
+		// timeOutBox.add(Box.createHorizontalStrut(10));
+		// timeOutBox.add(timeOutTf);
+		// timeOutBox.add(Box.createHorizontalStrut(20));
+		JLabel contextLl = new JLabel("服务器上下文根:", SwingConstants.RIGHT);
+		contextLl.setFont(font);
+		contextLl.setPreferredSize(new Dimension(100, 0));
+		JTextField contextTf = new JTextField();
+		contextTf.setPreferredSize(new Dimension(0, 26));
+		contextTf.setFont(font);
+		Box contextBox = Box.createHorizontalBox();
+		contextBox.add(Box.createHorizontalStrut(20));
+		contextBox.add(contextLl);
+		contextBox.add(Box.createHorizontalStrut(10));
+		contextBox.add(contextTf);
+		contextBox.add(Box.createHorizontalStrut(20));
+
+		JPanel serverPane = new JPanel();
+		serverPane.setBorder(serverBorder);
+		serverPane.setLayout(new BoxLayout(serverPane, BoxLayout.Y_AXIS));
+		serverPane.add(Box.createVerticalStrut(10));
+		serverPane.add(nameBox);
+		serverPane.add(Box.createVerticalStrut(5));
+		serverPane.add(portBox);
+		serverPane.add(Box.createVerticalStrut(5));
+		serverPane.add(contextBox);
+		serverPane.add(Box.createVerticalStrut(5));
+		// serverPane.add(timeOutBox);
+		serverPane.add(this.createButtonPanel());
+		serverPane.add(Box.createVerticalStrut(5));
+		return serverPane;
+	}
+
+	private JPanel createTplTypePanel() {
+		TitledBorder tplTypeBorder = BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "面单模板类型信息");
+		tplTypeBorder.setTitleFont(font);
+
+		JLabel carrieridLl = new JLabel("承运人id:", SwingConstants.RIGHT);
+		carrieridLl.setFont(font);
+		carrieridLl.setPreferredSize(new Dimension(100, 0));
+		JTextField carrieridTf = new JTextField();
+		carrieridTf.setPreferredSize(new Dimension(0, 26));
+		carrieridTf.setFont(font);
+		Box carrieridBox = Box.createHorizontalBox();
+		carrieridBox.add(Box.createHorizontalStrut(20));
+		carrieridBox.add(carrieridLl);
+		carrieridBox.add(Box.createHorizontalStrut(10));
+		carrieridBox.add(carrieridTf);
+		carrieridBox.add(Box.createHorizontalStrut(20));
+
+		JLabel tplTypeLl = new JLabel("面单模板类型:", SwingConstants.RIGHT);
+		tplTypeLl.setFont(font);
+		tplTypeLl.setPreferredSize(new Dimension(100, 0));
+		JTextField tplTypeTf = new JTextField();
+		tplTypeTf.setPreferredSize(new Dimension(0, 26));
+		tplTypeTf.setFont(font);
+		Box tplTypeBox = Box.createHorizontalBox();
+		tplTypeBox.add(Box.createHorizontalStrut(20));
+		tplTypeBox.add(tplTypeLl);
+		tplTypeBox.add(Box.createHorizontalStrut(10));
+		tplTypeBox.add(tplTypeTf);
+		tplTypeBox.add(Box.createHorizontalStrut(20));
+
+		JPanel tplTypePane = new JPanel();
+		tplTypePane.setBorder(tplTypeBorder);
+		tplTypePane.setLayout(new BoxLayout(tplTypePane, BoxLayout.Y_AXIS));
+		tplTypePane.add(Box.createVerticalStrut(10));
+		tplTypePane.add(carrieridBox);
+		tplTypePane.add(Box.createVerticalStrut(5));
+		tplTypePane.add(tplTypeBox);
+		tplTypePane.add(Box.createVerticalStrut(5));
+		tplTypePane.add(this.createButtonPanel());
+		tplTypePane.add(Box.createVerticalStrut(5));
+
+		new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+
+			}
+		};
+
+		return tplTypePane;
+	}
+
+	private JPanel createButtonPanel() {
+		JButton okBtn = new JButton("确定");
+		okBtn.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		okBtn.setFont(font);
+		JButton cancelBtn = new JButton("取消");
+		cancelBtn.setFont(font);
+
+		JPanel buttonPane = new JPanel();
+		buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.X_AXIS));
+		buttonPane.add(Box.createHorizontalGlue());
+		buttonPane.add(okBtn);
+		buttonPane.add(Box.createRigidArea(new Dimension(10, 0)));
+		buttonPane.add(cancelBtn);
+		buttonPane.add(Box.createRigidArea(new Dimension(20, 0)));
+		return buttonPane;
+	}
+
+	@Override
+	public void displayUI() {
+		this.initContainer();
+		this.showResource();
+	}
+}

@@ -1,0 +1,7 @@
+2016-09-17 18:37:19  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4316 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-17 18:37:19  [ main:11 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-17 18:37:19  [ main:199 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@59e5ddf: startup date [Sat Sep 17 18:37:19 CST 2016]; root of context hierarchy
+2016-09-17 18:37:21  [ main:1802 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-17 18:37:21  [ main:1815 ] - [ INFO ]  Started Application in 2.011 seconds (JVM running for 2.289)
+2016-09-17 18:38:55  [ Thread-2:96034 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@59e5ddf: startup date [Sat Sep 17 18:37:19 CST 2016]; root of context hierarchy
+2016-09-17 18:38:55  [ Thread-2:96045 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown

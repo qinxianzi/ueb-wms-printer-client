@@ -1,0 +1,507 @@
+package com.ueb.wms.printer.client.view;
+
+import java.awt.BorderLayout;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+import java.awt.GridBagConstraints;
+
+import javax.swing.BorderFactory;
+import javax.swing.DefaultComboBoxModel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTabbedPane;
+import javax.swing.JTextField;
+import javax.swing.JToggleButton;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
+
+import org.springframework.stereotype.Component;
+
+import net.sf.jasperreports.engine.JRConstants;
+
+@SuppressWarnings("serial")
+@Component("pdfView")
+public class PdfView extends JPanel implements IBaseView {
+
+	protected static final int TYPE_FILE_NAME = 1;
+	protected static final int TYPE_INPUT_STREAM = 2;
+	protected static final int TYPE_OBJECT = 3;
+
+	public static final int REPORT_RESOLUTION = 72;
+
+	protected final float MIN_ZOOM = 0.5f;
+	protected final float MAX_ZOOM = 10f;
+	protected int zooms[] = { 50, 75, 100, 125, 150, 175, 200, 250, 400, 800 };
+	protected int defaultZoomIndex = 2;
+
+	@Override
+	public void displayUI() {
+		this.initContainer();
+		this.showResource();
+	}
+
+	private void initContainer() {
+		this.setMinimumSize(new Dimension(450, 150));
+		this.setPreferredSize(new Dimension(450, 150));
+		this.setLayout(new BorderLayout());
+	}
+
+	class PageRenderer extends JLabel {
+		private static final long serialVersionUID = JRConstants.SERIAL_VERSION_UID;
+
+		private boolean renderImage;
+		PdfView viewer = null;
+
+		public PageRenderer(PdfView viewer) {
+			this.viewer = viewer;
+		}
+
+		public void paintComponent(Graphics g) {
+			// if (isRenderImage()) {
+			// super.paintComponent(g);
+			// } else {
+			// viewer.paintPage((Graphics2D) g.create());
+			// }
+		}
+
+		public boolean isRenderImage() {
+			return renderImage;
+		}
+
+		public void setRenderImage(boolean renderImage) {
+			this.renderImage = renderImage;
+		}
+	}
+
+	private void showResource() {
+		GridBagConstraints gridBagConstraints;
+
+		JPanel tlbToolBar = new JPanel(new FlowLayout(java.awt.FlowLayout.LEFT, 0, 2));
+
+		btnReload = new JButton();
+//		pnlSep01 = new JPanel();
+		btnFirst = new JButton();
+		btnPrevious = new JButton();
+		btnNext = new JButton();
+		btnLast = new JButton();
+		txtGoTo = new JTextField();
+//		pnlSep02 = new JPanel();
+		btnActualSize = new JToggleButton();
+		btnFitPage = new JToggleButton();
+		btnFitWidth = new JToggleButton();
+//		pnlSep03 = new JPanel();
+		btnZoomIn = new JButton();
+		btnZoomOut = new JButton();
+		cmbZoom = new JComboBox();
+		DefaultComboBoxModel model = new DefaultComboBoxModel();
+		for (int i = 0; i < zooms.length; i++) {
+			model.addElement("" + zooms[i] + "%");
+		}
+		cmbZoom.setModel(model);
+		pnlMain = new JPanel();
+		pnlTabs = new JTabbedPane();
+		scrollPane = new JScrollPane();
+		scrollPane.getHorizontalScrollBar().setUnitIncrement(5);
+		scrollPane.getVerticalScrollBar().setUnitIncrement(5);
+		pnlInScroll = new JPanel();
+		pnlPage = new JPanel();
+		jPanel4 = new JPanel();
+		pnlLinks = new JPanel();
+		jPanel5 = new JPanel();
+		jPanel6 = new JPanel();
+		jPanel7 = new JPanel();
+		jPanel8 = new JPanel();
+		jLabel1 = new JLabel();
+		jPanel9 = new JPanel();
+		lblPage = new PageRenderer(this);
+		pnlStatus = new JPanel();
+		lblStatus = new JLabel();
+
+		// setMinimumSize(new java.awt.Dimension(450, 150));
+		// setPreferredSize(new java.awt.Dimension(450, 150));
+		// setLayout(new java.awt.BorderLayout());
+
+		// 打印按钮---start
+		btnPrint = new JButton();
+		btnPrint.setIcon(new ImageIcon(getClass().getResource("/icon/images/print.GIF"))); // NOI18N
+		btnPrint.setToolTipText("打印");
+		btnPrint.setMargin(new java.awt.Insets(2, 2, 2, 2));
+		btnPrint.setMaximumSize(new java.awt.Dimension(23, 23));
+		btnPrint.setMinimumSize(new java.awt.Dimension(23, 23));
+		btnPrint.setPreferredSize(new java.awt.Dimension(23, 23));
+		btnPrint.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				// btnPrintActionPerformed(evt);
+			}
+		});
+		// btnPrint.addKeyListener(keyNavigationListener);
+		tlbToolBar.add(btnPrint);
+		// 打印按钮---end
+
+		//重新载入按钮---start
+		btnReload.setIcon(new ImageIcon(getClass().getResource("/icon/images/reload.GIF"))); // NOI18N
+		btnReload.setToolTipText("reload");
+		btnReload.setMargin(new java.awt.Insets(2, 2, 2, 2));
+		btnReload.setMaximumSize(new java.awt.Dimension(23, 23));
+		btnReload.setMinimumSize(new java.awt.Dimension(23, 23));
+		btnReload.setPreferredSize(new java.awt.Dimension(23, 23));
+		btnReload.addActionListener(new java.awt.event.ActionListener() {
+			public void actionPerformed(java.awt.event.ActionEvent evt) {
+				// btnReloadActionPerformed(evt);
+			}
+		});
+		// btnReload.addKeyListener(keyNavigationListener);
+		tlbToolBar.add(btnReload);
+		//重新载入按钮---end
+
+		JPanel pnlSep01 = new JPanel();
+		pnlSep01.setMaximumSize(new Dimension(10, 10));
+		tlbToolBar.add(pnlSep01);
+
+//		btnFirst.setIcon(new ImageIcon(getClass().getResource("/icon/images/first.GIF"))); // NOI18N
+//		btnFirst.setToolTipText("first.page");
+//		btnFirst.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnFirst.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnFirst.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnFirst.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnFirst.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnFirstActionPerformed(evt);
+//			}
+//		});
+//		// btnFirst.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnFirst);
+
+//		btnPrevious.setIcon(new ImageIcon(getClass().getResource("/icon/images/previous.GIF"))); // NOI18N
+//		btnPrevious.setToolTipText("previous.page");
+//		btnPrevious.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnPrevious.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnPrevious.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnPrevious.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnPrevious.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnPreviousActionPerformed(evt);
+//			}
+//		});
+//		// btnPrevious.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnPrevious);
+
+//		btnNext.setIcon(new ImageIcon(getClass().getResource("/icon/images/next.GIF"))); // NOI18N
+//		btnNext.setToolTipText("next.page");
+//		btnNext.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnNext.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnNext.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnNext.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnNext.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				/// btnNextActionPerformed(evt);
+//			}
+//		});
+//		// btnNext.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnNext);
+
+//		btnLast.setIcon(new ImageIcon(getClass().getResource("/icon/images/last.GIF"))); // NOI18N
+//		// btnLast.setToolTipText(getBundleString("last.page"));
+//		btnLast.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnLast.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnLast.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnLast.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnLast.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnLastActionPerformed(evt);
+//			}
+//		});
+//		// btnLast.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnLast);
+
+//		txtGoTo.setToolTipText(getBundleString("go.to.page"));
+//		txtGoTo.setMaximumSize(new java.awt.Dimension(40, 23));
+//		txtGoTo.setMinimumSize(new java.awt.Dimension(40, 23));
+//		txtGoTo.setPreferredSize(new java.awt.Dimension(40, 23));
+//		txtGoTo.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// txtGoToActionPerformed(evt);
+//			}
+//		});
+//		// txtGoTo.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(txtGoTo);
+
+//		pnlSep02.setMaximumSize(new java.awt.Dimension(10, 10));
+//		tlbToolBar.add(pnlSep02);
+
+//		btnActualSize.setIcon(new ImageIcon(getClass().getResource("/icon/images/actualsize.GIF"))); // NOI18N
+//		btnActualSize.setToolTipText(getBundleString("actual.size"));
+//		btnActualSize.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnActualSize.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnActualSize.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnActualSize.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnActualSize.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnActualSizeActionPerformed(evt);
+//			}
+//		});
+//		// btnActualSize.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnActualSize);
+
+//		btnFitPage.setIcon(new ImageIcon(getClass().getResource("/icon/images/fitpage.GIF"))); // NOI18N
+//		btnFitPage.setToolTipText(getBundleString("fit.page"));
+//		btnFitPage.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnFitPage.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnFitPage.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnFitPage.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnFitPage.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnFitPageActionPerformed(evt);
+//			}
+//		});
+//		// btnFitPage.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnFitPage);
+
+//		btnFitWidth.setIcon(new ImageIcon(getClass().getResource("/icon/images/fitwidth.GIF"))); // NOI18N
+//		btnFitWidth.setToolTipText(getBundleString("fit.width"));
+//		btnFitWidth.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnFitWidth.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnFitWidth.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnFitWidth.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnFitWidth.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnFitWidthActionPerformed(evt);
+//			}
+//		});
+//		// btnFitWidth.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnFitWidth);
+
+//		pnlSep03.setMaximumSize(new java.awt.Dimension(10, 10));
+//		tlbToolBar.add(pnlSep03);
+
+//		btnZoomIn.setIcon(new ImageIcon(getClass().getResource("/icon/images/zoomin.GIF"))); // NOI18N
+//		btnZoomIn.setToolTipText(getBundleString("zoom.in"));
+//		btnZoomIn.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnZoomIn.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnZoomIn.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnZoomIn.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnZoomIn.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnZoomInActionPerformed(evt);
+//			}
+//		});
+//		// btnZoomIn.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnZoomIn);
+
+//		btnZoomOut.setIcon(new ImageIcon(getClass().getResource("/icon/images/zoomout.GIF"))); // NOI18N
+//		btnZoomOut.setToolTipText(getBundleString("zoom.out"));
+//		btnZoomOut.setMargin(new java.awt.Insets(2, 2, 2, 2));
+//		btnZoomOut.setMaximumSize(new java.awt.Dimension(23, 23));
+//		btnZoomOut.setMinimumSize(new java.awt.Dimension(23, 23));
+//		btnZoomOut.setPreferredSize(new java.awt.Dimension(23, 23));
+//		btnZoomOut.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// btnZoomOutActionPerformed(evt);
+//			}
+//		});
+//		// btnZoomOut.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(btnZoomOut);
+
+//		cmbZoom.setEditable(true);
+//		cmbZoom.setToolTipText(getBundleString("zoom.ratio"));
+//		cmbZoom.setMaximumSize(new java.awt.Dimension(80, 23));
+//		cmbZoom.setMinimumSize(new java.awt.Dimension(80, 23));
+//		cmbZoom.setPreferredSize(new java.awt.Dimension(80, 23));
+//		cmbZoom.addActionListener(new java.awt.event.ActionListener() {
+//			public void actionPerformed(java.awt.event.ActionEvent evt) {
+//				// cmbZoomActionPerformed(evt);
+//			}
+//		});
+//		cmbZoom.addItemListener(new java.awt.event.ItemListener() {
+//			public void itemStateChanged(java.awt.event.ItemEvent evt) {
+//				// cmbZoomItemStateChanged(evt);
+//			}
+//		});
+//		// cmbZoom.addKeyListener(keyNavigationListener);
+//		tlbToolBar.add(cmbZoom);
+
+		add(tlbToolBar, java.awt.BorderLayout.NORTH);
+
+		pnlMain.addComponentListener(new java.awt.event.ComponentAdapter() {
+			public void componentResized(java.awt.event.ComponentEvent evt) {
+				// pnlMainComponentResized(evt);
+			}
+		});
+		pnlMain.setLayout(new java.awt.BorderLayout());
+
+		pnlTabs.addChangeListener(new ChangeListener() {
+			public void stateChanged(ChangeEvent evt) {
+				// pnlTabsStateChanged(evt);
+			}
+		});
+		pnlMain.add(pnlTabs, java.awt.BorderLayout.CENTER);
+
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_ALWAYS);
+		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
+
+		pnlInScroll.setLayout(new java.awt.GridBagLayout());
+
+		pnlPage.setMinimumSize(new java.awt.Dimension(100, 100));
+		pnlPage.setPreferredSize(new java.awt.Dimension(100, 100));
+		pnlPage.setLayout(new java.awt.BorderLayout());
+
+		jPanel4.setMinimumSize(new java.awt.Dimension(100, 120));
+		jPanel4.setPreferredSize(new java.awt.Dimension(100, 120));
+		jPanel4.setLayout(new java.awt.GridBagLayout());
+
+		pnlLinks.setMinimumSize(new java.awt.Dimension(5, 5));
+		pnlLinks.setOpaque(false);
+		pnlLinks.setPreferredSize(new java.awt.Dimension(5, 5));
+		pnlLinks.addMouseListener(new java.awt.event.MouseAdapter() {
+			public void mousePressed(java.awt.event.MouseEvent evt) {
+				// pnlLinksMousePressed(evt);
+			}
+
+			public void mouseReleased(java.awt.event.MouseEvent evt) {
+				// pnlLinksMouseReleased(evt);
+			}
+		});
+		pnlLinks.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+			public void mouseDragged(java.awt.event.MouseEvent evt) {
+				// pnlLinksMouseDragged(evt);
+			}
+		});
+		pnlLinks.setLayout(null);
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 0;
+		gridBagConstraints.gridy = 0;
+		gridBagConstraints.gridwidth = 2;
+		gridBagConstraints.gridheight = 2;
+		gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+		jPanel4.add(pnlLinks, gridBagConstraints);
+
+		jPanel5.setBackground(java.awt.Color.gray);
+		jPanel5.setMinimumSize(new java.awt.Dimension(5, 5));
+		jPanel5.setPreferredSize(new java.awt.Dimension(5, 5));
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 2;
+		gridBagConstraints.gridy = 1;
+		gridBagConstraints.fill = java.awt.GridBagConstraints.VERTICAL;
+		jPanel4.add(jPanel5, gridBagConstraints);
+
+		jPanel6.setMinimumSize(new java.awt.Dimension(5, 5));
+		jPanel6.setPreferredSize(new java.awt.Dimension(5, 5));
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 0;
+		gridBagConstraints.gridy = 2;
+		jPanel4.add(jPanel6, gridBagConstraints);
+
+		jPanel7.setBackground(java.awt.Color.gray);
+		jPanel7.setMinimumSize(new java.awt.Dimension(5, 5));
+		jPanel7.setPreferredSize(new java.awt.Dimension(5, 5));
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 1;
+		gridBagConstraints.gridy = 2;
+		gridBagConstraints.fill = java.awt.GridBagConstraints.HORIZONTAL;
+		jPanel4.add(jPanel7, gridBagConstraints);
+
+		jPanel8.setBackground(java.awt.Color.gray);
+		jPanel8.setMinimumSize(new java.awt.Dimension(5, 5));
+		jPanel8.setPreferredSize(new java.awt.Dimension(5, 5));
+
+		jLabel1.setText("jLabel1");
+		jPanel8.add(jLabel1);
+
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 2;
+		gridBagConstraints.gridy = 2;
+		jPanel4.add(jPanel8, gridBagConstraints);
+
+		jPanel9.setMinimumSize(new java.awt.Dimension(5, 5));
+		jPanel9.setPreferredSize(new java.awt.Dimension(5, 5));
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 2;
+		gridBagConstraints.gridy = 0;
+		jPanel4.add(jPanel9, gridBagConstraints);
+
+		lblPage.setBackground(java.awt.Color.white);
+		lblPage.setBorder(BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+		lblPage.setOpaque(true);
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.gridx = 0;
+		gridBagConstraints.gridy = 0;
+		gridBagConstraints.gridwidth = 2;
+		gridBagConstraints.gridheight = 2;
+		gridBagConstraints.fill = java.awt.GridBagConstraints.BOTH;
+		gridBagConstraints.weightx = 1.0;
+		gridBagConstraints.weighty = 1.0;
+		jPanel4.add(lblPage, gridBagConstraints);
+
+		pnlPage.add(jPanel4, java.awt.BorderLayout.CENTER);
+
+		gridBagConstraints = new java.awt.GridBagConstraints();
+		gridBagConstraints.insets = new java.awt.Insets(5, 5, 5, 5);
+		pnlInScroll.add(pnlPage, gridBagConstraints);
+
+		scrollPane.setViewportView(pnlInScroll);
+
+		pnlMain.add(scrollPane, java.awt.BorderLayout.CENTER);
+
+		add(pnlMain, java.awt.BorderLayout.CENTER);
+
+		pnlStatus.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 0, 0));
+
+		lblStatus.setFont(new java.awt.Font("Dialog", 1, 10)); // NOI18N
+		lblStatus.setText("Page i of n");
+		pnlStatus.add(lblStatus);
+
+		add(pnlStatus, java.awt.BorderLayout.SOUTH);
+		// addKeyListener(keyNavigationListener);
+	}
+
+	private String getBundleString(String str) {
+		return str;
+	}
+
+	// Variables declaration - do not modify//GEN-BEGIN:variables
+	protected JToggleButton btnActualSize;
+	protected JButton btnFirst;
+	protected JToggleButton btnFitPage;
+	protected JToggleButton btnFitWidth;
+	protected JButton btnLast;
+	protected JButton btnNext;
+	protected JButton btnPrevious;
+	protected JButton btnPrint;
+	protected JButton btnReload;
+	protected JButton btnSave;
+	protected JButton btnZoomIn;
+	protected JButton btnZoomOut;
+	protected JComboBox cmbZoom;
+	private JLabel jLabel1;
+	private JPanel jPanel4;
+	private JPanel jPanel5;
+	private JPanel jPanel6;
+	private JPanel jPanel7;
+	private JPanel jPanel8;
+	private JPanel jPanel9;
+	private JLabel lblPage;
+	protected JLabel lblStatus;
+	private JPanel pnlInScroll;
+	private JPanel pnlLinks;
+	private JPanel pnlMain;
+	private JPanel pnlPage;
+	
+	//工具条分隔符---start
+//	protected JPanel pnlSep01;
+//	protected JPanel pnlSep02;
+//	protected JPanel pnlSep03;
+	//工具条分隔符---end
+	
+	protected JPanel pnlStatus;
+	private JTabbedPane pnlTabs;
+	private JScrollPane scrollPane;
+	// protected JPanel tlbToolBar;
+	protected JTextField txtGoTo;
+	// End of variables declaration//GEN-END:variables
+}

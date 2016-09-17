@@ -1,0 +1,265 @@
+package com.ueb.wms.printer.client.view;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.BorderFactory;
+import javax.swing.Box;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.LineBorder;
+import javax.swing.border.TitledBorder;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.stereotype.Component;
+
+import com.ueb.wms.printer.client.util.PrintViewUtil;
+
+@SuppressWarnings("serial")
+@Component("homePageView")
+public class HomePageView extends ServerInfoView {
+
+	// @Autowired
+	// private IPrinterService printerService;
+	//
+	// private JTextField urlTf, portTf, contextTf;
+	//
+	// protected void initContainer() {
+	// this.setBorder(new LineBorder(Color.GRAY, 1));
+	// this.setLayout(new BorderLayout(0, 5));
+	// }
+	//
+	public void showResource() {
+		Box vbox = Box.createVerticalBox();
+
+		JPanel serverPanel = this.createServerPanel();
+		serverPanel.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "服务器信息"));
+		this.disableContent();
+		vbox.add(serverPanel);
+		vbox.add(Box.createVerticalStrut(10));
+		vbox.add(this.createTplTypePanel());
+
+		this.add(vbox, BorderLayout.NORTH);
+		this.add(new JPanel(), BorderLayout.CENTER);
+	}
+
+	// private JPanel createServerPanel() {
+	// Map<String, String> values = this.printerService.getConfigValues();
+	//
+	// urlTf = this.createJTextField();
+	// urlTf.setText(values.get("url"));
+	// Box urlBox = this.createSingleBox("服务器地址:", urlTf);
+	//
+	// portTf = this.createJTextField();
+	// portTf.setText(values.get("port"));
+	// Box portBox = this.createSingleBox("服务器端口:", portTf);
+	//
+	// contextTf = this.createJTextField();
+	// contextTf.setText(values.get("context"));
+	// Box contextBox = this.createSingleBox("服务器上下文根:", contextTf);
+	//
+	// Box[] boies = new Box[] { urlBox, portBox, contextBox };
+	//
+	// ActionListener okBtnListener = new ActionListener() {
+	// @Override
+	// public void actionPerformed(ActionEvent e) {
+	// updateHttpServerInfo();
+	// }
+	// };
+	// JPanel btnPanel = this.createButtonPanel(okBtnListener, null);
+	// JPanel boxPanel = this.createSingleBoxPanel("服务器信息", boies, btnPanel);
+	// return boxPanel;
+	// }
+	//
+	// private void updateHttpServerInfo() {
+	// String url = this.urlTf.getText();
+	// if (StringUtils.isBlank(url)) {
+	// PrintViewUtil.showErrorMsg("服务器地址不能为空");
+	// this.urlTf.setFocusable(true);
+	// }
+	// String port = this.portTf.getText();
+	// if (StringUtils.isBlank(port)) {
+	// PrintViewUtil.showErrorMsg("服务器端口不能为空");
+	// this.portTf.setFocusable(true);
+	// }
+	// String context = this.contextTf.getText();
+	// if (StringUtils.isBlank(context)) {
+	// PrintViewUtil.showErrorMsg("服务器上下文根不能为空");
+	// this.contextTf.setFocusable(true);
+	// }
+	// try {
+	// this.printerService.updateHttpServerInfo(url, port, context);
+	// PrintViewUtil.showInformationMsg("已修改服务器配置信息");
+	// } catch (Exception e) {
+	// PrintViewUtil.showErrorMsg("修改服务器配置信息出现异常");
+	// }
+	// }
+
+	@SuppressWarnings("rawtypes")
+	private JPanel createTplTypePanel() {
+		Dimension labelDim = new Dimension(100, 0);
+		JTextField carrieridTf = PrintViewUtil.createJTextField();
+		Box carrieridBox = PrintViewUtil.createSingleBox("承运人id:", labelDim, carrieridTf);
+
+		String[] data = { "PDF模板", "Report模板" };
+		JComboBox tplTypeCo = this.createJComboBox(data);
+		tplTypeCo.setSelectedIndex(1);
+		Box tplTypeBox = PrintViewUtil.createSingleBox("面单模板类型:", labelDim, tplTypeCo);
+
+		Box[] boies = new Box[] { carrieridBox, tplTypeBox };
+		ActionListener okBtnListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				String carrierid = carrieridTf.getText();
+				if (StringUtils.isBlank(carrierid)) {
+					PrintViewUtil.showErrorMsg("承运人id不能为空");
+					return;
+				}
+				int tplType = tplTypeCo.getSelectedIndex();
+				if (addCarrieridTplTypeRel(carrierid, tplType)) {
+					carrieridTf.setText("");
+					tplTypeCo.setSelectedIndex(1);
+				}
+			}
+		};
+		ActionListener cancelBtnListener = new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				carrieridTf.setText("");
+				tplTypeCo.setSelectedIndex(1);
+			}
+		};
+		// JPanel btnPanel = this.createButtonPanel(okBtnListener,
+		// cancelBtnListener);
+		// JPanel boxPanel = this.createSingleBoxPanel("面单模板类型信息", boies,
+		// btnPanel);
+
+		JButton[] btns = this.createBtns(okBtnListener, cancelBtnListener);
+		JPanel btnPanel = PrintViewUtil.createButtonBoxPanel(btns);
+
+		JPanel boxPanel = PrintViewUtil.createSingleBoxPanel(5, boies, btnPanel);
+		TitledBorder border = BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "面单模板类型信息");
+		boxPanel.setBorder(border);
+		return boxPanel;
+	}
+
+	private boolean addCarrieridTplTypeRel(String carrierid, int tplType) {
+		try {
+			printerService.addCarrieridTplTypeRel(carrierid, tplType);
+			PrintViewUtil.showInformationMsg("已新增承运人使用的模板类型");
+			return true;
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+			PrintViewUtil.showErrorMsg("新增承运人使用的模板类型出现异常");
+		}
+		return false;
+	}
+
+	// private JTextField createJTextField() {
+	// JTextField textFiled = new JTextField();
+	// textFiled.setPreferredSize(new Dimension(0, 26));
+	// return textFiled;
+	// }
+
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private JComboBox createJComboBox(Object[] items) {
+		JComboBox combo = new JComboBox(items);
+		combo.setPreferredSize(new Dimension(0, 26));
+		return combo;
+	}
+
+	// /**
+	// * 创建一行（JLabel:JTextField/JComboBox）
+	// *
+	// * @param text
+	// * @param component
+	// * @return
+	// */
+	// private Box createSingleBox(String text, java.awt.Component component) {
+	// JLabel label = new JLabel(text, SwingConstants.RIGHT);
+	// label.setPreferredSize(new Dimension(100, 0));
+	// if (null == component) {
+	// component = this.createJTextField();
+	// }
+	//
+	// Box box = Box.createHorizontalBox();
+	// box.add(Box.createHorizontalStrut(20));
+	// box.add(label);
+	// box.add(Box.createHorizontalStrut(10));
+	// box.add(component);
+	// box.add(Box.createHorizontalStrut(20));
+	// return box;
+	// }
+	//
+	// /**
+	// * 创建一组Box（一个Box表示一行）
+	// *
+	// * @param title
+	// * @param boies
+	// * @return
+	// */
+	// private JPanel createSingleBoxPanel(String title, Box[] boies, JPanel
+	// btnPanel) {
+	// TitledBorder border = BorderFactory.createTitledBorder(new
+	// LineBorder(Color.GRAY, 1), title);
+	// JPanel boxPanel = new JPanel();
+	// boxPanel.setBorder(border);
+	// boxPanel.setLayout(new BoxLayout(boxPanel, BoxLayout.Y_AXIS));
+	// for (int i = 0, len = boies.length; i < len; i++) {
+	// boxPanel.add(Box.createVerticalStrut(5));
+	// boxPanel.add(boies[i]);
+	// }
+	// boxPanel.add(Box.createVerticalStrut(5));
+	// if (null != btnPanel) {
+	// boxPanel.add(btnPanel);
+	// boxPanel.add(Box.createVerticalStrut(5));
+	// }
+	// return boxPanel;
+	// }
+
+	// private JPanel createButtonPanel(ActionListener okBtnListener,
+	// ActionListener cancelBtnListener) {
+	// JButton okBtn = new JButton("确定");
+	// if (null != okBtnListener) {
+	// okBtn.addActionListener(okBtnListener);
+	// }
+	// JButton cancelBtn = new JButton("取消");
+	// if (null != cancelBtnListener) {
+	// cancelBtn.addActionListener(cancelBtnListener);
+	// }
+	//
+	// JPanel buttonPane = new JPanel();
+	// buttonPane.setLayout(new BoxLayout(buttonPane, BoxLayout.X_AXIS));
+	// buttonPane.add(Box.createHorizontalGlue());
+	// buttonPane.add(okBtn);
+	// buttonPane.add(Box.createRigidArea(new Dimension(10, 0)));
+	// buttonPane.add(cancelBtn);
+	// buttonPane.add(Box.createRigidArea(new Dimension(20, 0)));
+	// return buttonPane;
+	// }
+
+	private JButton[] createBtns(ActionListener okBtnListener, ActionListener cancelBtnListener) {
+		JButton okBtn = new JButton("确定");
+		if (null != okBtnListener) {
+			okBtn.addActionListener(okBtnListener);
+		}
+		JButton cancelBtn = new JButton("取消");
+		if (null != cancelBtnListener) {
+			cancelBtn.addActionListener(cancelBtnListener);
+		}
+
+		JButton[] btns = { okBtn, cancelBtn };
+		return btns;
+	}
+
+	@Override
+	public void displayUI() {
+		this.initContainer();
+		this.showResource();
+	}
+}

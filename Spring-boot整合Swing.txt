@@ -1,0 +1,2 @@
+注入空指针问题重点参考：
+http://stackoverflow.com/questions/29265717/spring-autowired-swing-objects-nullpointerexception
