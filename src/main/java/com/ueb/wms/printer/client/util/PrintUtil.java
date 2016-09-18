@@ -31,9 +31,11 @@ public class PrintUtil {
 	public static String getReportLogoPath(int index) {
 		StringBuffer path = new StringBuffer(WmsConstants.UEB_REPORT_LOGO);
 		path.append(index).append(WmsConstants.UEB_REPORT_LOGO_SUFFIX);
+		// String fullPath =
+		// PrintUtil.class.getResource(path.toString()).getPath();
 
-		String fullPath = PrintUtil.class.getResource(path.toString()).getPath();
-		return fullPath.substring(1, fullPath.length());
+		// return fullPath.substring(1, fullPath.length());
+		return path.toString();
 	}
 
 	public static Map<String, Object> getImageParams() {

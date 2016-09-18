@@ -1,5 +1,6 @@
 package com.ueb.wms.printer.client.http;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Map;
@@ -55,8 +56,10 @@ public class HttpClientService extends HttpClientBaseService {
 	}
 
 	private void saveHttpClientConfig2properties() throws IOException {
-		
-		String file = this.getClass().getResource("/httpclient.properties").getFile();
+		// String file =
+		// this.getClass().getResource("httpclient.properties").getFile();
+		// File file = new File("config/httpclient.properties");
+		File file = config.getFile();
 		FileOutputStream output = null;
 		Properties properties = null;
 		try {

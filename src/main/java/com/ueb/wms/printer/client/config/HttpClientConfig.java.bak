@@ -1,72 +1,44 @@
 package com.ueb.wms.printer.client.config;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 @Component("httpClientConfig")
+@PropertySource("httpclient.properties")
 public class HttpClientConfig {
-
-	public HttpClientConfig() {
-		try {
-			this.initProperties();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-
-	private void initProperties() throws IOException {
-		FileInputStream input = null;
-		try {
-			Properties properties = new Properties();
-			input = new FileInputStream(this.getFile());
-			properties.load(input);
-
-			connectTimeout = Integer.valueOf(properties.getProperty("client.connectTimeout"));
-			socketTimeout = Integer.valueOf(properties.getProperty("client.socketTimeout"));
-			url = properties.getProperty("client.url");
-			port = properties.getProperty("client.port");
-			context = properties.getProperty("client.context");
-		} finally {
-			if (null != input) {
-				input.close();
-			}
-		}
-	}
-
-	public File getFile() {
-		File file = new File("resources/httpclient.properties");
-		return file;
-	}
 
 	/**
 	 * 连接超时时间(毫秒)
 	 */
+	@Value("${client.connectTimeout}")
 	private Integer connectTimeout;
 
 	/**
 	 * 响应的超时时间(毫秒)
 	 */
+	@Value("${client.socketTimeout}")
 	private Integer socketTimeout;
 
 	/**
 	 * 请求地址
 	 */
+	@Value("${client.url}")
 	private String url;
 
 	/**
 	 * 请求端口号
 	 */
+	@Value("${client.port}")
 	private String port;
 
 	/**
 	 * 服务器上下文根
 	 */
+	@Value("${client.context}")
 	private String context;
 
 	public Integer getConnectTimeout() {

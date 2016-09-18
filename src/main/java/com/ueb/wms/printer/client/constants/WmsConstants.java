@@ -10,8 +10,8 @@ public class WmsConstants {
 
 	public static final String UEB_PRINT_VIEW_Title = "PrintViewer";
 
-	public static final String UEB_PRINT_VIEW_ICON = "/icon/iwct.gif";
-	public static final String UEB_REPORT_LOGO = "/logo/logo";
+	public static final String UEB_PRINT_VIEW_ICON = "resources/icon/iwct.gif";
+	public static final String UEB_REPORT_LOGO = "resources/logo/logo";
 	public static final String UEB_REPORT_LOGO_SUFFIX = ".jpg";
 	public static final String UEB_REPORT = "/report";
 
