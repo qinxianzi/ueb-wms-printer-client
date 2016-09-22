@@ -30,6 +30,7 @@ public class JTableOrder extends JTable implements IBaseView {
 		this.setFont(new Font("微软雅黑", Font.PLAIN, 12));
 		this.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
+				// TODO:2016/9/22，使用连打功能
 				if (2 == e.getClickCount()) {
 					JTableOrder that = JTableOrder.this;
 					int row = that.getSelectedRow();

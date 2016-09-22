@@ -27,6 +27,12 @@ public class PrintViewUtil {
 		label.setFont(font);
 		JOptionPane.showMessageDialog(null, label, "错误提示", JOptionPane.ERROR_MESSAGE);
 	}
+	
+	public static void showWarningMsg(String message) {
+		JLabel label = new JLabel(message);
+		label.setFont(font);
+		JOptionPane.showMessageDialog(null, label, "告警提示", JOptionPane.WARNING_MESSAGE);
+	}
 
 	public static int showOptionDialog(String message) {
 		JLabel label = new JLabel(message);

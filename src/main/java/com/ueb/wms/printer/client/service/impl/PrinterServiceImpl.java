@@ -19,6 +19,7 @@ import org.springframework.stereotype.Service;
 import com.alibaba.fastjson.JSON;
 import com.ueb.wms.printer.client.http.HttpClientService;
 import com.ueb.wms.printer.client.service.IPrinterService;
+import com.ueb.wms.printer.client.util.ITextPdfUtil;
 import com.ueb.wms.printer.client.vo.ReportDataVO;
 
 @Service("printerService")
@@ -70,12 +71,42 @@ public class PrinterServiceImpl implements IPrinterService {
 
 	protected BufferedImage tranferPdf2Image(HttpEntity entity) throws Exception {
 		InputStream input = null;
+		PDDocument document = null;
 		try {
 			input = entity.getContent();
-			PDDocument document = PDDocument.load(input);
+			document = PDDocument.load(input);
 			PDFRenderer renderer = new PDFRenderer(document);
-			BufferedImage image = renderer.renderImageWithDPI(0, 150, ImageType.RGB); // 只取第1页
+			BufferedImage image = renderer.renderImageWithDPI(0, 4 * 72, ImageType.RGB); // 只取第1页
 			return image;
+		} catch (Exception e) {
+			throw e;
+		} finally {
+			if (null != document) {
+				document.close();
+			}
+			if (null != input) {
+				input.close();
+			}
+		}
+	}
+
+	public void downloadPdf(String orderNO, List<String> contents, String pdffile) throws Exception {
+		try {
+			Map<String, String> params = new HashMap<String, String>(10);
+			params.put("orderNO", orderNO);
+			HttpEntity entity = this.httpService.downloadPdfTemplate("downloadPdfTemplate", params);
+			this.generatePDF(entity, contents, pdffile);
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+			throw e;
+		}
+	}
+
+	protected void generatePDF(HttpEntity entity, List<String> contents, String pdffile) throws Exception {
+		InputStream input = null;
+		try {
+			input = entity.getContent();
+			ITextPdfUtil.manipulatePdf(input, pdffile, contents);
 		} catch (Exception e) {
 			throw e;
 		} finally {

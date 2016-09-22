@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -16,13 +17,12 @@ import javax.swing.JOptionPane;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.stereotype.Component;
 
 import com.ueb.wms.printer.client.constants.WmsConstants;
 import com.ueb.wms.printer.client.service.IPrinterService;
 import com.ueb.wms.printer.client.util.PrintUtil;
+import com.ueb.wms.printer.client.util.PrintViewUtil;
 import com.ueb.wms.printer.client.vo.ReportDataVO;
 
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -53,6 +53,11 @@ public class PrintView extends JRViewer implements IBaseView {
 		this.jasperPrint = jasperPrint;
 		super.loadReport(jasperPrint);
 		this.refreshPage();
+
+		// boolean fastPrinting = true;
+		// if (fastPrinting) {
+		// this.fastPrintReport();
+		// }
 	}
 
 	// public void loadReport(InputStream input, boolean isXmlReport) {
@@ -106,22 +111,26 @@ public class PrintView extends JRViewer implements IBaseView {
 		}
 		this.btnPrint.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
-				PrintView.this.printReport(event);
+				PrintView.this.printReport();
 			}
 		});
 	}
 
-	protected void printReport(ActionEvent evt) {
-		// TODO:读取该面单打印日志（即打印次数）
+	/**
+	 * 普通打印
+	 */
+	protected void printReport() {
+		if (!beforePrint()) {
+			return;
+		}
 		PrintView that = this;
 		Thread thread = new Thread(new Runnable() {
 			public void run() {
 				try {
 					btnPrint.setEnabled(false);
 					that.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
-					JasperPrintManager.getInstance(jasperReportsContext).print(that.jasperPrint, true);
-
-					// TODO:新增面单打印日志
+					JasperPrintManager.getInstance(jasperReportsContext).print(that.jasperPrint, true); // 弹出打印窗口
+					that.afterPrint();
 				} catch (Exception e) {
 					logger.error("Print error.", e);
 					JOptionPane.showMessageDialog(that, that.getBundleString("error.printing"));
@@ -132,6 +141,71 @@ public class PrintView extends JRViewer implements IBaseView {
 			}
 		});
 		thread.start();
+	}
+
+	/**
+	 * 快速打印
+	 */
+	protected void fastPrintReport() {
+		this.btnPrint.setEnabled(false);
+		if (!this.beforePrint()) {
+			return;
+		}
+		PrintView that = this;
+		Thread thread = new Thread(new Runnable() {
+			public void run() {
+				try {
+					JasperPrintManager.getInstance(jasperReportsContext).print(that.jasperPrint, false); // 快速打印
+					that.afterPrint();
+				} catch (Exception e) {
+					logger.error("Print error.", e);
+					JOptionPane.showMessageDialog(that, that.getBundleString("error.printing"));
+				}
+			}
+		});
+		thread.start();
+	}
+
+	public void fastPrintReport(ReportDataVO reportDataVo) {
+		if (null == reportDataVo) {
+			return;
+		}
+		JasperPrint jasperPrint = null;
+		try {
+			jasperPrint = this.loadReportTemplate(reportDataVo);
+		} catch (Exception e) {
+			logger.error("加载iReport面单模板出现异常：{}", e.getMessage());
+			PrintViewUtil.showErrorMsg("加载iReport面单模板出现异常");
+		}
+		this.fastPrintReport(jasperPrint);
+	}
+
+	protected void fastPrintReport(JasperPrint jasperPrint) {
+		if (null == jasperPrint) {
+			return;
+		}
+		this.jasperPrint = jasperPrint;
+		this.btnPrint.setEnabled(false);
+		if (!this.beforePrint()) {
+			return;
+		}
+		try {
+			// this.loadReport(jasperPrint);
+			JasperPrintManager.getInstance(jasperReportsContext).print(jasperPrint, false); // 快速打印
+			this.afterPrint();
+		} catch (Exception e) {
+			logger.error("打印iReport面单出现异常：{}", e.getMessage());
+			PrintViewUtil.showErrorMsg(this.getBundleString("error.printing"));
+		}
+	}
+
+	private boolean beforePrint() {
+		// TODO:读取该面单打印日志（即打印次数），若已经打印，则不能重复打印
+		return true;
+	}
+
+	private void afterPrint() {
+		// TODO:新增面单打印日志
 	}
 
 	@Override
@@ -199,20 +273,32 @@ public class PrintView extends JRViewer implements IBaseView {
 		BufferedImage pdfimage = printerService.downloadPdfTemplate(orderNO);
 		reportDataVo.setCOLUMNNAME101(pdfimage);
 
-		Resource resource = new ClassPathResource("/report/ueb_wms_pdf_report_tpl.jasper");
-		// String reportFile =
-		// this.getClass().getResource("/report/ueb_wms_pdf_report_tpl.jasper").getFile();
-		// File file = new File(reportFile);
-		// JasperReport jasperReport = (JasperReport) JRLoader.loadObject(file);
-		JasperReport jasperReport = (JasperReport) JRLoader.loadObject(resource.getInputStream());
+		FileInputStream inputStream = null;
+		try {
+			// Resource resource = new
+			// ClassPathResource("/report/ueb_wms_pdf_report_tpl.jasper");
+			// // String reportFile =
+			// //
+			// this.getClass().getResource("/report/ueb_wms_pdf_report_tpl.jasper").getFile();
+			// // File file = new File(reportFile);
+			// // JasperReport jasperReport = (JasperReport)
+			// // JRLoader.loadObject(file);
+			// JasperReport jasperReport = (JasperReport)
+			// JRLoader.loadObject(resource.getInputStream());
 
-		List<ReportDataVO> datas = new ArrayList<ReportDataVO>(1);
-		datas.add(reportDataVo);
-		JRBeanCollectionDataSource jrrsds = new JRBeanCollectionDataSource(datas);
+			inputStream = loadTpInputStream("resources/report/ueb_wms_pdf_report_tpl.jasper");
+			JasperReport jasperReport = (JasperReport) JRLoader.loadObject(inputStream);
 
-		Map<String, Object> parameters = PrintUtil.getImageParams();
-		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrrsds);
-		return jasperPrint;
+			List<ReportDataVO> datas = new ArrayList<ReportDataVO>(1);
+			datas.add(reportDataVo);
+			JRBeanCollectionDataSource jrrsds = new JRBeanCollectionDataSource(datas);
+
+			Map<String, Object> parameters = PrintUtil.getImageParams();
+			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrrsds);
+			return jasperPrint;
+		} finally {
+			this.closeReportTplInput(inputStream);
+		}
 	}
 
 	/**
@@ -227,16 +313,26 @@ public class PrintView extends JRViewer implements IBaseView {
 		// File reportFile = this.getReportTemplate(carrierID);
 		// JasperReport jasperReport = (JasperReport)
 		// JRLoader.loadObject(reportFile);
-		Resource resource = new ClassPathResource(this.getReportTemplate(carrierID));
-		JasperReport jasperReport = (JasperReport) JRLoader.loadObject(resource.getInputStream());
+		FileInputStream inputStream = null;
+		try {
+			// Resource resource = new
+			// ClassPathResource(this.getReportTemplate(carrierID));
+			// JasperReport jasperReport = (JasperReport)
+			// JRLoader.loadObject(resource.getInputStream());
 
-		List<ReportDataVO> datas = new ArrayList<ReportDataVO>(1);
-		datas.add(reportDataVo);
-		JRBeanCollectionDataSource jrrsds = new JRBeanCollectionDataSource(datas);
+			inputStream = getReportTplInput(carrierID);
+			JasperReport jasperReport = (JasperReport) JRLoader.loadObject(inputStream);
 
-		Map<String, Object> parameters = PrintUtil.getImageParams();
-		JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrrsds);
-		return jasperPrint;
+			List<ReportDataVO> datas = new ArrayList<ReportDataVO>(1);
+			datas.add(reportDataVo);
+			JRBeanCollectionDataSource jrrsds = new JRBeanCollectionDataSource(datas);
+
+			Map<String, Object> parameters = PrintUtil.getImageParams();
+			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, jrrsds);
+			return jasperPrint;
+		} finally {
+			closeReportTplInput(inputStream);
+		}
 	}
 
 	// private File getReportTemplate(String carrierId) throws Exception {
@@ -252,22 +348,45 @@ public class PrintView extends JRViewer implements IBaseView {
 	// }
 	// return file;
 	// }
-	private String getReportTemplate(String carrierId) throws Exception {
+	// private String getReportTemplate(String carrierId) throws Exception {
+	// String report = StringUtils.replace(WmsConstants.REPORT_TEMPLATE,
+	// "{CarrierID}",
+	// StringUtils.upperCase(carrierId));
+	// // URL url = this.getClass().getResource("/report/");
+	// // StringBuffer path = new StringBuffer(url.getPath());
+	// // path.append(report);
+	// //
+	// // File file = new File(path.toString());
+	// // if (!file.exists()) {
+	// // throw new Exception("SO快递面单模板文件不存在");
+	// // }
+	// // return file;
+	// StringBuffer path = new StringBuffer("/report/");
+	// path.append(report);
+	// return path.toString();
+	// }
+
+	private FileInputStream getReportTplInput(String carrierId) throws Exception {
 		String report = StringUtils.replace(WmsConstants.REPORT_TEMPLATE, "{CarrierID}",
 				StringUtils.upperCase(carrierId));
-		// URL url = this.getClass().getResource("/report/");
-		// StringBuffer path = new StringBuffer(url.getPath());
-		// path.append(report);
-		//
-		// File file = new File(path.toString());
-		// if (!file.exists()) {
-		// throw new Exception("SO快递面单模板文件不存在");
-		// }
-		// return file;
-
-		StringBuffer path = new StringBuffer("/report/");
+		StringBuffer path = new StringBuffer("resources/report/");
 		path.append(report);
-		return path.toString();
+		logger.info("===========report=================={}", path.toString());
+
+		// FileInputStream inputStream = new FileInputStream(report);
+		return this.loadTpInputStream(path.toString());
+		// return inputStream;
+	}
+
+	private void closeReportTplInput(FileInputStream inputStream) throws Exception {
+		if (null != inputStream) {
+			inputStream.close();
+		}
+	}
+
+	private FileInputStream loadTpInputStream(String filename) throws Exception {
+		FileInputStream inputStream = new FileInputStream(filename);
+		return inputStream;
 	}
 
 	// private void loadPdf2Report() throws Exception {

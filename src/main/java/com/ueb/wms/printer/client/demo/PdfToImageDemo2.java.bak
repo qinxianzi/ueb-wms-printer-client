@@ -1,0 +1,93 @@
+package com.ueb.wms.printer.client.demo;
+
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import com.itextpdf.text.BaseColor;
+import com.itextpdf.text.DocumentException;
+import com.itextpdf.text.Element;
+import com.itextpdf.text.Font;
+import com.itextpdf.text.Image;
+import com.itextpdf.text.Phrase;
+import com.itextpdf.text.Rectangle;
+import com.itextpdf.text.pdf.BaseFont;
+import com.itextpdf.text.pdf.ColumnText;
+import com.itextpdf.text.pdf.PdfContentByte;
+import com.itextpdf.text.pdf.PdfGState;
+import com.itextpdf.text.pdf.PdfReader;
+import com.itextpdf.text.pdf.PdfStamper;
+
+public class PdfToImageDemo2 {
+	public static void main(String[] args) throws Exception {
+		manipulatePdf("D:/pdf/PK160912024098.pdf", "D:/pdf/PK160912039918_out.pdf");
+	}
+
+	public static Font getFont() {
+		// 如果不设置中文处理，页眉页脚让不会被显示出来
+		BaseFont bfChinese = null;
+		try {
+			bfChinese = BaseFont.createFont("STSong-Light", "UniGB-UCS2-H", BaseFont.NOT_EMBEDDED);
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		Font fontChinese = new Font(bfChinese, 12, Font.NORMAL);
+		// 设置字体颜色
+		fontChinese.setColor(BaseColor.BLACK);
+		return fontChinese;
+		// // 页眉
+		// ColumnText.showTextAligned(writer.getDirectContent(),
+		// Element.ALIGN_CENTER, new Phrase("我是页眉", fontChinese),
+		// rect.getLeft(), rect.getTop() + 35, 0);
+		// // 页脚
+		// ColumnText.showTextAligned(writer.getDirectContent(),
+		// Element.ALIGN_CENTER,
+		// new Phrase(String.format("第 %d 页", writer.getPageNumber()),
+		// fontChinese),
+		// (rect.getLeft() + rect.getRight()) / 2 + 120, rect.getBottom() - 40,
+		// 0);
+	}
+
+	public static void manipulatePdf(String src, String dest) throws IOException, DocumentException {
+		PdfReader reader = new PdfReader(src);
+		int n = reader.getNumberOfPages();
+		PdfStamper stamper = new PdfStamper(reader, new FileOutputStream(dest));
+		stamper.setRotateContents(false);
+		// text watermark
+		// Font f = new Font(FontFamily.HELVETICA, 30);
+		// Phrase p = new Phrase("My watermark (text)", f);
+
+		Font f = getFont();
+		Phrase p = new Phrase("中文内容", f);
+
+		// image watermark
+		Image img = Image.getInstance("d:/test_img.jpg");
+		float w = img.getScaledWidth();
+		float h = img.getScaledHeight();
+		// transparency
+		PdfGState gs1 = new PdfGState();
+		gs1.setFillOpacity(0.5f);
+		// properties
+		PdfContentByte over;
+		Rectangle pagesize;
+		float x, y;
+		// loop over every page
+		for (int i = 1; i <= n; i++) {
+			pagesize = reader.getPageSize(i);
+			x = (pagesize.getLeft() + pagesize.getRight()) / 2;
+			y = (pagesize.getTop() + pagesize.getBottom()) / 2;
+			over = stamper.getOverContent(i);
+			over.saveState();
+			over.setGState(gs1);
+			if (i % 2 == 1) {
+				ColumnText.showTextAligned(over, Element.ALIGN_CENTER, p, x, y, 0);
+			} else {
+				over.addImage(img, w, 0, 0, h, x - (w / 2), y - (h / 2));
+			}
+			over.restoreState();
+		}
+		stamper.close();
+		reader.close();
+	}
+}

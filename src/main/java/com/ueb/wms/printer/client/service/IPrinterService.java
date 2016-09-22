@@ -38,6 +38,19 @@ public interface IPrinterService {
 	BufferedImage downloadPdfTemplate(String orderNO) throws Exception;
 
 	/**
+	 * 下载PDF模板文件，增加内容到PDF文件末尾
+	 * 
+	 * @param orderNO
+	 *            订单编号
+	 * @param contents
+	 *            增加的内容
+	 * @param pdffile
+	 *            本地待创建的pdf文件(完整路径)
+	 * @throws Exception
+	 */
+	void downloadPdf(String orderNO, List<String> contents, String pdffile) throws Exception;
+
+	/**
 	 * 新增承运人使用的模板类型
 	 * 
 	 * @param carrierid

@@ -8,6 +8,8 @@ import javax.swing.JTabbedPane;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.ueb.wms.printer.client.vo.ReportDataVO;
+
 @SuppressWarnings("serial")
 @Component("tabView")
 public class TabView extends JTabbedPane implements IBaseView {
@@ -71,4 +73,10 @@ public class TabView extends JTabbedPane implements IBaseView {
 		this.setSelectedComponent(this.printView);
 		this.printView.activation(orderNO);
 	}
+
+	public void fastPrintIReport(ReportDataVO reportDataVo) {
+		// this.setSelectedComponent(this.printView);
+		this.printView.fastPrintReport(reportDataVo);
+	}
+
 }

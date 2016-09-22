@@ -12,9 +12,7 @@ import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -85,11 +83,11 @@ public class MainView extends JFrame implements IBaseView {
 		Container content = this.getContentPane();
 		content.add(this.tabView, BorderLayout.CENTER);
 
-		JLabel label = new JLabel("17:35:03 登陆系统，陆账号是：，用户名是：");
-		// label.setFont(new Font("微软雅黑", Font.PLAIN, 12));
-		JPanel footer = new JPanel();
-		footer.add(label);
-		content.add(footer, BorderLayout.NORTH);
+		// JLabel label = new JLabel("17:35:03 登陆系统，陆账号是：，用户名是：");
+		// // label.setFont(new Font("微软雅黑", Font.PLAIN, 12));
+		// JPanel footer = new JPanel();
+		// footer.add(label);
+		// content.add(footer, BorderLayout.NORTH);
 
 		this.tabView.displayUI();
 
