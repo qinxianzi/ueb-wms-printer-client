@@ -3,10 +3,13 @@ package com.ueb.wms.printer.client.util;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Font;
+import java.util.List;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
@@ -27,7 +30,7 @@ public class PrintViewUtil {
 		label.setFont(font);
 		JOptionPane.showMessageDialog(null, label, "错误提示", JOptionPane.ERROR_MESSAGE);
 	}
-	
+
 	public static void showWarningMsg(String message) {
 		JLabel label = new JLabel(message);
 		label.setFont(font);
@@ -42,9 +45,30 @@ public class PrintViewUtil {
 		return result;
 	}
 
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	public static JComboBox createJComboBox(Object[] items, Dimension dim) {
+		items = (null == items) ? new Object[0] : items;
+		dim = (null == dim) ? new Dimension(0, 26) : dim;
+		JComboBox combo = new JComboBox(items);
+		combo.setPreferredSize(dim);
+		return combo;
+	}
+
+	public static String createJFileChooser(Component parent) {
+		JFileChooser chooser = new JFileChooser();
+		chooser.setApproveButtonText("确定");
+		chooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY); // 设置只选择目录
+		int returnVal = chooser.showOpenDialog(parent);
+		String pdfTpl = "";
+		if (returnVal == JFileChooser.APPROVE_OPTION) {
+			pdfTpl = chooser.getSelectedFile().getAbsolutePath();
+		}
+		return pdfTpl;
+	}
+
 	public static JTextField createJTextField() {
 		JTextField textFiled = new JTextField();
-		textFiled.setPreferredSize(new Dimension(0, 26));
+		textFiled.setPreferredSize(new Dimension(0, 23));
 		return textFiled;
 	}
 
@@ -78,11 +102,33 @@ public class PrintViewUtil {
 	 * @param boies
 	 * @return
 	 */
-	public static JPanel createSingleBoxPanel(int height, Box[] boies, JPanel btnPanel) {
+	public static JPanel createSingleBoxPanel(int height, List<Box> boies, JPanel btnPanel) {
 		// TitledBorder border = BorderFactory.createTitledBorder(new
 		// LineBorder(Color.GRAY, 1), title);
 		JPanel boxPanel = new JPanel();
 		// boxPanel.setBorder(border);
+		boxPanel.setLayout(new BoxLayout(boxPanel, BoxLayout.Y_AXIS));
+		for (int i = 0, len = boies.size(); i < len; i++) {
+			boxPanel.add(Box.createVerticalStrut(height));
+			boxPanel.add(boies.get(i));
+		}
+		boxPanel.add(Box.createVerticalStrut(height));
+		if (null != btnPanel) {
+			boxPanel.add(btnPanel);
+			boxPanel.add(Box.createVerticalStrut(height));
+		}
+		return boxPanel;
+	}
+
+	/**
+	 * 创建一组Box（一个Box表示一行）
+	 * 
+	 * @param title
+	 * @param boies
+	 * @return
+	 */
+	public static JPanel createSingleBoxPanel(int height, Box[] boies, JPanel btnPanel) {
+		JPanel boxPanel = new JPanel();
 		boxPanel.setLayout(new BoxLayout(boxPanel, BoxLayout.Y_AXIS));
 		for (int i = 0, len = boies.length; i < len; i++) {
 			boxPanel.add(Box.createVerticalStrut(height));

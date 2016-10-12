@@ -22,7 +22,6 @@ import org.springframework.stereotype.Component;
 import com.ueb.wms.printer.client.constants.WmsConstants;
 import com.ueb.wms.printer.client.service.IPrinterService;
 import com.ueb.wms.printer.client.util.PrintUtil;
-import com.ueb.wms.printer.client.util.PrintViewUtil;
 import com.ueb.wms.printer.client.vo.ReportDataVO;
 
 import net.sf.jasperreports.engine.JasperFillManager;
@@ -44,6 +43,11 @@ public class PrintView extends JRViewer implements IBaseView {
 	private JTextFieldSearch tfSearch;
 
 	protected JasperPrint jasperPrint;
+
+	/**
+	 * 本次打印的订单
+	 */
+	private String orderNO;
 
 	public PrintView() {
 		super(null, null);
@@ -120,23 +124,25 @@ public class PrintView extends JRViewer implements IBaseView {
 	 * 普通打印
 	 */
 	protected void printReport() {
-		if (!beforePrint()) {
+		if (!beforePrint(this.orderNO)) {
 			return;
 		}
 		PrintView that = this;
 		Thread thread = new Thread(new Runnable() {
 			public void run() {
+				boolean isPrintSuccess = true;
 				try {
 					btnPrint.setEnabled(false);
 					that.setCursor(Cursor.getPredefinedCursor(Cursor.WAIT_CURSOR));
 					JasperPrintManager.getInstance(jasperReportsContext).print(that.jasperPrint, true); // 弹出打印窗口
-					that.afterPrint();
 				} catch (Exception e) {
+					isPrintSuccess = false;
 					logger.error("Print error.", e);
 					JOptionPane.showMessageDialog(that, that.getBundleString("error.printing"));
 				} finally {
 					that.setCursor(Cursor.getPredefinedCursor(Cursor.DEFAULT_CURSOR));
 					btnPrint.setEnabled(true);
+					that.afterPrint(that.orderNO, isPrintSuccess);
 				}
 			}
 		});
@@ -148,64 +154,87 @@ public class PrintView extends JRViewer implements IBaseView {
 	 */
 	protected void fastPrintReport() {
 		this.btnPrint.setEnabled(false);
-		if (!this.beforePrint()) {
+		if (!this.beforePrint(this.orderNO)) {
 			return;
 		}
 		PrintView that = this;
 		Thread thread = new Thread(new Runnable() {
 			public void run() {
+				boolean isPrintSuccess = true;
 				try {
 					JasperPrintManager.getInstance(jasperReportsContext).print(that.jasperPrint, false); // 快速打印
-					that.afterPrint();
 				} catch (Exception e) {
+					isPrintSuccess = false;
 					logger.error("Print error.", e);
 					JOptionPane.showMessageDialog(that, that.getBundleString("error.printing"));
+				} finally {
+					that.afterPrint(that.orderNO, isPrintSuccess);
 				}
 			}
 		});
 		thread.start();
 	}
 
-	public void fastPrintReport(ReportDataVO reportDataVo) {
+	public void fastPrintReport(ReportDataVO reportDataVo) throws Exception {
 		if (null == reportDataVo) {
 			return;
 		}
+		String orderNO = reportDataVo.getCOLUMNNAME1();
+//		if (!this.beforePrint(orderNO)) { //TODO:2016/10/10注释
+//			return;
+//		}
 		JasperPrint jasperPrint = null;
+		//boolean isPrintSuccess = true;
 		try {
 			jasperPrint = this.loadReportTemplate(reportDataVo);
+			this.fastPrintReport(jasperPrint, orderNO);
 		} catch (Exception e) {
+			//isPrintSuccess = false;
 			logger.error("加载iReport面单模板出现异常：{}", e.getMessage());
-			PrintViewUtil.showErrorMsg("加载iReport面单模板出现异常");
+			throw e;
+			// PrintViewUtil.showErrorMsg("加载iReport面单模板出现异常");
 		}
-		this.fastPrintReport(jasperPrint);
+//		finally { //TODO:2016/10/10注释
+//			this.afterPrint(orderNO, isPrintSuccess);
+//		}
+		// this.fastPrintReport(jasperPrint, orderNO);
 	}
 
-	protected void fastPrintReport(JasperPrint jasperPrint) {
+	protected void fastPrintReport(JasperPrint jasperPrint, String orderNO) throws Exception {
 		if (null == jasperPrint) {
 			return;
 		}
 		this.jasperPrint = jasperPrint;
 		this.btnPrint.setEnabled(false);
-		if (!this.beforePrint()) {
-			return;
-		}
+		boolean isPrintSuccess = true;
 		try {
 			// this.loadReport(jasperPrint);
 			JasperPrintManager.getInstance(jasperReportsContext).print(jasperPrint, false); // 快速打印
-			this.afterPrint();
 		} catch (Exception e) {
+			isPrintSuccess = false;
 			logger.error("打印iReport面单出现异常：{}", e.getMessage());
-			PrintViewUtil.showErrorMsg(this.getBundleString("error.printing"));
+			throw e;
+			// PrintViewUtil.showErrorMsg(this.getBundleString("error.printing"));
+		} finally {
+			this.afterPrint(orderNO, isPrintSuccess);
 		}
 	}
 
-	private boolean beforePrint() {
-		// TODO:读取该面单打印日志（即打印次数），若已经打印，则不能重复打印
-		return true;
+	private boolean beforePrint(String orderNO) {
+		try {
+			return printerService.beforePrint(orderNO);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
 	}
 
-	private void afterPrint() {
-		// TODO:新增面单打印日志
+	private void afterPrint(String orderNO, boolean isPrintSuccess) {
+		try {
+			printerService.afterPrint(orderNO, isPrintSuccess);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
 	}
 
 	@Override
@@ -246,6 +275,7 @@ public class PrintView extends JRViewer implements IBaseView {
 	}
 
 	private void showReportView(ReportDataVO reportDataVo) throws Exception {
+		this.orderNO = reportDataVo.getCOLUMNNAME1();
 		int tplType = reportDataVo.getTplType();
 		JasperPrint jasperPrint = null;
 		switch (tplType) {

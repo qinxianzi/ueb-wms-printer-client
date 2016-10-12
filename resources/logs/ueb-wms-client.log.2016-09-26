@@ -1,0 +1,662 @@
+2016-09-26 09:33:26  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4052 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 09:33:26  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 09:33:26  [ main:375 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76ad244d: startup date [Mon Sep 26 09:33:26 CST 2016]; root of context hierarchy
+2016-09-26 09:33:28  [ main:2232 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serialDataReader' defined in file [D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes\com\ueb\wms\printer\client\serial\SerialDataReader.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ueb.wms.printer.client.serial.SerialDataReader]: Constructor threw exception; nested exception is java.lang.NullPointerException
+2016-09-26 09:33:28  [ main:2232 ] - [ ERROR ]  Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serialDataReader' defined in file [D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes\com\ueb\wms\printer\client\serial\SerialDataReader.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ueb.wms.printer.client.serial.SerialDataReader]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1105)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1050)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.ueb.wms.printer.client.Application.main(Application.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:478)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.ueb.wms.printer.client.serial.SerialDataReader]: Constructor threw exception; nested exception is java.lang.NullPointerException
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:163)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:89)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1098)
+	... 21 more
+Caused by: java.lang.NullPointerException
+	at java.util.Properties$LineReader.readLine(Properties.java:434)
+	at java.util.Properties.load0(Properties.java:353)
+	at java.util.Properties.load(Properties.java:341)
+	at com.ueb.wms.printer.client.serial.SerialDataReader.readSerialParameters(SerialDataReader.java:78)
+	at com.ueb.wms.printer.client.serial.SerialDataReader.<init>(SerialDataReader.java:28)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:147)
+	... 23 more
+2016-09-26 09:33:28  [ main:2279 ] - [ INFO ]  Application failed to start with classpath: [file:/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/, file:/C:/Users/liangxf/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, file:/C:/Users/liangxf/.m2/repository/com/itextpdf/itext-asian/5.2.0/itext-asian-5.2.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-expression/4.2.6.RELEASE/spring-expression-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/C:/Users/liangxf/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.3.4.RELEASE/spring-boot-autoconfigure-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/barcode4j/barcode4j/2.1/barcode4j-2.1.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/jasperreports/jasperreports/6.0.0/jasperreports-6.0.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/com/alibaba/fastjson/1.2.12/fastjson-1.2.12.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-beans/4.2.6.RELEASE/spring-beans-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7.jar, file:/C:/Users/liangxf/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar, file:/C:/Users/liangxf/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot-starter/1.3.4.RELEASE/spring-boot-starter-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7.jar, file:/C:/Users/liangxf/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7.jar, file:/C:/Users/liangxf/.m2/repository/com/itextpdf/itextpdf/5.5.9/itextpdf-5.5.9.jar, file:/C:/Users/liangxf/.m2/repository/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar, file:/C:/Users/liangxf/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/pdfbox/fontbox/2.0.2/fontbox-2.0.2.jar, file:/C:/Users/liangxf/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-js/1.7/batik-js-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot/1.3.4.RELEASE/spring-boot-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar, file:/C:/Users/liangxf/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar, file:/C:/Users/liangxf/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/pdfbox/pdfbox/2.0.2/pdfbox-2.0.2.jar, file:/C:/Users/liangxf/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/jasperreports/jasperreports-fonts/6.0.0/jasperreports-fonts-6.0.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/fluent-hc/4.5.2/fluent-hc-4.5.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar]
+2016-09-26 09:42:04  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4388 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 09:42:04  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 09:42:04  [ main:265 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2a993ea7: startup date [Mon Sep 26 09:42:04 CST 2016]; root of context hierarchy
+2016-09-26 09:42:05  [ main:1842 ] - [ WARN ]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serialDataReader': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ueb.wms.printer.client.serial.SerialUtil com.ueb.wms.printer.client.serial.SerialDataReader.serialUtil; nested exception is java.lang.NoClassDefFoundError: gnu/io/NoSuchPortException
+2016-09-26 09:42:05  [ main:1843 ] - [ ERROR ]  Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'serialDataReader': Injection of autowired dependencies failed; nested exception is org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ueb.wms.printer.client.serial.SerialUtil com.ueb.wms.printer.client.serial.SerialDataReader.serialUtil; nested exception is java.lang.NoClassDefFoundError: gnu/io/NoSuchPortException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:334)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1214)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:543)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:772)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.builder.SpringApplicationBuilder.run(SpringApplicationBuilder.java:134)
+	at com.ueb.wms.printer.client.Application.main(Application.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.maven.AbstractRunMojo$LaunchRunner.run(AbstractRunMojo.java:478)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.springframework.beans.factory.BeanCreationException: Could not autowire field: private com.ueb.wms.printer.client.serial.SerialUtil com.ueb.wms.printer.client.serial.SerialDataReader.serialUtil; nested exception is java.lang.NoClassDefFoundError: gnu/io/NoSuchPortException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:573)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:88)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:331)
+	... 21 more
+Caused by: java.lang.NoClassDefFoundError: gnu/io/NoSuchPortException
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:612)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:524)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:510)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:241)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1069)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1042)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:510)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.findAutowireCandidates(DefaultListableBeanFactory.java:1192)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1116)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1014)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:545)
+	... 23 more
+Caused by: java.lang.ClassNotFoundException: gnu.io.NoSuchPortException
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 42 more
+2016-09-26 09:42:05  [ main:1843 ] - [ INFO ]  Application failed to start with classpath: [file:/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/, file:/C:/Users/liangxf/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar, file:/C:/Users/liangxf/.m2/repository/com/itextpdf/itext-asian/5.2.0/itext-asian-5.2.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-expression/4.2.6.RELEASE/spring-expression-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar, file:/C:/Users/liangxf/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-aop/4.2.6.RELEASE/spring-aop-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot-autoconfigure/1.3.4.RELEASE/spring-boot-autoconfigure-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-css/1.7/batik-css-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-awt-util/1.7/batik-awt-util-1.7.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/barcode4j/barcode4j/2.1/barcode4j-2.1.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-gvt/1.7/batik-gvt-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-util/1.7/batik-util-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-xml/1.7/batik-xml-1.7.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/jasperreports/jasperreports/6.0.0/jasperreports-6.0.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-core/4.2.6.RELEASE/spring-core-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/com/alibaba/fastjson/1.2.12/fastjson-1.2.12.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-parser/1.7/batik-parser-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-beans/4.2.6.RELEASE/spring-beans-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-script/1.7/batik-script-1.7.jar, file:/C:/Users/liangxf/.m2/repository/xml-apis/xml-apis-ext/1.3.04/xml-apis-ext-1.3.04.jar, file:/C:/Users/liangxf/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot-starter/1.3.4.RELEASE/spring-boot-starter-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-bridge/1.7/batik-bridge-1.7.jar, file:/C:/Users/liangxf/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-svg-dom/1.7/batik-svg-dom-1.7.jar, file:/C:/Users/liangxf/.m2/repository/com/itextpdf/itextpdf/5.5.9/itextpdf-5.5.9.jar, file:/C:/Users/liangxf/.m2/repository/org/codehaus/groovy/groovy-all/2.4.7/groovy-all-2.4.7.jar, file:/C:/Users/liangxf/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/pdfbox/fontbox/2.0.2/fontbox-2.0.2.jar, file:/C:/Users/liangxf/.m2/repository/xalan/xalan/2.6.0/xalan-2.6.0.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-js/1.7/batik-js-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/slf4j/slf4j-log4j12/1.7.21/slf4j-log4j12-1.7.21.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/boot/spring-boot/1.3.4.RELEASE/spring-boot-1.3.4.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar, file:/C:/Users/liangxf/.m2/repository/commons-beanutils/commons-beanutils/1.9.2/commons-beanutils-1.9.2.jar, file:/C:/Users/liangxf/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/pdfbox/pdfbox/2.0.2/pdfbox-2.0.2.jar, file:/C:/Users/liangxf/.m2/repository/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar, file:/C:/Users/liangxf/.m2/repository/net/sf/jasperreports/jasperreports-fonts/6.0.0/jasperreports-fonts-6.0.0.jar, file:/C:/Users/liangxf/.m2/repository/org/springframework/spring-context/4.2.6.RELEASE/spring-context-4.2.6.RELEASE.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-dom/1.7/batik-dom-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-anim/1.7/batik-anim-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/xmlgraphics/batik-ext/1.7/batik-ext-1.7.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/fluent-hc/4.5.2/fluent-hc-4.5.2.jar, file:/C:/Users/liangxf/.m2/repository/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar]
+2016-09-26 09:51:20  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4472 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 09:51:20  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 09:51:20  [ main:219 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7a3eb4fc: startup date [Mon Sep 26 09:51:20 CST 2016]; root of context hierarchy
+2016-09-26 09:51:22  [ main:1776 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 09:51:22  [ main:1787 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 09:51:22  [ main:1787 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 09:51:22  [ main:1789 ] - [ INFO ]  Started Application in 2.314 seconds (JVM running for 4.98)
+2016-09-26 14:43:32  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6080 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 14:43:32  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 14:43:32  [ main:218 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@53dfeaf0: startup date [Mon Sep 26 14:43:32 CST 2016]; root of context hierarchy
+2016-09-26 14:43:34  [ main:2014 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 14:43:34  [ main:2030 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 14:43:34  [ main:2030 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 14:43:34  [ main:2030 ] - [ INFO ]  Started Application in 2.374 seconds (JVM running for 5.007)
+2016-09-26 15:03:50  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5496 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:03:50  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:03:50  [ main:211 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f58bde7: startup date [Mon Sep 26 15:03:50 CST 2016]; root of context hierarchy
+2016-09-26 15:03:52  [ main:1787 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:03:52  [ main:1787 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:03:52  [ main:1787 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:03:52  [ main:1787 ] - [ INFO ]  Started Application in 2.13 seconds (JVM running for 4.894)
+2016-09-26 15:04:29  [ Thread-2:39326 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f58bde7: startup date [Mon Sep 26 15:03:50 CST 2016]; root of context hierarchy
+2016-09-26 15:04:29  [ Thread-2:39342 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:04:33  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5868 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:04:33  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:04:33  [ main:208 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e70b517: startup date [Mon Sep 26 15:04:33 CST 2016]; root of context hierarchy
+2016-09-26 15:04:35  [ main:1755 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:04:35  [ main:1755 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:04:35  [ main:1755 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:04:35  [ main:1755 ] - [ INFO ]  Started Application in 2.114 seconds (JVM running for 4.97)
+2016-09-26 15:14:25  [ Thread-2:591506 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e70b517: startup date [Mon Sep 26 15:04:33 CST 2016]; root of context hierarchy
+2016-09-26 15:14:25  [ Thread-2:591506 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:14:35  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4860 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:14:35  [ main:15 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:14:35  [ main:249 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e70b517: startup date [Mon Sep 26 15:14:35 CST 2016]; root of context hierarchy
+2016-09-26 15:14:37  [ main:1764 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:14:37  [ main:1779 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:14:37  [ main:1779 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:14:37  [ main:1779 ] - [ INFO ]  Started Application in 2.122 seconds (JVM running for 4.735)
+2016-09-26 15:15:17  [ AWT-EventQueue-0:42090 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:path parameters can not be empty
+2016-09-26 15:15:17  [ AWT-EventQueue-0:42090 ] - [ INFO ]  path parameters can not be empty
+2016-09-26 15:15:17  [ AWT-EventQueue-0:42090 ] - [ INFO ]  按波次号包裹出现了异常，波次号是：W1609240327，异常详细信息是：path parameters can not be empty
+2016-09-26 15:17:10  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4292 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:17:10  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:17:10  [ main:218 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f58bde7: startup date [Mon Sep 26 15:17:10 CST 2016]; root of context hierarchy
+2016-09-26 15:17:12  [ main:1805 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:17:12  [ main:1820 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:17:12  [ main:1820 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:17:12  [ main:1820 ] - [ INFO ]  Started Application in 2.163 seconds (JVM running for 4.873)
+2016-09-26 15:17:30  [ AWT-EventQueue-0:20386 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:path parameters can not be empty
+2016-09-26 15:17:30  [ AWT-EventQueue-0:20386 ] - [ INFO ]  path parameters can not be empty
+2016-09-26 15:17:30  [ AWT-EventQueue-0:20386 ] - [ INFO ]  按波次号包裹出现了异常，波次号是：W1609240327，异常详细信息是：path parameters can not be empty
+2016-09-26 15:17:35  [ Thread-2:24890 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f58bde7: startup date [Mon Sep 26 15:17:10 CST 2016]; root of context hierarchy
+2016-09-26 15:17:35  [ Thread-2:24890 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:17:38  [ Thread-2:183065 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e70b517: startup date [Mon Sep 26 15:14:35 CST 2016]; root of context hierarchy
+2016-09-26 15:17:38  [ Thread-2:183065 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:17:53  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4252 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:17:53  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:17:53  [ main:218 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1acc7260: startup date [Mon Sep 26 15:17:53 CST 2016]; root of context hierarchy
+2016-09-26 15:17:55  [ main:1967 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:17:55  [ main:1982 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:17:55  [ main:1982 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:17:55  [ main:1982 ] - [ INFO ]  Started Application in 2.343 seconds (JVM running for 4.97)
+2016-09-26 15:18:07  [ AWT-EventQueue-0:14766 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:path parameters can not be empty
+2016-09-26 15:18:07  [ AWT-EventQueue-0:14766 ] - [ INFO ]  path parameters can not be empty
+2016-09-26 15:18:07  [ AWT-EventQueue-0:14766 ] - [ INFO ]  按波次号包裹出现了异常，波次号是：W1609240327，异常详细信息是：path parameters can not be empty
+2016-09-26 15:18:25  [ Thread-2:32539 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1acc7260: startup date [Mon Sep 26 15:17:53 CST 2016]; root of context hierarchy
+2016-09-26 15:18:25  [ Thread-2:32539 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:18:29  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4648 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:18:29  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:18:30  [ main:325 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e93f042: startup date [Mon Sep 26 15:18:30 CST 2016]; root of context hierarchy
+2016-09-26 15:18:32  [ main:2625 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:18:32  [ main:2641 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:18:32  [ main:2641 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:18:32  [ main:2641 ] - [ INFO ]  Started Application in 3.125 seconds (JVM running for 6.235)
+2016-09-26 15:19:50  [ AWT-EventQueue-0:80308 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:path parameters can not be empty
+2016-09-26 15:19:50  [ AWT-EventQueue-0:80308 ] - [ INFO ]  path parameters can not be empty
+2016-09-26 15:19:50  [ AWT-EventQueue-0:80308 ] - [ INFO ]  按波次号包裹出现了异常，波次号是：W1609240327，异常详细信息是：path parameters can not be empty
+2016-09-26 15:19:57  [ Thread-2:87874 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e93f042: startup date [Mon Sep 26 15:18:30 CST 2016]; root of context hierarchy
+2016-09-26 15:19:57  [ Thread-2:87874 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 15:20:01  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5864 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 15:20:01  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 15:20:01  [ main:204 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3e70b517: startup date [Mon Sep 26 15:20:01 CST 2016]; root of context hierarchy
+2016-09-26 15:20:03  [ main:1678 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 15:20:03  [ main:1694 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:20:03  [ main:1694 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 15:20:03  [ main:1694 ] - [ INFO ]  Started Application in 2.084 seconds (JVM running for 4.721)
+2016-09-26 15:20:22  [ Thread-4:20576 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 15:20:23  [ Thread-4:21596 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 15:20:25  [ Thread-4:23349 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:27  [ Thread-4:25804 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:27  [ Thread-4:25804 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 15:20:28  [ Thread-4:26524 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:28  [ Thread-4:26524 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:28  [ Thread-4:27104 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:28  [ Thread-4:27104 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:29  [ Thread-4:27651 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:29  [ Thread-4:27651 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 15:20:29  [ Thread-4:27697 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 15:20:30  [ Thread-4:29010 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 15:20:30  [ Thread-4:29080 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 15:20:31  [ Thread-4:29876 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:32  [ Thread-4:30424 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:32  [ Thread-4:30424 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:32  [ Thread-4:31018 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:32  [ Thread-4:31018 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 15:20:32  [ Thread-4:31111 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 15:20:33  [ Thread-4:32205 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 15:20:33  [ Thread-4:32222 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 15:20:34  [ Thread-4:32690 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:34  [ Thread-4:33222 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:34  [ Thread-4:33222 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 15:20:34  [ Thread-4:33223 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 15:20:35  [ Thread-4:33863 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 15:20:36  [ Thread-4:34456 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:36  [ Thread-4:34456 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 15:20:36  [ Thread-4:35019 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:36  [ Thread-4:35019 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:37  [ Thread-4:35599 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:37  [ Thread-4:35599 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:37  [ Thread-4:36117 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:37  [ Thread-4:36117 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 15:20:38  [ Thread-4:36710 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:38  [ Thread-4:36710 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 15:20:38  [ Thread-4:37206 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:38  [ Thread-4:37206 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 15:20:39  [ Thread-4:37720 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 15:20:39  [ Thread-4:37720 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 15:20:39  [ Thread-4:38240 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:32:20  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5192 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 16:32:20  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 16:32:21  [ main:218 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fbbd997: startup date [Mon Sep 26 16:32:21 CST 2016]; root of context hierarchy
+2016-09-26 16:32:22  [ main:1818 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 16:32:22  [ main:1834 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:32:22  [ main:1834 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:32:22  [ main:1834 ] - [ INFO ]  Started Application in 2.084 seconds (JVM running for 4.898)
+2016-09-26 16:32:43  [ AWT-EventQueue-0:22793 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:32:44  [ AWT-EventQueue-0:23217 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:33:36  [ AWT-EventQueue-0:76013 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:33:37  [ AWT-EventQueue-0:77171 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:33:41  [ Thread-2:80481 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fbbd997: startup date [Mon Sep 26 16:32:21 CST 2016]; root of context hierarchy
+2016-09-26 16:33:41  [ Thread-2:80481 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 16:34:26  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4764 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 16:34:26  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 16:34:26  [ main:250 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@67fcd88f: startup date [Mon Sep 26 16:34:26 CST 2016]; root of context hierarchy
+2016-09-26 16:34:29  [ main:2668 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 16:34:29  [ main:2669 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:34:29  [ main:2669 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:34:29  [ main:2670 ] - [ INFO ]  Started Application in 3.122 seconds (JVM running for 6.424)
+2016-09-26 16:36:25  [ AWT-EventQueue-0:118972 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:36:26  [ AWT-EventQueue-0:120346 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:37:23  [ AWT-EventQueue-0:177500 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:37:24  [ AWT-EventQueue-0:178048 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:39:37  [ AWT-EventQueue-0:311419 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 16:41:24  [ AWT-EventQueue-0:418305 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:42:02  [ AWT-EventQueue-0:456058 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:42:14  [ AWT-EventQueue-0:467911 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:45:05  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3364 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 16:45:05  [ main:16 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 16:45:05  [ main:317 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7be04faf: startup date [Mon Sep 26 16:45:05 CST 2016]; root of context hierarchy
+2016-09-26 16:45:08  [ main:2986 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 16:45:08  [ main:3002 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:45:08  [ main:3002 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 16:45:08  [ main:3002 ] - [ INFO ]  Started Application in 3.425 seconds (JVM running for 6.743)
+2016-09-26 16:45:39  [ AWT-EventQueue-0:34512 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:45:40  [ AWT-EventQueue-0:35061 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:49:53  [ AWT-EventQueue-0:288125 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:49:53  [ AWT-EventQueue-0:288361 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:34  [ AWT-EventQueue-0:329706 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 16:50:35  [ AWT-EventQueue-0:329785 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:43  [ AWT-EventQueue-0:337997 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:50:43  [ AWT-EventQueue-0:338029 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:45  [ AWT-EventQueue-0:340030 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:50:45  [ AWT-EventQueue-0:340061 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:46  [ AWT-EventQueue-0:340781 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 16:50:46  [ AWT-EventQueue-0:340828 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:50:49  [ AWT-EventQueue-0:344721 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 16:50:49  [ AWT-EventQueue-0:344722 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:50:52  [ AWT-EventQueue-0:347367 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:50:52  [ AWT-EventQueue-0:347384 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:53  [ AWT-EventQueue-0:348072 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:50:53  [ AWT-EventQueue-0:348088 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:50:53  [ AWT-EventQueue-0:348649 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 16:50:53  [ AWT-EventQueue-0:348681 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 16:50:57  [ AWT-EventQueue-0:352512 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 16:50:57  [ AWT-EventQueue-0:352513 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 16:51:00  [ AWT-EventQueue-0:355217 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:00  [ AWT-EventQueue-0:355233 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:01  [ AWT-EventQueue-0:355954 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 16:51:01  [ AWT-EventQueue-0:355969 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:03  [ AWT-EventQueue-0:358344 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:03  [ AWT-EventQueue-0:358361 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:04  [ AWT-EventQueue-0:358971 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 16:51:04  [ AWT-EventQueue-0:359034 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:04  [ AWT-EventQueue-0:359548 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:04  [ AWT-EventQueue-0:359565 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:05  [ AWT-EventQueue-0:360066 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:05  [ AWT-EventQueue-0:360082 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:05  [ AWT-EventQueue-0:360581 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:05  [ AWT-EventQueue-0:360597 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:06  [ AWT-EventQueue-0:361083 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:06  [ AWT-EventQueue-0:361114 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:06  [ AWT-EventQueue-0:361551 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:06  [ AWT-EventQueue-0:361582 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:07  [ AWT-EventQueue-0:362022 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:07  [ AWT-EventQueue-0:362038 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:07  [ AWT-EventQueue-0:362038 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 16:51:09  [ AWT-EventQueue-0:364275 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:51:09  [ AWT-EventQueue-0:364306 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:51:10  [ AWT-EventQueue-0:365167 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:51:10  [ AWT-EventQueue-0:365182 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:51:11  [ AWT-EventQueue-0:366168 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:11  [ AWT-EventQueue-0:366200 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:12  [ AWT-EventQueue-0:367544 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:12  [ AWT-EventQueue-0:367560 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:13  [ AWT-EventQueue-0:368358 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:13  [ AWT-EventQueue-0:368374 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:14  [ AWT-EventQueue-0:369062 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 16:51:14  [ AWT-EventQueue-0:369078 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:16  [ AWT-EventQueue-0:371314 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 16:51:16  [ AWT-EventQueue-0:371329 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:18  [ AWT-EventQueue-0:373003 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:18  [ AWT-EventQueue-0:373019 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:18  [ AWT-EventQueue-0:373644 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:18  [ AWT-EventQueue-0:373675 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:19  [ AWT-EventQueue-0:374254 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 16:51:19  [ AWT-EventQueue-0:374270 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 16:51:21  [ AWT-EventQueue-0:376176 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 16:51:21  [ AWT-EventQueue-0:376192 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 16:51:23  [ AWT-EventQueue-0:377895 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:23  [ AWT-EventQueue-0:377911 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:23  [ AWT-EventQueue-0:378520 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 16:51:23  [ AWT-EventQueue-0:378536 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:25  [ AWT-EventQueue-0:380548 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:25  [ AWT-EventQueue-0:380564 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:26  [ AWT-EventQueue-0:381128 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 16:51:26  [ AWT-EventQueue-0:381160 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:26  [ AWT-EventQueue-0:381739 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:26  [ AWT-EventQueue-0:381754 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:27  [ AWT-EventQueue-0:382364 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:27  [ AWT-EventQueue-0:382380 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:28  [ AWT-EventQueue-0:382974 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:28  [ AWT-EventQueue-0:382975 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:28  [ AWT-EventQueue-0:383537 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:28  [ AWT-EventQueue-0:383553 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:29  [ AWT-EventQueue-0:384101 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:29  [ AWT-EventQueue-0:384102 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:29  [ AWT-EventQueue-0:384632 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 16:51:29  [ AWT-EventQueue-0:384648 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:29  [ AWT-EventQueue-0:384648 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 16:51:33  [ AWT-EventQueue-0:387933 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:51:33  [ AWT-EventQueue-0:387964 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:51:34  [ AWT-EventQueue-0:389202 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 16:51:34  [ AWT-EventQueue-0:389204 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 16:51:35  [ AWT-EventQueue-0:389894 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:35  [ AWT-EventQueue-0:389909 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:36  [ AWT-EventQueue-0:390989 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:36  [ AWT-EventQueue-0:391024 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:36  [ AWT-EventQueue-0:391289 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:36  [ AWT-EventQueue-0:391305 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:51:37  [ AWT-EventQueue-0:391835 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 16:51:37  [ AWT-EventQueue-0:391851 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:38  [ AWT-EventQueue-0:393038 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 16:51:38  [ AWT-EventQueue-0:393054 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 16:51:39  [ AWT-EventQueue-0:394430 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:51:39  [ AWT-EventQueue-0:394445 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:52:15  [ AWT-EventQueue-0:430477 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 16:52:15  [ AWT-EventQueue-0:430528 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 16:53:20  [ AWT-EventQueue-0:495742 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 16:53:21  [ AWT-EventQueue-0:495868 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 17:02:50  [ Thread-2:1065411 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7be04faf: startup date [Mon Sep 26 16:45:05 CST 2016]; root of context hierarchy
+2016-09-26 17:02:50  [ Thread-2:1065411 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 17:03:00  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6096 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 17:03:00  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 17:03:00  [ main:219 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ff11a96: startup date [Mon Sep 26 17:03:00 CST 2016]; root of context hierarchy
+2016-09-26 17:03:02  [ main:2348 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 17:03:02  [ main:2364 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:03:02  [ main:2364 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:03:02  [ main:2364 ] - [ INFO ]  Started Application in 2.535 seconds (JVM running for 7.748)
+2016-09-26 17:03:35  [ AWT-EventQueue-0:35218 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 17:03:36  [ AWT-EventQueue-0:35679 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 17:05:49  [ AWT-EventQueue-0:169118 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:05:49  [ AWT-EventQueue-0:169292 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:05:51  [ AWT-EventQueue-0:171088 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:05:51  [ AWT-EventQueue-0:171151 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:05:52  [ AWT-EventQueue-0:171918 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:05:52  [ AWT-EventQueue-0:171949 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:05:53  [ AWT-EventQueue-0:172701 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:05:53  [ AWT-EventQueue-0:172733 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:05:53  [ AWT-EventQueue-0:173466 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:05:53  [ AWT-EventQueue-0:173482 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 17:06:29  [ Thread-2:209317 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7ff11a96: startup date [Mon Sep 26 17:03:00 CST 2016]; root of context hierarchy
+2016-09-26 17:06:29  [ Thread-2:209317 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 17:06:34  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4680 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 17:06:34  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 17:06:34  [ main:280 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5adb632a: startup date [Mon Sep 26 17:06:34 CST 2016]; root of context hierarchy
+2016-09-26 17:06:36  [ main:2748 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 17:06:36  [ main:2782 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:06:36  [ main:2782 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:06:36  [ main:2782 ] - [ INFO ]  Started Application in 3.079 seconds (JVM running for 6.203)
+2016-09-26 17:06:55  [ AWT-EventQueue-0:20978 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 17:07:15  [ AWT-EventQueue-0:40989 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo35.jpg
+2016-09-26 17:14:35  [ AWT-EventQueue-0:481809 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:14:36  [ AWT-EventQueue-0:481989 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:14:43  [ AWT-EventQueue-0:488818 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:14:43  [ AWT-EventQueue-0:488882 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:14:47  [ AWT-EventQueue-0:493273 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:14:47  [ AWT-EventQueue-0:493321 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:14:48  [ AWT-EventQueue-0:494275 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:14:48  [ AWT-EventQueue-0:494306 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:14:49  [ AWT-EventQueue-0:495182 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:14:49  [ AWT-EventQueue-0:495198 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 17:18:17  [ AWT-EventQueue-0:703057 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 17:18:17  [ AWT-EventQueue-0:703074 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 17:20:26  [ AWT-EventQueue-0:832196 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:20:26  [ AWT-EventQueue-0:832197 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:20:27  [ AWT-EventQueue-0:833505 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:20:27  [ AWT-EventQueue-0:833506 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:20:28  [ AWT-EventQueue-0:834162 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:20:28  [ AWT-EventQueue-0:834194 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-26 17:23:13  [ AWT-EventQueue-0:999721 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:23:14  [ AWT-EventQueue-0:999863 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:23:15  [ AWT-EventQueue-0:1000974 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:23:15  [ AWT-EventQueue-0:1001006 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:23:15  [ AWT-EventQueue-0:1001755 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:23:15  [ AWT-EventQueue-0:1001772 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-26 17:25:37  [ AWT-EventQueue-0:1143249 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:25:37  [ AWT-EventQueue-0:1143297 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:38  [ AWT-EventQueue-0:1144422 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:25:38  [ AWT-EventQueue-0:1144455 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:39  [ AWT-EventQueue-0:1145221 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:39  [ AWT-EventQueue-0:1145252 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:40  [ AWT-EventQueue-0:1145925 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:40  [ AWT-EventQueue-0:1145941 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:40  [ AWT-EventQueue-0:1146644 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:40  [ AWT-EventQueue-0:1146659 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:41  [ AWT-EventQueue-0:1147348 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:25:41  [ AWT-EventQueue-0:1147363 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:42  [ AWT-EventQueue-0:1148006 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:25:42  [ AWT-EventQueue-0:1148037 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:42  [ AWT-EventQueue-0:1148677 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:25:42  [ AWT-EventQueue-0:1148692 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:42  [ AWT-EventQueue-0:1148692 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 17:25:46  [ AWT-EventQueue-0:1152103 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 17:25:46  [ AWT-EventQueue-0:1152151 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:53  [ AWT-EventQueue-0:1159540 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:53  [ AWT-EventQueue-0:1159541 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:54  [ AWT-EventQueue-0:1160073 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:25:54  [ AWT-EventQueue-0:1160089 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:54  [ AWT-EventQueue-0:1160541 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:54  [ AWT-EventQueue-0:1160542 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:55  [ AWT-EventQueue-0:1161169 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:55  [ AWT-EventQueue-0:1161185 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:55  [ AWT-EventQueue-0:1161700 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:25:56  [ AWT-EventQueue-0:1162032 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:56  [ AWT-EventQueue-0:1162203 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 17:25:56  [ AWT-EventQueue-0:1162250 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:56  [ AWT-EventQueue-0:1162766 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:56  [ AWT-EventQueue-0:1162805 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:57  [ AWT-EventQueue-0:1163273 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:57  [ AWT-EventQueue-0:1163289 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:57  [ AWT-EventQueue-0:1163772 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:25:57  [ AWT-EventQueue-0:1163778 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:58  [ AWT-EventQueue-0:1164250 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:25:58  [ AWT-EventQueue-0:1164282 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:58  [ AWT-EventQueue-0:1164718 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:25:58  [ AWT-EventQueue-0:1164734 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:59  [ AWT-EventQueue-0:1165188 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:25:59  [ AWT-EventQueue-0:1165220 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:25:59  [ AWT-EventQueue-0:1165657 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:25:59  [ AWT-EventQueue-0:1165673 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:00  [ AWT-EventQueue-0:1166112 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:26:00  [ AWT-EventQueue-0:1166143 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:00  [ AWT-EventQueue-0:1166595 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:26:00  [ AWT-EventQueue-0:1166596 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:01  [ AWT-EventQueue-0:1167033 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:26:01  [ AWT-EventQueue-0:1167049 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:01  [ AWT-EventQueue-0:1167454 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:26:01  [ AWT-EventQueue-0:1167486 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1167907 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1167908 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1168329 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1168360 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1168766 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1168767 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:26:02  [ AWT-EventQueue-0:1168767 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 17:26:04  [ AWT-EventQueue-0:1170672 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 17:26:04  [ AWT-EventQueue-0:1170687 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:12  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4936 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 17:29:12  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 17:29:13  [ main:225 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fbbd997: startup date [Mon Sep 26 17:29:13 CST 2016]; root of context hierarchy
+2016-09-26 17:29:14  [ main:1926 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 17:29:14  [ main:1926 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:29:14  [ main:1926 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 17:29:14  [ main:1927 ] - [ INFO ]  Started Application in 2.302 seconds (JVM running for 5.185)
+2016-09-26 17:29:36  [ AWT-EventQueue-0:23273 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 17:29:36  [ AWT-EventQueue-0:23837 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:38  [ AWT-EventQueue-0:25697 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:38  [ AWT-EventQueue-0:25769 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:39  [ AWT-EventQueue-0:26505 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:29:39  [ AWT-EventQueue-0:26583 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:39  [ AWT-EventQueue-0:27066 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:39  [ AWT-EventQueue-0:27114 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:40  [ AWT-EventQueue-0:27568 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:40  [ AWT-EventQueue-0:27600 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:40  [ AWT-EventQueue-0:28021 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:29:40  [ AWT-EventQueue-0:28114 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:41  [ AWT-EventQueue-0:28514 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 17:29:41  [ AWT-EventQueue-0:28577 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:41  [ AWT-EventQueue-0:28967 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:41  [ AWT-EventQueue-0:28998 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:42  [ AWT-EventQueue-0:29437 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:42  [ AWT-EventQueue-0:29452 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:42  [ AWT-EventQueue-0:29890 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:29:42  [ AWT-EventQueue-0:29937 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:43  [ AWT-EventQueue-0:30345 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 17:29:43  [ AWT-EventQueue-0:30391 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:43  [ AWT-EventQueue-0:30813 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:43  [ AWT-EventQueue-0:30845 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:44  [ AWT-EventQueue-0:31268 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 17:29:44  [ AWT-EventQueue-0:31299 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:44  [ AWT-EventQueue-0:31720 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:29:44  [ AWT-EventQueue-0:31736 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:44  [ AWT-EventQueue-0:32159 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 17:29:45  [ AWT-EventQueue-0:32191 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:45  [ AWT-EventQueue-0:32597 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:45  [ AWT-EventQueue-0:32691 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:45  [ AWT-EventQueue-0:33065 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:45  [ AWT-EventQueue-0:33081 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:46  [ AWT-EventQueue-0:33519 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 17:29:46  [ AWT-EventQueue-0:33520 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:46  [ AWT-EventQueue-0:33988 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:29:46  [ AWT-EventQueue-0:34020 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:47  [ AWT-EventQueue-0:34443 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:29:47  [ AWT-EventQueue-0:34458 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:47  [ AWT-EventQueue-0:34895 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 17:29:47  [ AWT-EventQueue-0:34896 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 17:29:47  [ AWT-EventQueue-0:34896 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 17:38:16  [ AWT-EventQueue-0:543774 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 18:01:32  [ Thread-2:1939765 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1fbbd997: startup date [Mon Sep 26 17:29:13 CST 2016]; root of context hierarchy
+2016-09-26 18:01:32  [ Thread-2:1939765 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 18:01:38  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5980 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 18:01:38  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 18:01:38  [ main:239 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d530479: startup date [Mon Sep 26 18:01:38 CST 2016]; root of context hierarchy
+2016-09-26 18:01:40  [ main:1992 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 18:01:40  [ main:2004 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 18:01:40  [ main:2005 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 18:01:40  [ main:2006 ] - [ INFO ]  Started Application in 2.161 seconds (JVM running for 6.535)
+2016-09-26 18:02:11  [ AWT-EventQueue-0:33672 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 18:02:12  [ AWT-EventQueue-0:34291 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:30  [ AWT-EventQueue-0:51770 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:30  [ AWT-EventQueue-0:51847 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:30  [ AWT-EventQueue-0:52651 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 18:02:31  [ AWT-EventQueue-0:52767 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:31  [ AWT-EventQueue-0:53102 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:31  [ AWT-EventQueue-0:53127 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:31  [ AWT-EventQueue-0:53499 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:31  [ AWT-EventQueue-0:53530 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:32  [ AWT-EventQueue-0:53783 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 18:02:32  [ AWT-EventQueue-0:53890 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54092 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54139 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54357 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54389 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54638 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:32  [ AWT-EventQueue-0:54669 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:33  [ AWT-EventQueue-0:54874 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 18:02:33  [ AWT-EventQueue-0:54921 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55124 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_GB_SFOZ_%.jasper
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55155 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55378 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55393 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55621 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_PTGH_%.jasper
+2016-09-26 18:02:33  [ AWT-EventQueue-0:55636 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:34  [ AWT-EventQueue-0:55824 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 18:02:34  [ AWT-EventQueue-0:55879 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56067 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56101 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56344 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56372 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56615 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:34  [ AWT-EventQueue-0:56616 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:35  [ AWT-EventQueue-0:56859 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 18:02:35  [ AWT-EventQueue-0:56890 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57105 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57120 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57388 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57403 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57671 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57687 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 18:02:35  [ AWT-EventQueue-0:57687 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-26 19:38:28  [ AWT-EventQueue-0:5810292 ] - [ INFO ]  请求后台findReportData接口出现异常，异常详细信息是:没有找到面单数据，查询条件是:03702844180
+2016-09-26 19:38:28  [ AWT-EventQueue-0:5810292 ] - [ INFO ]  没有找到面单数据，查询条件是:03702844180
+2016-09-26 19:38:28  [ AWT-EventQueue-0:5810292 ] - [ INFO ]  预览快递面单出现了异常，查询条件是：03702844180，异常详细信息是：没有找到面单数据，查询条件是:03702844180
+2016-09-26 19:39:37  [ AWT-EventQueue-0:5878954 ] - [ INFO ]  请求后台findReportData接口出现异常，异常详细信息是:没有找到面单数据，查询条件是:03702844180TEAPY1027134947YQ
+2016-09-26 19:39:37  [ AWT-EventQueue-0:5878954 ] - [ INFO ]  没有找到面单数据，查询条件是:03702844180TEAPY1027134947YQ
+2016-09-26 19:39:37  [ AWT-EventQueue-0:5878954 ] - [ INFO ]  预览快递面单出现了异常，查询条件是：03702844180TEAPY1027134947YQ，异常详细信息是：没有找到面单数据，查询条件是:03702844180TEAPY1027134947YQ
+2016-09-26 19:40:21  [ AWT-EventQueue-0:5923660 ] - [ INFO ]  请求后台findReportData接口出现异常，异常详细信息是:没有找到面单数据，查询条件是:03771253276
+2016-09-26 19:40:21  [ AWT-EventQueue-0:5923660 ] - [ INFO ]  没有找到面单数据，查询条件是:03771253276
+2016-09-26 19:40:21  [ AWT-EventQueue-0:5923660 ] - [ INFO ]  预览快递面单出现了异常，查询条件是：03771253276，异常详细信息是：没有找到面单数据，查询条件是:03771253276
+2016-09-26 21:40:44  [ Thread-2:13146036 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7d530479: startup date [Mon Sep 26 18:01:38 CST 2016]; root of context hierarchy
+2016-09-26 21:40:44  [ Thread-2:13146041 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 21:40:50  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4632 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 21:40:50  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 21:40:50  [ main:280 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7932035c: startup date [Mon Sep 26 21:40:50 CST 2016]; root of context hierarchy
+2016-09-26 21:40:53  [ main:3086 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 21:40:53  [ main:3101 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:40:53  [ main:3102 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:40:53  [ main:3105 ] - [ INFO ]  Started Application in 3.554 seconds (JVM running for 6.97)
+2016-09-26 21:41:29  [ AWT-EventQueue-0:38804 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:41:30  [ AWT-EventQueue-0:39501 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:41:37  [ AWT-EventQueue-0:47088 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:41:49  [ AWT-EventQueue-0:59302 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-26 21:41:49  [ AWT-EventQueue-0:59404 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:45:12  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2692 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 21:45:12  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 21:45:13  [ main:281 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5161b65a: startup date [Mon Sep 26 21:45:13 CST 2016]; root of context hierarchy
+2016-09-26 21:45:15  [ main:2706 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 21:45:15  [ main:2720 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:45:15  [ main:2720 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:45:15  [ main:2722 ] - [ INFO ]  Started Application in 3.161 seconds (JVM running for 6.452)
+2016-09-26 21:45:30  [ AWT-EventQueue-0:18119 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:45:31  [ AWT-EventQueue-0:18839 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:45:56  [ Thread-2:43355 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5161b65a: startup date [Mon Sep 26 21:45:13 CST 2016]; root of context hierarchy
+2016-09-26 21:45:56  [ Thread-2:43358 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 21:47:38  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6292 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 21:47:38  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 21:47:39  [ main:290 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c32da98: startup date [Mon Sep 26 21:47:39 CST 2016]; root of context hierarchy
+2016-09-26 21:47:41  [ main:2981 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 21:47:41  [ main:3019 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:47:41  [ main:3019 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:47:41  [ main:3019 ] - [ INFO ]  Started Application in 3.731 seconds (JVM running for 7.227)
+2016-09-26 21:47:57  [ AWT-EventQueue-0:18315 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:47:57  [ AWT-EventQueue-0:18989 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:53:32  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6244 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 21:53:32  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 21:53:32  [ main:291 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71dbe977: startup date [Mon Sep 26 21:53:32 CST 2016]; root of context hierarchy
+2016-09-26 21:53:35  [ main:2922 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 21:53:35  [ main:2934 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:53:35  [ main:2934 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:53:35  [ main:2937 ] - [ INFO ]  Started Application in 3.318 seconds (JVM running for 6.602)
+2016-09-26 21:53:55  [ AWT-EventQueue-0:22889 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:53:55  [ AWT-EventQueue-0:23603 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:54:17  [ Thread-2:44690 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@71dbe977: startup date [Mon Sep 26 21:53:32 CST 2016]; root of context hierarchy
+2016-09-26 21:54:17  [ Thread-2:44697 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-26 21:54:21  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6656 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-26 21:54:21  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-26 21:54:21  [ main:316 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@394ec532: startup date [Mon Sep 26 21:54:21 CST 2016]; root of context hierarchy
+2016-09-26 21:54:24  [ main:2993 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-26 21:54:24  [ main:3009 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:54:24  [ main:3009 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-26 21:54:24  [ main:3012 ] - [ INFO ]  Started Application in 3.459 seconds (JVM running for 6.894)
+2016-09-26 21:54:40  [ AWT-EventQueue-0:19437 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-26 21:54:41  [ AWT-EventQueue-0:20103 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-26 21:59:52  [ AWT-EventQueue-0:330598 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-26 22:00:52  [ AWT-EventQueue-0:390538 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper

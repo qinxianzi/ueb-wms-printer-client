@@ -1,0 +1,120 @@
+2016-09-27 09:31:41  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3248 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 09:31:41  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 09:31:41  [ main:290 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f0d2b9a: startup date [Tue Sep 27 09:31:41 CST 2016]; root of context hierarchy
+2016-09-27 09:31:43  [ main:2251 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 09:31:43  [ main:2263 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 09:31:43  [ main:2264 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 09:31:43  [ main:2266 ] - [ INFO ]  Started Application in 2.615 seconds (JVM running for 5.715)
+2016-09-27 09:32:15  [ Thread-4:34051 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:syntax error, expect {, actual error, pos 0
+2016-09-27 09:32:15  [ Thread-4:34051 ] - [ INFO ]  syntax error, expect {, actual error, pos 0
+2016-09-27 17:06:02  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5788 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 17:06:02  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 17:06:02  [ main:268 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6740ab3f: startup date [Tue Sep 27 17:06:02 CST 2016]; root of context hierarchy
+2016-09-27 17:06:04  [ main:1867 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 17:06:04  [ main:1877 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:06:04  [ main:1877 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:06:04  [ main:1879 ] - [ INFO ]  Started Application in 2.192 seconds (JVM running for 5.124)
+2016-09-27 17:47:03  [ Thread-2:2461774 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6740ab3f: startup date [Tue Sep 27 17:06:02 CST 2016]; root of context hierarchy
+2016-09-27 17:47:03  [ Thread-2:2461776 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-27 17:48:31  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5364 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 17:48:31  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 17:48:31  [ main:229 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d8809ac: startup date [Tue Sep 27 17:48:31 CST 2016]; root of context hierarchy
+2016-09-27 17:48:33  [ main:2032 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 17:48:33  [ main:2049 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:48:33  [ main:2050 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:48:33  [ main:2054 ] - [ INFO ]  Started Application in 2.583 seconds (JVM running for 5.418)
+2016-09-27 17:48:51  [ AWT-EventQueue-0:20181 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 17:48:52  [ AWT-EventQueue-0:20921 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:49:03  [ AWT-EventQueue-0:31901 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 17:49:03  [ AWT-EventQueue-0:32163 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:49:11  [ AWT-EventQueue-0:39923 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-27 17:49:11  [ AWT-EventQueue-0:40015 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:49:31  [ AWT-EventQueue-0:59598 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 17:49:31  [ AWT-EventQueue-0:59650 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:51:30  [ Thread-2:179209 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@d8809ac: startup date [Tue Sep 27 17:48:31 CST 2016]; root of context hierarchy
+2016-09-27 17:51:30  [ Thread-2:179213 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-27 17:51:34  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2916 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 17:51:34  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 17:51:35  [ main:203 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f0d2b9a: startup date [Tue Sep 27 17:51:35 CST 2016]; root of context hierarchy
+2016-09-27 17:51:36  [ main:1842 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 17:51:36  [ main:1855 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:51:36  [ main:1855 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:51:36  [ main:1857 ] - [ INFO ]  Started Application in 2.145 seconds (JVM running for 5.02)
+2016-09-27 17:51:49  [ AWT-EventQueue-0:14244 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 17:51:49  [ AWT-EventQueue-0:14810 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:53:16  [ Thread-2:101287 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@1f0d2b9a: startup date [Tue Sep 27 17:51:35 CST 2016]; root of context hierarchy
+2016-09-27 17:53:16  [ Thread-2:101290 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-27 17:53:20  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5348 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 17:53:20  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 17:53:20  [ main:227 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6740ab3f: startup date [Tue Sep 27 17:53:20 CST 2016]; root of context hierarchy
+2016-09-27 17:53:22  [ main:1890 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 17:53:22  [ main:1902 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:53:22  [ main:1902 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 17:53:22  [ main:1905 ] - [ INFO ]  Started Application in 2.218 seconds (JVM running for 5.098)
+2016-09-27 17:53:37  [ AWT-EventQueue-0:17314 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 17:53:38  [ AWT-EventQueue-0:17878 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:53:56  [ AWT-EventQueue-0:35695 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 17:53:56  [ AWT-EventQueue-0:35774 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:54:02  [ AWT-EventQueue-0:41357 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-27 17:54:02  [ AWT-EventQueue-0:41422 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:54:02  [ AWT-EventQueue-0:41878 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 17:54:02  [ AWT-EventQueue-0:41909 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 17:54:02  [ AWT-EventQueue-0:42172 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 17:54:02  [ AWT-EventQueue-0:42220 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 18:22:04  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4588 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 18:22:04  [ main:4 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 18:22:04  [ main:298 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d508f5f: startup date [Tue Sep 27 18:22:04 CST 2016]; root of context hierarchy
+2016-09-27 18:22:07  [ main:2835 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 18:22:07  [ main:2850 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:22:07  [ main:2850 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:22:07  [ main:2853 ] - [ INFO ]  Started Application in 3.113 seconds (JVM running for 8.922)
+2016-09-27 18:22:29  [ Thread-4:24828 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/report/findSingleProductFirst HTTP/1.1, the exception details are：Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:22:29  [ Thread-4:24829 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:22:29  [ Thread-4:24829 ] - [ INFO ]  Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:24:10  [ Thread-2:126009 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@d508f5f: startup date [Tue Sep 27 18:22:04 CST 2016]; root of context hierarchy
+2016-09-27 18:24:10  [ Thread-2:126012 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-27 18:24:20  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5764 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 18:24:20  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 18:24:20  [ main:311 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@690d87ea: startup date [Tue Sep 27 18:24:20 CST 2016]; root of context hierarchy
+2016-09-27 18:24:22  [ main:2883 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 18:24:22  [ main:2895 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:24:22  [ main:2895 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:24:22  [ main:2898 ] - [ INFO ]  Started Application in 3.352 seconds (JVM running for 6.738)
+2016-09-27 18:24:34  [ Thread-4:14593 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/report/findSingleProductFirst HTTP/1.1, the exception details are：Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:24:34  [ Thread-4:14594 ] - [ INFO ]  请求后台findSingleProductFirst接口出现异常，异常详细信息是:Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:24:34  [ Thread-4:14594 ] - [ INFO ]  Connect to 172.16.6.139:8080 [/172.16.6.139] failed: Connection refused: connect
+2016-09-27 18:26:39  [ AWT-EventQueue-0:139700 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 18:26:40  [ AWT-EventQueue-0:140446 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 18:36:50  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5704 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 18:36:50  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 18:36:50  [ main:295 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3d832a21: startup date [Tue Sep 27 18:36:50 CST 2016]; root of context hierarchy
+2016-09-27 18:36:52  [ main:2805 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 18:36:52  [ main:2818 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:36:52  [ main:2819 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:36:52  [ main:2823 ] - [ INFO ]  Started Application in 3.072 seconds (JVM running for 8.574)
+2016-09-27 18:37:19  [ AWT-EventQueue-0:29346 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 18:37:20  [ AWT-EventQueue-0:30036 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 18:53:21  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5188 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 18:53:21  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 18:53:21  [ main:327 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@690d87ea: startup date [Tue Sep 27 18:53:21 CST 2016]; root of context hierarchy
+2016-09-27 18:53:24  [ main:2755 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 18:53:24  [ main:2768 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:53:24  [ main:2769 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:53:24  [ main:2771 ] - [ INFO ]  Started Application in 3.175 seconds (JVM running for 6.485)
+2016-09-27 18:53:39  [ AWT-EventQueue-0:18044 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 18:53:40  [ AWT-EventQueue-0:18688 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 18:55:04  [ Thread-2:102942 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@690d87ea: startup date [Tue Sep 27 18:53:21 CST 2016]; root of context hierarchy
+2016-09-27 18:55:04  [ Thread-2:102948 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-27 18:55:10  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 6080 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-27 18:55:10  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-27 18:55:10  [ main:288 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea1b73f: startup date [Tue Sep 27 18:55:10 CST 2016]; root of context hierarchy
+2016-09-27 18:55:13  [ main:2677 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-27 18:55:13  [ main:2692 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:55:13  [ main:2692 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-27 18:55:13  [ main:2694 ] - [ INFO ]  Started Application in 3.114 seconds (JVM running for 6.394)
+2016-09-27 18:55:42  [ AWT-EventQueue-0:32183 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YO_EST_%.jasper
+2016-09-27 18:55:43  [ AWT-EventQueue-0:32829 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 18:55:48  [ AWT-EventQueue-0:37679 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_DGYZ_%.jasper
+2016-09-27 18:55:48  [ AWT-EventQueue-0:37760 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-27 19:10:14  [ Thread-2:903649 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@ea1b73f: startup date [Tue Sep 27 18:55:10 CST 2016]; root of context hierarchy
+2016-09-27 19:10:14  [ Thread-2:903653 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown

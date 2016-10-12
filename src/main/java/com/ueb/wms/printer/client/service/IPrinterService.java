@@ -1,6 +1,7 @@
 package com.ueb.wms.printer.client.service;
 
 import java.awt.image.BufferedImage;
+import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
@@ -65,9 +66,10 @@ public interface IPrinterService {
 	 * @param url
 	 * @param port
 	 * @param context
+	 * @param pdfTpl
 	 * @throws Exception
 	 */
-	void updateHttpServerInfo(String url, String port, String context) throws Exception;
+	void updateHttpServerInfo(String url, String port, String context, String pdfTpl) throws Exception;
 
 	/**
 	 * 获取服务器连接配置信息
@@ -76,12 +78,40 @@ public interface IPrinterService {
 	 */
 	Map<String, String> getConfigValues();
 
+	// /**
+	// * 用户登陆
+	// *
+	// * @param account
+	// * @param password
+	// * @throws Exception
+	// */
+	// void userLogin(String account, String password) throws Exception;
+
 	/**
-	 * 用户登陆
+	 * 单品复核（查询单品001数据列表）
 	 * 
-	 * @param account
-	 * @param password
+	 * @param waveNO
+	 * @param sku
+	 * @return
+	 * @throws SQLException
+	 */
+	List<ReportDataVO> findSingleProductFirst(String waveNO, String sku) throws Exception;
+
+	/**
+	 * 打印面单之前：是否重复打印、占用该订单锁
+	 * 
+	 * @param orderNO
+	 * @return
 	 * @throws Exception
 	 */
-	void userLogin(String account, String password) throws Exception;
+	boolean beforePrint(String orderNO) throws Exception;
+
+	/**
+	 * 面单打印完毕：增加打印次数、释放该订单锁
+	 * 
+	 * @param orderNO
+	 * @return
+	 * @throws Exception
+	 */
+	boolean afterPrint(String orderNO, boolean isPrintSuccess) throws Exception;
 }

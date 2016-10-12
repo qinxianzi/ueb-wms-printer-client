@@ -1,0 +1,102 @@
+package com.ueb.wms.printer.client.serial.device;
+
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.apache.commons.lang3.StringUtils;
+
+import com.ueb.wms.printer.client.serial.ISerialDevice;
+import com.ueb.wms.printer.client.serial.SerialDataReader;
+import com.ueb.wms.printer.client.serial.SerialMonitor;
+
+public class SerialDeviceForACS implements ISerialDevice {
+
+	@Override
+	public float readDataFromSerialDevice(SerialMonitor serialMonitor, SerialDataReader serialReader) {
+		float floatValue = 0.0F;
+		if (null == serialMonitor || null == serialMonitor.getinputStream()) {
+			return floatValue;
+		}
+		InputStream inputStream = serialMonitor.getInputStream();
+		long readCount = serialReader.getReadCount();
+		StringBuffer inputBuffer = new StringBuffer();
+		StringBuffer numbersBuffer = new StringBuffer();
+		StringBuffer numBuffer = new StringBuffer();
+
+		numbersBuffer.append("//" + serialReader.getReadCount() + "//");
+		inputBuffer.append("//" + serialReader.getReadCount() + "//");
+
+		int numCount = 0;
+
+		byte[] readBuffer = new byte[1];
+		int preByte = 0;
+		// int curByte = 0;
+		boolean isVisibledChar = false;
+		try {
+			serialReader.readWaitTime();
+			do {
+				int numBytes = inputStream.read(readBuffer);
+				if (numBytes <= 0) {
+					continue;
+				}
+				int curByte = readBuffer[0];
+				if (curByte == 2) {
+					numBuffer = new StringBuffer();
+				} else if (curByte == 61) {
+					if (numBuffer.length() > 0) {
+						float numValue = getNumber(numBuffer.toString());
+						numbersBuffer.append(numValue + "\t");
+						numCount++;
+						floatValue = numValue;
+					}
+					numBuffer = new StringBuffer();
+				}
+
+				if ((curByte >= 32) && (curByte <= 126)) {
+					isVisibledChar = true;
+					inputBuffer.append((char) curByte);
+
+					if (((curByte >= 48) && (curByte <= 57)) || (curByte == 46)) {
+						numBuffer.append((char) curByte);
+					}
+					preByte = curByte;
+				} else if ((!isVisibledChar) && ((preByte < 32) || (preByte > 126))) {
+					preByte = curByte;
+
+					inputBuffer.append("(" + curByte + ")");
+				} else {
+					preByte = curByte;
+					inputBuffer.append("(" + curByte + ")");
+				}
+			} while (inputStream.available() > 0);
+
+			System.out.println("重量信息:" + numbersBuffer.toString());
+			System.out.println("读取信息:" + inputBuffer.toString());
+		} catch (IOException ex) {
+			parentReader.displayLogInformation("[" + serialPortObj.getPORTNAME() + "]: 读取数据时异常：" + ex.toString(), ex);
+		}
+
+		parentReader.displayLogInformation(numbersBuffer.toString(), null);
+		parentReader.displayLogInformation(inputBuffer.toString(), null);
+		System.out.println("//" + parentReader.getReadCount() + "//NumberCount=" + numCount);
+
+		StringBuffer value = new StringBuffer().append(floatValue);
+		value = value.reverse();
+		floatValue = Float.valueOf(value.toString()).floatValue();
+
+		return floatValue;
+	}
+
+	public float getNumber(String data) {
+		float v = 0.0F;
+		if (StringUtils.isNotBlank(data)) {
+			return v;
+		}
+		try {
+			v = Float.valueOf(data);
+		} catch (Exception e) {
+			v = 0.0F;
+		}
+		return v;
+	}
+}

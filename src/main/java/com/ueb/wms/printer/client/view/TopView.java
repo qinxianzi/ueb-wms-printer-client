@@ -6,13 +6,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
@@ -20,9 +21,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import com.atomikos.swing.SwingWorker;
 import com.ueb.wms.printer.client.pdf.PrintFile;
 import com.ueb.wms.printer.client.service.IPrinterService;
 import com.ueb.wms.printer.client.util.PrintViewUtil;
+import com.ueb.wms.printer.client.util.UebDateTimeUtil;
 import com.ueb.wms.printer.client.vo.ReportDataVO;
 
 @SuppressWarnings("serial")
@@ -38,18 +41,22 @@ public class TopView extends JPanel implements IBaseView {
 	private JButton btnQuery;
 
 	private void initContainer() {
-		// this.setBorder(new LineBorder(Color.GRAY, 1));
 		this.parent = (WaveView) this.getParent();
 	}
 
 	private void showResource() {
-		JLabel label = new JLabel("波次号:");
+		JLabel label = new JLabel("波次编号:");
 		label.setFont(font);
 		tfWaveNum = new JTextField();
 		tfWaveNum.setPreferredSize(new Dimension(170, 24));
 		tfWaveNum.addKeyListener(new KeyAdapter() {
 			public void keyPressed(KeyEvent e) {
 				if (KeyEvent.VK_ENTER == e.getKeyCode()) {
+					// String waveNO = tfWaveNum.getText();
+					// if (StringUtils.isBlank(waveNO)) {
+					// tfWaveNum.requestFocus();
+					// return;
+					// }
 					TopView.this.doSearch();
 				}
 			}
@@ -73,127 +80,137 @@ public class TopView extends JPanel implements IBaseView {
 		String waveNO = this.tfWaveNum.getText();
 		String condition = StringUtils.trim(waveNO);
 		if (StringUtils.isBlank(condition)) {
-			PrintViewUtil.showWarningMsg("请输入波次号");
+			PrintViewUtil.showWarningMsg("请输入波次编号");
 			this.tfWaveNum.requestFocus();
 			return;
 		}
-		this.doSearch(condition);
+		btnQuery.setEnabled(false);
+		SwingWorker worker = new SwingWorker() {
+			private boolean error = false;
+
+			@Override
+			public Object construct() {
+				List<ReportDataVO> reportDataVos = null;
+				try {
+					reportDataVos = printerService.findByWaveNO(waveNO);
+				} catch (Exception e) {
+					this.error = true;
+				}
+				return reportDataVos;
+			}
+
+			@SuppressWarnings("unchecked")
+			@Override
+			public void finished() {
+				if (this.error) {
+					TopView.this.clearTableData();
+					PrintViewUtil.showErrorMsg("根据波次号查询面单出现异常");
+					tfWaveNum.selectAll();
+					tfWaveNum.requestFocus();
+					btnQuery.setEnabled(true);
+					return;
+				}
+				List<ReportDataVO> reportDataVos = (List<ReportDataVO>) this.getValue();
+				if (null == reportDataVos || reportDataVos.isEmpty()) {
+					TopView.this.clearTableData();
+					PrintViewUtil.showInformationMsg(String.format("根据\"波次编号%s\"没有查询到任何面单", condition));
+					tfWaveNum.selectAll();
+					tfWaveNum.requestFocus();
+					btnQuery.setEnabled(true);
+					return;
+				}
+				TopView.this.callBack(reportDataVos);
+				// TopView.this.parent.refreshTableData(reportDataVos);
+				// TopView.this.printReport(reportDataVos);
+				btnQuery.setEnabled(true);
+			}
+		};
+		worker.start();
 	}
 
-	protected void doSearch(String waveNO) {
+	private void callBack(List<ReportDataVO> reportDataVos) {
+		new Thread() {
+			public void run() {
+				TopView.this.parent.refreshTableData(reportDataVos);
+			}
+		}.start();
+		new Thread() {
+			public void run() {
+				TopView.this.printReport(reportDataVos);
+			}
+		}.start();
+	}
+
+	private void printReport(List<ReportDataVO> dataList) {
+		if (null == dataList || dataList.isEmpty()) {
+			return;
+		}
+		for (Iterator<ReportDataVO> it = dataList.iterator(); it.hasNext();) {
+			this.fastPrintReport(it.next());
+		}
+	}
+
+	private void clearTableData() {
+		this.parent.refreshTableData(new ArrayList<ReportDataVO>());
+	}
+
+	private void fastPrintReport(ReportDataVO reportDataVo) {
 		try {
-			List<ReportDataVO> reportDataVos = printerService.findByWaveNO(waveNO);
-			if (null == reportDataVos || reportDataVos.isEmpty()) {
-				PrintViewUtil.showInformationMsg(String.format("波次号%s中没有任何订单", StringUtils.trim(waveNO)));
-				return;
-			}
-
-			// TODO:构造多条数据
-			ReportDataVO v1 = new ReportDataVO();
-			v1.setCOLUMNNAME1("SO15042129330");
-			v1.setCOLUMNNAME18("aaaaaa");
-			v1.setCOLUMNNAME4("aaaaaa");
-			v1.setCOLUMNNAME39("aaaaaa");
-			v1.setCOLUMNNAME3("aaaaaa");
-			v1.setCOLUMNNAME6("cm_sy_my");
-			v1.setTplType(0);// PDF
-
-			ReportDataVO v2 = new ReportDataVO();
-			v2.setCOLUMNNAME1("SO151216005738");
-			v2.setCOLUMNNAME18("bbbbbb");
-			v2.setCOLUMNNAME4("bbbbbb");
-			v2.setCOLUMNNAME39("bbbbbb");
-			v2.setCOLUMNNAME3("bbbbbb");
-			v2.setCOLUMNNAME6("cm_sy_my");
-			v2.setTplType(0); // PDF
-			reportDataVos.add(v1);
-			reportDataVos.add(v2);
-
-			PrintPdfTask printTask = new PrintPdfTask();
-			printTask.setWaveNO(waveNO);
-			printTask.setReportDataVos(reportDataVos);
-			printTask.start();
-
-			this.parent.refreshTableData(reportDataVos);
-		} catch (Exception e) {
-			logger.info("按波次号包裹出现了异常，波次号是：{}，异常详细信息是：{}", waveNO, e.getMessage());
-			JOptionPane.showMessageDialog(null, "按波次号包裹出现了异常", "系统提示", JOptionPane.ERROR_MESSAGE);
-		}
-	}
-
-	@Override
-	public void displayUI() {
-		this.initContainer();
-		this.showResource();
-	}
-
-	class PrintPdfTask extends Thread {
-		/*
-		 * 波次号
-		 */
-		private String waveNO;
-
-		/*
-		 * 波次下的订单列表
-		 */
-		private List<ReportDataVO> reportDataVos;
-
-		public void setWaveNO(String waveNO) {
-			this.waveNO = waveNO;
-		}
-
-		public void setReportDataVos(List<ReportDataVO> reportDataVos) {
-			this.reportDataVos = reportDataVos;
-		}
-
-		public void run() {
-			if (null == reportDataVos && reportDataVos.isEmpty()) {
-				return;
-			}
-			this.setUiElementsEnabled(false);
-			for (Iterator<ReportDataVO> it = reportDataVos.iterator(); it.hasNext();) {
-				// ReportDataVO reportVo = it.next();
-				// String orderNo = reportVo.getCOLUMNNAME1(); // 订单编号
-				this.printReport(it.next());
-			}
-		}
-
-		private void printReport(ReportDataVO reportVo) {
-			if (null == reportVo) {
-				return;
-			}
-			try {
-				this.fastPrintReport(reportVo);
-			} catch (Exception e) {
-				logger.info("快速快递面单出现了异常，订单号是：{}，异常详细信息是：{}", reportVo.getCOLUMNNAME1(), e.getMessage());
-				PrintViewUtil.showErrorMsg("快速快递面单出现了异常");
-			}
-		}
-
-		private void fastPrintReport(ReportDataVO reportDataVo) throws Exception {
 			int tplType = reportDataVo.getTplType(); // 使用的模板类型
 			switch (tplType) {
 			case 0: // PDF模板
 				this.fastPrintPdf(reportDataVo);
 				break;
 			case 1: // iReport模板
-				this.fastPrintIReport(reportDataVo);
+				TopView.this.parent.fastPrintIReport(reportDataVo);
 				break;
 			default:
 				throw new Exception("使用的模板类型不存在");
 			}
+		} catch (Exception e) {
+			logger.info("打印多品面单出现了异常，，波次编号是：{}，订单编号是：{}，异常详细信息是：{}", reportDataVo.getCOLUMNNAME18(),
+					reportDataVo.getCOLUMNNAME1(), e.getMessage());
+			PrintViewUtil.showErrorMsg("快速打印快递面单出现了异常");
 		}
+	}
 
-		private void fastPrintIReport(ReportDataVO reportDataVo) throws Exception {
-			TopView.this.parent.fastPrintIReport(reportDataVo);
+	private String getPdfPrefix() {
+		Map<String, String> values = printerService.getConfigValues();
+		String pdfTpl = values.get("client.pdfTpl");
+		File pdfTplDir = new File(pdfTpl);
+		if (!pdfTplDir.exists()) {
+			pdfTplDir.mkdirs();
 		}
+		return pdfTplDir.getAbsolutePath();
+	}
 
-		private void fastPrintPdf(ReportDataVO reportDataVo) throws Exception {
-			String orderNo = StringUtils.trim(reportDataVo.getCOLUMNNAME1()); // 订单编号
+	// private boolean beforePrint(String orderNO) {
+	// try {
+	// return printerService.beforePrint(orderNO);
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// return false;
+	// }
+	//
+	// private void afterPrint(String orderNO, boolean isPrintSuccess) {
+	// try {
+	// printerService.afterPrint(orderNO, isPrintSuccess);
+	// } catch (Exception e) {
+	// e.printStackTrace();
+	// }
+	// }
 
+	private void fastPrintPdf(ReportDataVO reportDataVo) throws Exception {
+		String orderNo = StringUtils.trim(reportDataVo.getCOLUMNNAME1()); // 订单编号
+		// if (!this.beforePrint(orderNo)) {
+		// return;
+		// }
+		// boolean isPrintSuccess = true;
+		try {
 			// 本地处理好的待打印的pdf文件
-			StringBuffer sb = new StringBuffer("resources/tmppdf/");
-			sb.append(this.waveNO).append("_").append(orderNo).append(".pdf");
+			StringBuffer sb = new StringBuffer(this.getPdfPrefix());
+			sb.append(UebDateTimeUtil.getNowDateStr("")).append("/").append(orderNo).append(".pdf");
 			String tmppdf = sb.toString();
 
 			List<String> contents = new ArrayList<String>(10);
@@ -202,14 +219,19 @@ public class TopView extends JPanel implements IBaseView {
 			contents.add("CW:" + reportDataVo.getCOLUMNNAME39());
 			contents.add(reportDataVo.getCOLUMNNAME3());
 			printerService.downloadPdf(orderNo, contents, tmppdf);
-			PrintFile.printPdf(tmppdf, null, "");
-
-			this.setUiElementsEnabled(true);
+			PrintFile.pluginPrintPdf(tmppdf);
+		} catch (Exception e) {
+			// isPrintSuccess = false;
+			throw e;
 		}
+		// finally {
+		// this.afterPrint(orderNo, isPrintSuccess);
+		// }
+	}
 
-		private void setUiElementsEnabled(boolean enabled) {
-			tfWaveNum.setEnabled(enabled);
-			btnQuery.setEnabled(enabled);
-		}
+	@Override
+	public void displayUI() {
+		this.initContainer();
+		this.showResource();
 	}
 }

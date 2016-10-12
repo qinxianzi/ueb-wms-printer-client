@@ -71,12 +71,17 @@ public class PrintFile {
 			throw new Exception("待打印的文件不存");
 		}
 		String jobName = pdfFile.getName();
+		int len = StringUtils.indexOf(jobName, ".");
+		if (-1 != len) {
+			jobName = StringUtils.substring(jobName, 0, len);
+		}
+
 		HashPrintRequestAttributeSet pras = new HashPrintRequestAttributeSet();
 		pras.add(new JobName(jobName, null));
 
-		// 选择AUTOSENSE，即自动选择文件类型
 		if (null == flavor) {
-			flavor = DocFlavor.INPUT_STREAM.AUTOSENSE;
+			// flavor = DocFlavor.INPUT_STREAM.AUTOSENSE;// 这是流类型，不能打印文件
+			flavor = DocFlavor.INPUT_STREAM.PDF; // 需要支持PDF文件类型的打印机，市面上普通的打印机一般不支持PDF打印
 		}
 
 		HashAttributeSet has = new HashAttributeSet();
@@ -86,12 +91,66 @@ public class PrintFile {
 
 		//  查找所有的可用打印服务
 		PrintService printService[] = PrintServiceLookup.lookupPrintServices(flavor, has);
-		if (null != printService[1]) {
-			DocPrintJob job = printService[1].createPrintJob(); // 创建打印任务
-			DocAttributeSet das = new HashDocAttributeSet();
-			InputStream input = new FileInputStream(pdfFile);//  构造待打印文件流
-			Doc doc = new SimpleDoc(input, flavor, das);//  创建打印文件格式
-			job.print(doc, pras);//  打印文件
+		FileInputStream fileinput = null;
+		try {
+			if (null != printService && printService.length > 0) {
+				PrintService defaultPrinter = printService[0];
+				defaultPrinter.getName();
+				fileinput = new FileInputStream(pdfFile);//  构造待打印文件流
+
+				DocAttributeSet das = new HashDocAttributeSet();
+				Doc doc = new SimpleDoc(fileinput, flavor, das);
+
+				DocPrintJob job = defaultPrinter.createPrintJob(); // 创建打印任务
+				job.print(doc, pras);//  打印文件
+			}
+		} finally {
+			if (null != fileinput) {
+				fileinput.close();
+			}
 		}
 	}
+
+	/**
+	 * http://blog.csdn.net/u012345283/article/details/41011977
+	 * 
+	 * @param pdfFilePath
+	 * @throws Exception
+	 */
+	public static void pluginPrintPdf(String pdfFilePath) throws Exception {
+		if (StringUtils.isBlank(pdfFilePath)) {
+			return;
+		}
+		File pdfFile = new File(pdfFilePath);
+		if (!pdfFile.exists()) {
+			logger.info("待打印的文件不存在，文件路径是：{}", pdfFilePath);
+			throw new Exception("待打印的文件不存");
+		}
+
+		// 调用Adobe Reader打印pdf
+		try {
+			PrintService printService = findDefaultPrintService();
+
+			// StringBuffer cmd = new StringBuffer("cmd.exe /C start acrord32 /t
+			// path printername drivername portname ");
+			String cmd = String.format("cmd.exe /C start acrord32 /s /t %s %s", pdfFile.getAbsolutePath(),
+					printService.getName());
+			// Runtime.getRuntime().exec("cmd.exe /C start acrord32 /P /h " +
+			// pdfFile.getAbsolutePath());
+			// Runtime.getRuntime().exec("cmd.exe /C start acrord32 /P " +
+			// pdfFile.getAbsolutePath());
+			Runtime.getRuntime().exec(cmd);
+		} catch (Exception e) {
+			throw e;
+		}
+	}
+
+	// public static void main(String[] args) {
+	// try {
+	// pluginPrintPdf("d:/W1609230282_GS160923032333.pdf");
+	// } catch (Exception e) {
+	// // TODO Auto-generated catch block
+	// e.printStackTrace();
+	// }
+	// }
 }

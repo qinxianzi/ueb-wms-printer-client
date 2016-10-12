@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.Box;
@@ -37,9 +39,9 @@ public class HomePageView extends ServerInfoView {
 	public void showResource() {
 		Box vbox = Box.createVerticalBox();
 
-		JPanel serverPanel = this.createServerPanel();
-		serverPanel.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "服务器信息"));
-		this.disableContent();
+		JPanel serverPanel = this.createServerPanel(false);
+		serverPanel.setBorder(BorderFactory.createTitledBorder(new LineBorder(Color.GRAY, 1), "系统配置信息"));
+		// this.disableContent();
 		vbox.add(serverPanel);
 		vbox.add(Box.createVerticalStrut(10));
 		vbox.add(this.createTplTypePanel());
@@ -111,7 +113,10 @@ public class HomePageView extends ServerInfoView {
 		tplTypeCo.setSelectedIndex(1);
 		Box tplTypeBox = PrintViewUtil.createSingleBox("面单模板类型:", labelDim, tplTypeCo);
 
-		Box[] boies = new Box[] { carrieridBox, tplTypeBox };
+		// Box[] boies = new Box[] { carrieridBox, tplTypeBox };
+		List<Box> boies = new ArrayList<Box>(10);
+		boies.add(carrieridBox);
+		boies.add(tplTypeBox);
 		ActionListener okBtnListener = new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {

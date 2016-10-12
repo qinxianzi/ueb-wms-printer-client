@@ -1,0 +1,16 @@
+2016-09-28 09:08:09  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3704 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-28 09:08:09  [ main:4 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-28 09:08:09  [ main:537 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@13904f98: startup date [Wed Sep 28 09:08:09 CST 2016]; root of context hierarchy
+2016-09-28 09:08:12  [ main:3832 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-28 09:08:13  [ main:3852 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-28 09:08:13  [ main:3852 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-28 09:08:13  [ main:3855 ] - [ INFO ]  Started Application in 4.282 seconds (JVM running for 8.377)
+2016-09-28 16:16:39  [ Thread-2:25710336 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@13904f98: startup date [Wed Sep 28 09:08:09 CST 2016]; root of context hierarchy
+2016-09-28 16:16:39  [ Thread-2:25710336 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-28 16:32:23  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4340 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-28 16:32:23  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-28 16:32:23  [ main:305 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6740ab3f: startup date [Wed Sep 28 16:32:23 CST 2016]; root of context hierarchy
+2016-09-28 16:32:25  [ main:2063 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-28 16:32:25  [ main:2072 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-28 16:32:25  [ main:2072 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-28 16:32:25  [ main:2074 ] - [ INFO ]  Started Application in 2.462 seconds (JVM running for 5.466)

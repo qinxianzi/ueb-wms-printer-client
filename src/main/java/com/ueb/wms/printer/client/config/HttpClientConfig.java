@@ -69,6 +69,11 @@ public class HttpClientConfig {
 	 */
 	private String context;
 
+	/**
+	 * PDF模板文件路径
+	 */
+	private String pdfTpl;
+
 	public Integer getConnectTimeout() {
 		return connectTimeout;
 	}
@@ -101,6 +106,14 @@ public class HttpClientConfig {
 		this.context = context;
 	}
 
+	public String getPdfTpl() {
+		return pdfTpl;
+	}
+
+	public void setPdfTpl(String pdfTpl) {
+		this.pdfTpl = pdfTpl;
+	}
+
 	public Map<String, String> getValues() {
 		Map<String, String> values = new HashMap<String, String>();
 		values.put("client.connectTimeout", String.valueOf(connectTimeout));
@@ -108,6 +121,7 @@ public class HttpClientConfig {
 		values.put("client.url", url);
 		values.put("client.port", port);
 		values.put("client.context", context);
+		values.put("client.pdfTpl", pdfTpl);
 		return values;
 	}
 }

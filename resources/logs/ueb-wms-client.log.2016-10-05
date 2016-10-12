@@ -1,0 +1,107 @@
+2016-10-05 10:29:30  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3128 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 10:29:30  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 10:29:31  [ main:608 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@378d78a4: startup date [Wed Oct 05 10:29:31 CST 2016]; root of context hierarchy
+2016-10-05 10:29:34  [ main:4071 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 10:29:34  [ main:4087 ] - [ INFO ]  Started Application in 4.681 seconds (JVM running for 8.245)
+2016-10-05 10:37:46  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2260 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 10:37:46  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 10:37:47  [ main:250 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@760b2180: startup date [Wed Oct 05 10:37:47 CST 2016]; root of context hierarchy
+2016-10-05 10:37:49  [ main:2605 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 10:37:49  [ main:2621 ] - [ INFO ]  Started Application in 3.233 seconds (JVM running for 6.621)
+2016-10-05 10:39:58  [ AWT-EventQueue-0:131665 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:39:58  [ AWT-EventQueue-0:131665 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:39:58  [ AWT-EventQueue-0:131665 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 10:40:10  [ AWT-EventQueue-0:143928 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:40:10  [ AWT-EventQueue-0:143928 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:40:10  [ AWT-EventQueue-0:143928 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 10:45:52  [ AWT-EventQueue-0:485610 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:45:52  [ AWT-EventQueue-0:485610 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:45:52  [ AWT-EventQueue-0:485610 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 10:45:55  [ AWT-EventQueue-0:488668 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:45:55  [ AWT-EventQueue-0:488668 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:45:55  [ AWT-EventQueue-0:488668 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 10:45:57  [ AWT-EventQueue-0:490510 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:45:57  [ AWT-EventQueue-0:490510 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:45:57  [ AWT-EventQueue-0:490510 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 10:45:59  [ AWT-EventQueue-0:492664 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有admin用户
+2016-10-05 10:45:59  [ AWT-EventQueue-0:492664 ] - [ INFO ]  系统没有admin用户
+2016-10-05 10:45:59  [ AWT-EventQueue-0:492664 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：系统没有admin用户
+2016-10-05 11:01:40  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4400 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:01:40  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:01:40  [ main:246 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@38e945de: startup date [Wed Oct 05 11:01:40 CST 2016]; root of context hierarchy
+2016-10-05 11:01:43  [ main:2653 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:01:43  [ main:2654 ] - [ INFO ]  Started Application in 3.043 seconds (JVM running for 6.181)
+2016-10-05 11:16:08  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3660 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:16:08  [ main:16 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:16:08  [ main:298 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22fcb637: startup date [Wed Oct 05 11:16:08 CST 2016]; root of context hierarchy
+2016-10-05 11:16:11  [ main:2881 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:16:11  [ main:2882 ] - [ INFO ]  Started Application in 3.256 seconds (JVM running for 6.647)
+2016-10-05 11:17:23  [ Thread-2:74884 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@22fcb637: startup date [Wed Oct 05 11:16:08 CST 2016]; root of context hierarchy
+2016-10-05 11:17:23  [ Thread-2:74899 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 11:17:32  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4668 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:17:32  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:17:32  [ main:281 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6d66f267: startup date [Wed Oct 05 11:17:32 CST 2016]; root of context hierarchy
+2016-10-05 11:17:34  [ main:2512 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:17:34  [ main:2513 ] - [ INFO ]  Started Application in 2.858 seconds (JVM running for 6.142)
+2016-10-05 11:20:18  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5024 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:20:18  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:20:19  [ main:202 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f637765: startup date [Wed Oct 05 11:20:19 CST 2016]; root of context hierarchy
+2016-10-05 11:20:20  [ main:1778 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:20:20  [ main:1779 ] - [ INFO ]  Started Application in 2.046 seconds (JVM running for 4.84)
+2016-10-05 11:20:47  [ Thread-2:28872 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6f637765: startup date [Wed Oct 05 11:20:19 CST 2016]; root of context hierarchy
+2016-10-05 11:20:47  [ Thread-2:28872 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 11:20:54  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4996 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:20:54  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:20:54  [ main:188 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5da1f0b1: startup date [Wed Oct 05 11:20:54 CST 2016]; root of context hierarchy
+2016-10-05 11:20:56  [ main:1794 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:20:56  [ main:1794 ] - [ INFO ]  Started Application in 2.294 seconds (JVM running for 5.163)
+2016-10-05 11:22:33  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 756 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:22:33  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:22:34  [ main:268 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22fcb637: startup date [Wed Oct 05 11:22:34 CST 2016]; root of context hierarchy
+2016-10-05 11:22:36  [ main:2623 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:22:36  [ main:2623 ] - [ INFO ]  Started Application in 3.059 seconds (JVM running for 6.261)
+2016-10-05 11:27:41  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 876 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:27:41  [ main:16 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:27:42  [ main:265 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ae87686: startup date [Wed Oct 05 11:27:42 CST 2016]; root of context hierarchy
+2016-10-05 11:27:44  [ main:2746 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:27:44  [ main:2761 ] - [ INFO ]  Started Application in 3.168 seconds (JVM running for 6.542)
+2016-10-05 11:28:08  [ AWT-EventQueue-0:27039 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：3
+2016-10-05 11:28:11  [ Thread-2:29693 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6ae87686: startup date [Wed Oct 05 11:27:42 CST 2016]; root of context hierarchy
+2016-10-05 11:28:11  [ Thread-2:29693 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 11:28:26  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4196 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:28:26  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:28:27  [ main:267 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b066cb3: startup date [Wed Oct 05 11:28:27 CST 2016]; root of context hierarchy
+2016-10-05 11:28:29  [ main:2669 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:28:29  [ main:2670 ] - [ INFO ]  Started Application in 3.106 seconds (JVM running for 6.281)
+2016-10-05 11:28:30  [ Thread-2:3950 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b066cb3: startup date [Wed Oct 05 11:28:27 CST 2016]; root of context hierarchy
+2016-10-05 11:28:30  [ Thread-2:3950 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 11:31:58  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4600 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:31:58  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:31:58  [ main:312 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c92ae56: startup date [Wed Oct 05 11:31:58 CST 2016]; root of context hierarchy
+2016-10-05 11:32:00  [ main:2730 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:32:00  [ main:2731 ] - [ INFO ]  Started Application in 3.075 seconds (JVM running for 6.385)
+2016-10-05 11:37:35  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3340 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:37:35  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:37:36  [ main:265 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@781ba24e: startup date [Wed Oct 05 11:37:36 CST 2016]; root of context hierarchy
+2016-10-05 11:37:38  [ main:2481 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:37:38  [ main:2482 ] - [ INFO ]  Started Application in 2.873 seconds (JVM running for 6.23)
+2016-10-05 11:41:57  [ Thread-2:261274 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@781ba24e: startup date [Wed Oct 05 11:37:36 CST 2016]; root of context hierarchy
+2016-10-05 11:41:57  [ Thread-2:261274 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 11:42:01  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4608 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 11:42:01  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 11:42:01  [ main:266 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1e3b4661: startup date [Wed Oct 05 11:42:01 CST 2016]; root of context hierarchy
+2016-10-05 11:42:04  [ main:2606 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 11:42:04  [ main:2622 ] - [ INFO ]  Started Application in 2.996 seconds (JVM running for 6.247)
+2016-10-05 16:35:16  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 1556 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 16:35:16  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 16:35:16  [ main:265 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@44ac8987: startup date [Wed Oct 05 16:35:16 CST 2016]; root of context hierarchy
+2016-10-05 16:35:17  [ main:1858 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 16:35:17  [ main:1873 ] - [ INFO ]  Started Application in 2.247 seconds (JVM running for 5.044)
+2016-10-05 16:36:20  [ AWT-EventQueue-0:64499 ] - [ INFO ]  修改服务器配置信息出现异常,异常详细信息是:null
+2016-10-05 17:45:59  [ Thread-2:4243480 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@44ac8987: startup date [Wed Oct 05 16:35:16 CST 2016]; root of context hierarchy
+2016-10-05 17:45:59  [ Thread-2:4243484 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-05 17:46:26  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5636 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-05 17:46:26  [ main:0 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-05 17:46:27  [ main:245 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@3c92ae56: startup date [Wed Oct 05 17:46:27 CST 2016]; root of context hierarchy
+2016-10-05 17:46:29  [ main:2677 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-05 17:46:29  [ main:2692 ] - [ INFO ]  Started Application in 3.175 seconds (JVM running for 6.74)

@@ -5,6 +5,10 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 import javax.swing.Box;
@@ -34,7 +38,7 @@ public class ServerInfoView extends JPanel implements IBaseView {
 	@Autowired
 	protected IPrinterService printerService;
 
-	private JTextField urlTf, portTf, contextTf;
+	private JTextField urlTf, portTf, contextTf, pdfFileTf;
 	private JButton okBtn, cancelBtn;
 
 	protected void initContainer() {
@@ -44,7 +48,7 @@ public class ServerInfoView extends JPanel implements IBaseView {
 	protected void showResource() {
 		Box vbox = Box.createVerticalBox();
 		vbox.add(Box.createVerticalStrut(20));
-		vbox.add(this.createServerPanel());
+		vbox.add(this.createServerPanel(true));
 		// vbox.add(Box.createVerticalStrut(20));
 
 		this.add(vbox, BorderLayout.NORTH);
@@ -57,7 +61,7 @@ public class ServerInfoView extends JPanel implements IBaseView {
 		this.showResource();
 	}
 
-	protected JPanel createServerPanel() {
+	protected JPanel createServerPanel(boolean login) {
 		Dimension labelDim = new Dimension(100, 0);
 		Map<String, String> values = this.printerService.getConfigValues();
 
@@ -72,8 +76,29 @@ public class ServerInfoView extends JPanel implements IBaseView {
 		contextTf = PrintViewUtil.createJTextField();
 		contextTf.setText(values.get("client.context"));
 		Box contextBox = PrintViewUtil.createSingleBox("服务器上下文根:", labelDim, this.contextTf);
+		// Box[] boies = new Box[] { urlBox, portBox, contextBox };
+		List<Box> boies = new ArrayList<Box>(10);
+		boies.add(urlBox);
+		boies.add(portBox);
+		boies.add(contextBox);
+		if (!login) {
+			pdfFileTf = PrintViewUtil.createJTextField();
+			pdfFileTf.setText("d:/pdf_tpl_files/");
+			Box pdfFileBox = PrintViewUtil.createSingleBox("PDF模板路径:", labelDim, pdfFileTf);
+			pdfFileTf.addMouseListener(new MouseAdapter() {
+				public void mouseClicked(MouseEvent e) {
+					if (2 == e.getClickCount()) {
+						String pdfTpl = PrintViewUtil.createJFileChooser(ServerInfoView.this);
+						if (StringUtils.isNotBlank(pdfTpl)) {
+							pdfFileTf.setText(pdfTpl);
+						}
+					}
+				}
+			});
+			boies.add(pdfFileBox);
+		}
 
-		Box[] boies = new Box[] { urlBox, portBox, contextBox };
+		// Box[] boies = new Box[] { urlBox, portBox, contextBox, pdfFileBox };
 		JButton[] btns = this.createBtns();
 
 		JPanel btnPanel = PrintViewUtil.createButtonBoxPanel(btns);
@@ -108,7 +133,9 @@ public class ServerInfoView extends JPanel implements IBaseView {
 		cancelBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				ServerInfoView.this.parent.showLoginPanel();
+				if (null != ServerInfoView.this.parent) {
+					ServerInfoView.this.parent.showLoginPanel();
+				}
 			}
 		});
 		JButton[] btns = { okBtn, cancelBtn };
@@ -134,10 +161,21 @@ public class ServerInfoView extends JPanel implements IBaseView {
 			this.contextTf.requestFocus();
 			return;
 		}
+		String pdfTpl = "";
+		if (null != this.pdfFileTf) {
+			pdfTpl = this.pdfFileTf.getText();
+			if (StringUtils.isBlank(pdfTpl)) {
+				PrintViewUtil.showErrorMsg("PDF模板路径不能为空");
+				this.pdfFileTf.requestFocus();
+				return;
+			}
+		}
 		try {
-			this.printerService.updateHttpServerInfo(url, port, context);
+			this.printerService.updateHttpServerInfo(url, port, context, pdfTpl);
 			PrintViewUtil.showInformationMsg("已修改服务器配置信息");
-			this.parent.showLoginPanel();
+			if (null != parent) {
+				parent.showLoginPanel();
+			}
 		} catch (Exception e) {
 			logger.info("修改服务器配置信息出现异常,异常详细信息是:{}", e.getMessage());
 			PrintViewUtil.showErrorMsg("修改服务器配置信息出现异常");

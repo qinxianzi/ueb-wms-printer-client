@@ -10,10 +10,11 @@ import java.util.List;
 
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
+import javax.swing.event.ListSelectionEvent;
+import javax.swing.event.ListSelectionListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
 
-import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 
 import com.ueb.wms.printer.client.vo.ReportDataVO;
@@ -21,9 +22,15 @@ import com.ueb.wms.printer.client.vo.ReportDataVO;
 @SuppressWarnings("serial")
 @Component("jTableOrder")
 public class JTableOrder extends JTable implements IBaseView {
-	private String[] headers = { "订单编号", "SO编号", "来源平台", "物流编号", "物流单号", "承运人", "收货人名称", "收货人地址", "国家外文", "国家中文", "城市",
-			"省份", "邮编", "收件联系人", "收件联系电话", "货主联系电话", "产品", "产品库位", "产品数量", "产品英文描述", "订单重量kg", "订单金额", "平台订单号",
-			"卖家账号" };
+	// private String[] headers = { "订单编号", "SO编号", "来源平台", "物流编号", "物流单号",
+	// "承运人", "收货人名称", "收货人地址", "国家外文", "国家中文", "城市",
+	// "省份", "邮编", "收件联系人", "收件联系电话", "货主联系电话", "产品", "产品库位", "产品数量", "产品英文描述",
+	// "订单重量kg", "订单金额", "平台订单号",
+	// "卖家账号" };
+
+	private String[] headers = { "订单编号", "SO编号", "承运人", "产品", "产品库位", "产品数量", "来源平台", "物流编号", "物流单号", "收货人名称", "收货人地址",
+			"国家外文", "国家中文", "城市", "省份", "邮编", "收件联系人", "收件联系电话", "货主联系电话", /* "产品","产品库位", "产品数量",*/ "产品英文描述", "订单重量kg",
+			"订单金额"/*, "平台订单号", "卖家账号"*/ };
 	private DefaultTableModel defaultModel;
 
 	private void initContainer() {
@@ -31,16 +38,24 @@ public class JTableOrder extends JTable implements IBaseView {
 		this.addMouseListener(new MouseAdapter() {
 			public void mouseClicked(MouseEvent e) {
 				// TODO:2016/9/22，使用连打功能
-				if (2 == e.getClickCount()) {
-					JTableOrder that = JTableOrder.this;
-					int row = that.getSelectedRow();
-					String orderNO = (String) that.getValueAt(row, 0);
-
-					OrderTableView parent = (OrderTableView) that.getParent().getParent();
-					parent.activationReportView(StringUtils.trim(orderNO));
-				}
+//				if (2 == e.getClickCount()) {
+//					JTableOrder that = JTableOrder.this;
+//					int row = that.getSelectedRow();
+//					String orderNO = (String) that.getValueAt(row, 0);
+//
+//					OrderTableView parent = (OrderTableView) that.getParent().getParent();
+//					parent.activationReportView(StringUtils.trim(orderNO));
+//				}
 			}
 		});
+		// this.addKeyListener(new KeyAdapter() {
+		// public void keyPressed(KeyEvent e) {
+		// if (KeyEvent.VK_ENTER == e.getKeyCode()) {
+		// int selectedRow = JTableOrder.this.getSelectedRow();
+		// String orderNO = (String) defaultModel.getValueAt(selectedRow, 0);
+		// }
+		// }
+		// });
 
 		this.setDragEnabled(false);
 		// this.setRowSelectionAllowed(false);
@@ -57,6 +72,7 @@ public class JTableOrder extends JTable implements IBaseView {
 			}
 		};
 		this.setModel(defaultModel);
+		this.getSelectionModel().addListSelectionListener(new RowListener(this)); // 增加行选中事件
 
 		JTableHeader tableHeader = this.getTableHeader();
 		tableHeader.setBackground(new Color(0xffffff));
@@ -69,6 +85,11 @@ public class JTableOrder extends JTable implements IBaseView {
 		for (Iterator<ReportDataVO> it = dataList.iterator(); it.hasNext();) {
 			ReportDataVO reportDataVO = it.next();
 			this.defaultModel.addRow(reportDataVO.getTableRowData());
+		}
+
+		// 默认选中第1行数据
+		if (this.getRowCount() > 0) {
+			this.setRowSelectionInterval(0, 0);
 		}
 		this.resizeTable(this.getParent().getSize());
 	}
@@ -105,5 +126,55 @@ public class JTableOrder extends JTable implements IBaseView {
 	public void displayUI() {
 		this.initContainer();
 		this.showResource();
+	}
+
+	/**
+	 * https://www.oschina.net/question/2418490_2181545
+	 *
+	 * @author liangxf
+	 *
+	 */
+	// class SelectionListener implements ListSelectionListener {
+	// private JTableOrder that;
+	//
+	// SelectionListener() {
+	// this.that = JTableOrder.this;
+	// }
+	//
+	// @Override
+	// public void valueChanged(ListSelectionEvent e) {
+	// // if ((e.getSource() == that.getColumnModel().getSelectionModel())
+	// // && that.getRowSelectionAllowed()) {
+	// // int firstRow = e.getFirstIndex();
+	// // int lastRow = e.getLastIndex();
+	// //
+	// // // TODO:处理事件
+	// // System.out.println("处理事件");
+	// // }
+	// System.out.println("处理事件");
+	// }
+	// }
+	// /**
+	// * http://www.open-open.com/lib/view/open1381034153955.html
+	// *
+	// * @author liangxf
+	// *
+	// */
+	private class RowListener implements ListSelectionListener {
+		private JTableOrder that;
+
+		public RowListener(JTableOrder that) {
+			this.that = that;
+		}
+
+		public void valueChanged(ListSelectionEvent event) {
+			if (event.getValueIsAdjusting()) {
+				return;
+			}
+			//TODO:先注销
+//			int selectedRow = that.getSelectedRow();
+//			String productCount = (String) that.defaultModel.getValueAt(selectedRow, 5);
+//			System.out.println("处理事件，产品数量" + productCount);
+		}
 	}
 }

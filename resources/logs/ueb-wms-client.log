@@ -1,0 +1,424 @@
+2016-10-12 10:12:01  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 1336 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 10:12:01  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 10:12:02  [ main:553 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5b721a50: startup date [Wed Oct 12 10:12:02 CST 2016]; root of context hierarchy
+2016-10-12 10:12:05  [ main:3841 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 10:12:05  [ main:3855 ] - [ INFO ]  Started Application in 5.136 seconds (JVM running for 9.217)
+2016-10-12 10:15:28  [ AWT-EventQueue-0:206633 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 10:16:37  [ AWT-EventQueue-0:275867 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 10:16:55  [ AWT-EventQueue-0:293976 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 10:17:39  [ AWT-EventQueue-0:337620 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 10:52:59  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2456 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 10:52:59  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 10:53:00  [ main:282 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@25204a20: startup date [Wed Oct 12 10:53:00 CST 2016]; root of context hierarchy
+2016-10-12 10:53:02  [ main:3170 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 10:53:02  [ main:3188 ] - [ INFO ]  Started Application in 3.755 seconds (JVM running for 7.005)
+2016-10-12 10:54:00  [ AWT-EventQueue-0:60615 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:00:35  [ Thread-2:2913225 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5b721a50: startup date [Wed Oct 12 10:12:02 CST 2016]; root of context hierarchy
+2016-10-12 11:00:35  [ Thread-2:2913231 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 11:04:50  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4416 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 11:04:50  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 11:04:50  [ main:258 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a31743b: startup date [Wed Oct 12 11:04:50 CST 2016]; root of context hierarchy
+2016-10-12 11:04:53  [ main:3092 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 11:04:53  [ main:3107 ] - [ INFO ]  Started Application in 3.536 seconds (JVM running for 6.976)
+2016-10-12 11:06:28  [ AWT-EventQueue-0:97892 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 11:06:28  [ AWT-EventQueue-0:97893 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 11:06:28  [ AWT-EventQueue-0:97893 ] - [ INFO ]  Read timed out
+2016-10-12 11:06:28  [ AWT-EventQueue-0:97893 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 11:09:39  [ Thread-4:288937 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:12:10  [ Thread-2:439912 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@6a31743b: startup date [Wed Oct 12 11:04:50 CST 2016]; root of context hierarchy
+2016-10-12 11:12:10  [ Thread-2:439919 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 11:12:20  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4136 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 11:12:21  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 11:12:21  [ main:272 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b066cb3: startup date [Wed Oct 12 11:12:21 CST 2016]; root of context hierarchy
+2016-10-12 11:12:23  [ main:2757 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 11:12:23  [ main:2771 ] - [ INFO ]  Started Application in 3.191 seconds (JVM running for 6.404)
+2016-10-12 11:12:42  [ Thread-4:21432 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:13:07  [ Thread-8:46074 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:13:14  [ Thread-9:53045 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:13:20  [ Thread-10:59211 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:13:26  [ Thread-11:65402 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:14:08  [ Thread-2:107099 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7b066cb3: startup date [Wed Oct 12 11:12:21 CST 2016]; root of context hierarchy
+2016-10-12 11:14:08  [ Thread-2:107102 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 11:14:14  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 1272 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 11:14:14  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 11:14:14  [ main:265 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22fcb637: startup date [Wed Oct 12 11:14:14 CST 2016]; root of context hierarchy
+2016-10-12 11:14:16  [ main:2789 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 11:14:16  [ main:2801 ] - [ INFO ]  Started Application in 3.237 seconds (JVM running for 6.326)
+2016-10-12 11:19:28  [ Thread-4:314405 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-10-12 11:19:56  [ Thread-7:341982 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-10-12 11:20:13  [ Thread-8:359249 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-10-12 11:21:48  [ Thread-9:454510 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:23:34  [ Thread-11:560330 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 11:33:35  [ AWT-EventQueue-0:1161610 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 11:33:35  [ AWT-EventQueue-0:1161610 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 11:33:35  [ AWT-EventQueue-0:1161611 ] - [ INFO ]  Read timed out
+2016-10-12 11:33:35  [ AWT-EventQueue-0:1161611 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 11:40:00  [ AWT-EventQueue-0:1546013 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 11:40:00  [ AWT-EventQueue-0:1546013 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 11:40:00  [ AWT-EventQueue-0:1546014 ] - [ INFO ]  Read timed out
+2016-10-12 11:40:00  [ AWT-EventQueue-0:1546015 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 11:54:31  [ AWT-EventQueue-0:2416988 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 11:54:31  [ AWT-EventQueue-0:2416988 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 11:54:31  [ AWT-EventQueue-0:2416989 ] - [ INFO ]  Read timed out
+2016-10-12 11:54:31  [ AWT-EventQueue-0:2416989 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 14:19:22  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5184 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 14:19:22  [ main:1 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 14:19:23  [ main:259 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@62bf8e52: startup date [Wed Oct 12 14:19:23 CST 2016]; root of context hierarchy
+2016-10-12 14:19:25  [ main:2698 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 14:19:25  [ main:2712 ] - [ INFO ]  Started Application in 3.705 seconds (JVM running for 7.243)
+2016-10-12 14:20:54  [ AWT-EventQueue-0:91972 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 14:20:54  [ AWT-EventQueue-0:91973 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 14:20:54  [ AWT-EventQueue-0:91973 ] - [ INFO ]  Read timed out
+2016-10-12 14:20:54  [ AWT-EventQueue-0:91973 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 14:29:33  [ AWT-EventQueue-0:610273 ] - [ INFO ]  请求后台getIDSequence接口出现异常，异常详细信息是:path parameters can not be empty
+2016-10-12 14:29:33  [ AWT-EventQueue-0:610274 ] - [ INFO ]  path parameters can not be empty
+2016-10-12 14:29:33  [ AWT-EventQueue-0:610274 ] - [ INFO ]  获取装箱箱号出现异常，异常信息是：{}
+java.lang.IllegalArgumentException: path parameters can not be empty
+	at com.ueb.wms.printer.client.http.HttpClientBaseService.buildRequestUri(HttpClientBaseService.java:138)
+	at com.ueb.wms.printer.client.http.HttpClientService.sendPostRequest(HttpClientService.java:26)
+	at com.ueb.wms.printer.client.service.impl.SingleSkuMatchServiceImpl.getIDSequence(SingleSkuMatchServiceImpl.java:74)
+	at com.ueb.wms.printer.client.view.SingleProductView.setIDSequence(SingleProductView.java:219)
+	at com.ueb.wms.printer.client.view.SingleProductView.access$3(SingleProductView.java:217)
+	at com.ueb.wms.printer.client.view.SingleProductView$4.actionPerformed(SingleProductView.java:257)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6535)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6300)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4891)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2750)
+	at java.awt.Component.dispatchEvent(Component.java:4713)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:86)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2016-10-12 14:30:35  [ Thread-2:672466 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@62bf8e52: startup date [Wed Oct 12 14:19:23 CST 2016]; root of context hierarchy
+2016-10-12 14:30:35  [ Thread-2:672470 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 14:30:41  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3280 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 14:30:41  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 14:30:41  [ main:360 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@744ce78f: startup date [Wed Oct 12 14:30:41 CST 2016]; root of context hierarchy
+2016-10-12 14:30:44  [ main:3217 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 14:30:44  [ main:3236 ] - [ INFO ]  Started Application in 4.29 seconds (JVM running for 7.637)
+2016-10-12 14:34:14  [ AWT-EventQueue-0:213412 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 14:34:14  [ AWT-EventQueue-0:213412 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 14:34:14  [ AWT-EventQueue-0:213412 ] - [ INFO ]  Read timed out
+2016-10-12 14:34:14  [ AWT-EventQueue-0:213412 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 14:50:11  [ AWT-EventQueue-0:1170672 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 14:50:11  [ AWT-EventQueue-0:1170672 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 14:50:11  [ AWT-EventQueue-0:1170672 ] - [ INFO ]  Read timed out
+2016-10-12 14:50:11  [ AWT-EventQueue-0:1170673 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 14:57:11  [ Thread-4:1590037 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 15:00:47  [ Thread-4:1806407 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 15:00:47  [ Thread-4:1806789 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 15:00:47  [ Thread-4:1806790 ] - [ INFO ]  打印快递面单出现了异常，，波次编号是：W1603020020，产品代码是：98140.01，订单编号是：GS160127013877      ，异常详细信息是：Error printing report.
+2016-10-12 15:02:58  [ AWT-EventQueue-0:1937404 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Connection reset
+2016-10-12 15:02:58  [ AWT-EventQueue-0:1937404 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Connection reset
+2016-10-12 15:02:58  [ AWT-EventQueue-0:1937406 ] - [ INFO ]  Connection reset
+2016-10-12 15:02:58  [ AWT-EventQueue-0:1937406 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Connection reset
+2016-10-12 15:04:16  [ AWT-EventQueue-0:2015357 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:04:16  [ AWT-EventQueue-0:2015357 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:04:16  [ AWT-EventQueue-0:2015357 ] - [ INFO ]  Read timed out
+2016-10-12 15:04:16  [ AWT-EventQueue-0:2015358 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:08:21  [ AWT-EventQueue-0:2260469 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:08:21  [ AWT-EventQueue-0:2260470 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:08:21  [ AWT-EventQueue-0:2260470 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:10:19  [ AWT-EventQueue-0:2378792 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:10:19  [ AWT-EventQueue-0:2378792 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:10:19  [ AWT-EventQueue-0:2378792 ] - [ INFO ]  Read timed out
+2016-10-12 15:10:19  [ AWT-EventQueue-0:2378793 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:15:46  [ AWT-EventQueue-0:2705014 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence(?,?,?,?,?)}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:15:46  [ AWT-EventQueue-0:2705014 ] - [ INFO ]  
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence(?,?,?,?,?)}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:15:46  [ AWT-EventQueue-0:2705015 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence(?,?,?,?,?)}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:17:12  [ AWT-EventQueue-0:2791656 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence ?,?,?,?,?}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:17:12  [ AWT-EventQueue-0:2791656 ] - [ INFO ]  
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence ?,?,?,?,?}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:17:12  [ AWT-EventQueue-0:2791656 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：
+### Error querying database.  Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+### The error may exist in com/ueb/wms/printer/server/mapper/flux/ISingleProductMapper.java (best guess)
+### The error may involve com.ueb.wms.printer.server.mapper.flux.ISingleProductMapper.getIDSequence-Inline
+### The error occurred while setting parameters
+### SQL: {EXEC SPCOM_GetIDSequence ?,?,?,?,?}
+### Cause: com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+; uncategorized SQLException for SQL []; SQL state [S0001]; error code [102]; '{' 附近有语法错误。; nested exception is com.microsoft.sqlserver.jdbc.SQLServerException: '{' 附近有语法错误。
+2016-10-12 15:18:18  [ AWT-EventQueue-0:2857450 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:18:18  [ AWT-EventQueue-0:2857450 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:18:18  [ AWT-EventQueue-0:2857451 ] - [ INFO ]  Read timed out
+2016-10-12 15:18:18  [ AWT-EventQueue-0:2857451 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:19:43  [ AWT-EventQueue-0:2942129 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:19:43  [ AWT-EventQueue-0:2942129 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:19:43  [ AWT-EventQueue-0:2942129 ] - [ INFO ]  Read timed out
+2016-10-12 15:19:43  [ AWT-EventQueue-0:2942130 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:22:34  [ AWT-EventQueue-0:3113469 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:22:34  [ AWT-EventQueue-0:3113469 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:22:34  [ AWT-EventQueue-0:3113469 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:23:39  [ AWT-EventQueue-0:3178791 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:23:39  [ AWT-EventQueue-0:3178791 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:23:39  [ AWT-EventQueue-0:3178791 ] - [ INFO ]  Read timed out
+2016-10-12 15:23:39  [ AWT-EventQueue-0:3178791 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:26:39  [ AWT-EventQueue-0:3358830 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:26:39  [ AWT-EventQueue-0:3358830 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:26:39  [ AWT-EventQueue-0:3358831 ] - [ INFO ]  Read timed out
+2016-10-12 15:26:39  [ AWT-EventQueue-0:3358831 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:30:19  [ AWT-EventQueue-0:3578516 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:30:19  [ AWT-EventQueue-0:3578516 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:30:19  [ AWT-EventQueue-0:3578517 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:31:04  [ AWT-EventQueue-0:3623669 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:31:04  [ AWT-EventQueue-0:3623670 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:31:04  [ AWT-EventQueue-0:3623670 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:33:16  [ AWT-EventQueue-0:3755991 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:33:16  [ AWT-EventQueue-0:3755991 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:33:16  [ AWT-EventQueue-0:3755992 ] - [ INFO ]  Read timed out
+2016-10-12 15:33:16  [ AWT-EventQueue-0:3755992 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:35:15  [ AWT-EventQueue-0:3874522 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:35:15  [ AWT-EventQueue-0:3874522 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:35:15  [ AWT-EventQueue-0:3874523 ] - [ INFO ]  Read timed out
+2016-10-12 15:35:15  [ AWT-EventQueue-0:3874523 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:36:39  [ AWT-EventQueue-0:3958786 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:36:39  [ AWT-EventQueue-0:3958786 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:36:39  [ AWT-EventQueue-0:3958787 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:37:38  [ AWT-EventQueue-0:4017211 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:37:38  [ AWT-EventQueue-0:4017211 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:37:38  [ AWT-EventQueue-0:4017212 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:41:14  [ AWT-EventQueue-0:4233942 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:41:14  [ AWT-EventQueue-0:4233943 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:41:14  [ AWT-EventQueue-0:4233943 ] - [ INFO ]  Read timed out
+2016-10-12 15:41:14  [ AWT-EventQueue-0:4233943 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:43:42  [ AWT-EventQueue-0:4381783 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:43:42  [ AWT-EventQueue-0:4381783 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:43:42  [ AWT-EventQueue-0:4381784 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:46:50  [ AWT-EventQueue-0:4569941 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:46:50  [ AWT-EventQueue-0:4569941 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:46:50  [ AWT-EventQueue-0:4569942 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:48:22  [ AWT-EventQueue-0:4661693 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:订单编号不能为空
+2016-10-12 15:48:22  [ AWT-EventQueue-0:4661693 ] - [ INFO ]  订单编号不能为空
+2016-10-12 15:48:22  [ AWT-EventQueue-0:4661694 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：订单编号不能为空
+2016-10-12 15:50:47  [ AWT-EventQueue-0:4806865 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 15:50:47  [ AWT-EventQueue-0:4806865 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 15:50:47  [ AWT-EventQueue-0:4806865 ] - [ INFO ]  Read timed out
+2016-10-12 15:50:47  [ AWT-EventQueue-0:4806866 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 15:55:59  [ Thread-7:5118980 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-10-12 15:56:32  [ Thread-8:5151951 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-10-12 15:56:40  [ Thread-9:5159844 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-10-12 15:56:49  [ Thread-10:5168245 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-10-12 15:58:07  [ Thread-2:5246868 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@744ce78f: startup date [Wed Oct 12 14:30:41 CST 2016]; root of context hierarchy
+2016-10-12 15:58:07  [ Thread-2:5246876 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 15:58:19  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2544 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 15:58:19  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 15:58:19  [ main:312 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@760b2180: startup date [Wed Oct 12 15:58:19 CST 2016]; root of context hierarchy
+2016-10-12 15:58:22  [ main:2949 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 15:58:22  [ main:2960 ] - [ INFO ]  Started Application in 3.305 seconds (JVM running for 6.642)
+2016-10-12 15:59:11  [ Thread-4:52066 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 15:59:57  [ Thread-8:97957 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-10-12 16:00:05  [ Thread-9:106658 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 16:00:12  [ Thread-10:113755 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 16:06:32  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5924 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 16:06:32  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 16:06:32  [ main:294 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@280b54b2: startup date [Wed Oct 12 16:06:32 CST 2016]; root of context hierarchy
+2016-10-12 16:06:35  [ main:3033 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 16:06:35  [ main:3046 ] - [ INFO ]  Started Application in 3.523 seconds (JVM running for 6.834)
+2016-10-12 16:11:10  [ AWT-EventQueue-0:278778 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 16:11:10  [ AWT-EventQueue-0:278779 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 16:11:10  [ AWT-EventQueue-0:278779 ] - [ INFO ]  Read timed out
+2016-10-12 16:11:10  [ AWT-EventQueue-0:278779 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 16:15:23  [ Thread-2:531770 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@280b54b2: startup date [Wed Oct 12 16:06:32 CST 2016]; root of context hierarchy
+2016-10-12 16:15:23  [ Thread-2:531773 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 16:15:41  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5376 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 16:15:41  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 16:15:41  [ main:557 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4cf96e82: startup date [Wed Oct 12 16:15:41 CST 2016]; root of context hierarchy
+2016-10-12 16:15:46  [ main:4989 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 16:15:46  [ main:5033 ] - [ INFO ]  Started Application in 6.123 seconds (JVM running for 12.215)
+2016-10-12 16:25:56  [ AWT-EventQueue-0:615816 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 16:25:56  [ AWT-EventQueue-0:615817 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 16:25:56  [ AWT-EventQueue-0:615817 ] - [ INFO ]  Read timed out
+2016-10-12 16:25:56  [ AWT-EventQueue-0:615818 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 16:33:42  [ AWT-EventQueue-0:1081189 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/review/singleSkuMatch HTTP/1.1, the exception details are：Read timed out
+2016-10-12 16:33:42  [ AWT-EventQueue-0:1081189 ] - [ INFO ]  请求后台singleSkuMatch接口出现异常，异常详细信息是:Read timed out
+2016-10-12 16:33:42  [ AWT-EventQueue-0:1081190 ] - [ INFO ]  Read timed out
+2016-10-12 16:33:42  [ AWT-EventQueue-0:1081190 ] - [ INFO ]  单品复核出现异常，波次编号是：W1603020020，产品代码是：98140.01，异常信息是：Read timed out
+2016-10-12 17:15:09  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5760 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 17:15:09  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 17:15:09  [ main:440 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@55e49aca: startup date [Wed Oct 12 17:15:09 CST 2016]; root of context hierarchy
+2016-10-12 17:15:12  [ main:3153 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 17:15:12  [ main:3166 ] - [ INFO ]  Started Application in 3.996 seconds (JVM running for 10.825)
+2016-10-12 17:20:03  [ Thread-2:293915 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@55e49aca: startup date [Wed Oct 12 17:15:09 CST 2016]; root of context hierarchy
+2016-10-12 17:20:03  [ Thread-2:293923 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 17:20:08  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5244 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 17:20:08  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 17:20:08  [ main:270 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6af4a9: startup date [Wed Oct 12 17:20:08 CST 2016]; root of context hierarchy
+2016-10-12 17:20:10  [ main:2833 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 17:20:10  [ main:2845 ] - [ INFO ]  Started Application in 3.323 seconds (JVM running for 6.671)
+2016-10-12 17:24:07  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3124 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 17:24:07  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 17:24:07  [ main:269 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@378d78a4: startup date [Wed Oct 12 17:24:07 CST 2016]; root of context hierarchy
+2016-10-12 17:24:10  [ main:2984 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 17:24:10  [ main:3000 ] - [ INFO ]  Started Application in 3.431 seconds (JVM running for 6.888)
+2016-10-12 17:24:31  [ Thread-4:24212 ] - [ INFO ]  请求后台findByWaveNO接口出现异常，异常详细信息是:Exception occurred during query data
+2016-10-12 17:24:31  [ Thread-4:24212 ] - [ INFO ]  Exception occurred during query data
+2016-10-12 17:24:42  [ Thread-5:35526 ] - [ INFO ]  请求后台findByWaveNO接口出现异常，异常详细信息是:Exception occurred during query data
+2016-10-12 17:24:42  [ Thread-5:35526 ] - [ INFO ]  Exception occurred during query data
+2016-10-12 17:24:46  [ Thread-6:39068 ] - [ INFO ]  请求后台findByWaveNO接口出现异常，异常详细信息是:Exception occurred during query data
+2016-10-12 17:24:46  [ Thread-6:39069 ] - [ INFO ]  Exception occurred during query data
+2016-10-12 17:27:35  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3116 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 17:27:35  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 17:27:36  [ main:560 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@69895cf6: startup date [Wed Oct 12 17:27:36 CST 2016]; root of context hierarchy
+2016-10-12 17:27:42  [ main:6447 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 17:27:42  [ main:6475 ] - [ INFO ]  Started Application in 7.912 seconds (JVM running for 14.776)
+2016-10-12 17:29:07  [ Thread-4:92290 ] - [ INFO ]  an exception occurred during the request，the request is: POST http://172.16.6.139:8080/report/findByWaveNO HTTP/1.1, the exception details are：Read timed out
+2016-10-12 17:29:07  [ Thread-4:92292 ] - [ INFO ]  请求后台findByWaveNO接口出现异常，异常详细信息是:Read timed out
+2016-10-12 17:29:07  [ Thread-4:92292 ] - [ INFO ]  Read timed out
+2016-10-12 17:30:22  [ Thread-5:167289 ] - [ INFO ]  请求后台findByWaveNO接口出现异常，异常详细信息是:尚未给承运人cm_jrxb配置报表模板类型
+2016-10-12 17:30:22  [ Thread-5:167290 ] - [ INFO ]  尚未给承运人cm_jrxb配置报表模板类型
+2016-10-12 17:59:16  [ AWT-EventQueue-0:1901307 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 17:59:24  [ AWT-EventQueue-0:1908753 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 17:59:45  [ AWT-EventQueue-0:1930308 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 17:59:48  [ AWT-EventQueue-0:1932722 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 17:59:48  [ AWT-EventQueue-0:1932756 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 17:59:48  [ AWT-EventQueue-0:1932756 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160127013802      ，异常详细信息是：Error printing report.
+2016-10-12 17:59:49  [ AWT-EventQueue-0:1933965 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 17:59:51  [ AWT-EventQueue-0:1935620 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 17:59:51  [ AWT-EventQueue-0:1935655 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 17:59:51  [ AWT-EventQueue-0:1935655 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160127013803      ，异常详细信息是：Error printing report.
+2016-10-12 17:59:52  [ AWT-EventQueue-0:1937168 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 18:02:10  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4068 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 18:02:10  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 18:02:11  [ main:284 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f727826: startup date [Wed Oct 12 18:02:11 CST 2016]; root of context hierarchy
+2016-10-12 18:02:13  [ main:3004 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 18:02:13  [ main:3020 ] - [ INFO ]  Started Application in 3.409 seconds (JVM running for 7.105)
+2016-10-12 18:02:43  [ Thread-2:32818 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7f727826: startup date [Wed Oct 12 18:02:11 CST 2016]; root of context hierarchy
+2016-10-12 18:02:43  [ Thread-2:32821 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-10-12 18:02:58  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5060 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 18:02:58  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 18:02:58  [ main:267 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@37ba0e8c: startup date [Wed Oct 12 18:02:58 CST 2016]; root of context hierarchy
+2016-10-12 18:03:01  [ main:2605 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 18:03:01  [ main:2617 ] - [ INFO ]  Started Application in 3.026 seconds (JVM running for 6.302)
+2016-10-12 18:04:15  [ AWT-EventQueue-0:76511 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:04:30  [ AWT-EventQueue-0:92049 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:04:32  [ AWT-EventQueue-0:93617 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 18:04:32  [ AWT-EventQueue-0:93650 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 18:04:32  [ AWT-EventQueue-0:93651 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160124078378      ，异常详细信息是：Error printing report.
+2016-10-12 18:04:33  [ AWT-EventQueue-0:94924 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 18:04:36  [ AWT-EventQueue-0:97441 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 18:04:36  [ AWT-EventQueue-0:97785 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 18:04:36  [ AWT-EventQueue-0:97787 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160127013802      ，异常详细信息是：Error printing report.
+2016-10-12 18:05:16  [ AWT-EventQueue-0:138131 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:06:16  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4580 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 18:06:16  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 18:06:16  [ main:292 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6e6af4a9: startup date [Wed Oct 12 18:06:16 CST 2016]; root of context hierarchy
+2016-10-12 18:06:19  [ main:2586 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 18:06:19  [ main:2599 ] - [ INFO ]  Started Application in 3.031 seconds (JVM running for 6.273)
+2016-10-12 18:06:53  [ Thread-6:36798 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:09:11  [ Thread-6:174939 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 18:09:11  [ Thread-6:174974 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 18:09:11  [ Thread-6:174974 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160124077943      ，异常详细信息是：Error printing report.
+2016-10-12 18:09:13  [ Thread-6:177059 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:09:15  [ Thread-6:178716 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 18:09:15  [ Thread-6:178750 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 18:09:15  [ Thread-6:178750 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020020，订单编号是：GS160124078378      ，异常详细信息是：Error printing report.
+2016-10-12 18:09:16  [ Thread-6:179890 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_FUZHOU_%.jasper
+2016-10-12 18:09:23  [ Thread-6:187212 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 18:09:42  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5936 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 18:09:42  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 18:09:43  [ main:291 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@45aa2cf3: startup date [Wed Oct 12 18:09:43 CST 2016]; root of context hierarchy
+2016-10-12 18:09:45  [ main:3107 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 18:09:45  [ main:3121 ] - [ INFO ]  Started Application in 3.742 seconds (JVM running for 7.238)
+2016-10-12 18:10:06  [ Thread-6:23820 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:32:57  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3908 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 19:32:57  [ main:14 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 19:32:57  [ main:380 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@280b54b2: startup date [Wed Oct 12 19:32:57 CST 2016]; root of context hierarchy
+2016-10-12 19:33:00  [ main:3473 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 19:33:00  [ main:3489 ] - [ INFO ]  Started Application in 3.831 seconds (JVM running for 7.752)
+2016-10-12 19:35:59  [ Thread-6:182522 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:39:54  [ Thread-6:416904 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:39:54  [ Thread-6:416982 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:39:54  [ Thread-6:416983 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124033592      ，异常详细信息是：Error printing report.
+2016-10-12 19:39:55  [ Thread-6:418046 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:39:56  [ Thread-6:419306 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:39:56  [ Thread-6:419359 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:39:56  [ Thread-6:419359 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124036265      ，异常详细信息是：Error printing report.
+2016-10-12 19:39:57  [ Thread-6:420609 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_CN_%.jasper
+2016-10-12 19:40:12  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 836 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 19:40:12  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 19:40:12  [ main:308 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@15827e41: startup date [Wed Oct 12 19:40:12 CST 2016]; root of context hierarchy
+2016-10-12 19:40:14  [ main:2750 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 19:40:14  [ main:2766 ] - [ INFO ]  Started Application in 3.251 seconds (JVM running for 6.699)
+2016-10-12 19:40:34  [ Thread-6:22055 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:42:58  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3164 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-10-12 19:42:58  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-10-12 19:42:58  [ main:288 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@752cc570: startup date [Wed Oct 12 19:42:58 CST 2016]; root of context hierarchy
+2016-10-12 19:43:00  [ main:2726 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-10-12 19:43:00  [ main:2739 ] - [ INFO ]  Started Application in 3.078 seconds (JVM running for 6.344)
+2016-10-12 19:43:13  [ Thread-6:15525 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:43:38  [ Thread-6:40498 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:43:38  [ Thread-6:40530 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:43:38  [ Thread-6:40531 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124033592      ，异常详细信息是：Error printing report.
+2016-10-12 19:43:42  [ Thread-6:44045 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:43:43  [ Thread-6:45248 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:43:43  [ Thread-6:45283 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:43:43  [ Thread-6:45284 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124036265      ，异常详细信息是：Error printing report.
+2016-10-12 19:43:44  [ Thread-6:46636 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_CN_%.jasper
+2016-10-12 19:43:45  [ Thread-6:47743 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:43:45  [ Thread-6:47777 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:43:45  [ Thread-6:47778 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124037382      ，异常详细信息是：Error printing report.
+2016-10-12 19:43:46  [ Thread-6:48537 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_JRXB_%.jasper
+2016-10-12 19:43:47  [ Thread-6:49567 ] - [ ERROR ]  打印iReport面单出现异常：Error printing report.
+2016-10-12 19:43:47  [ Thread-6:49617 ] - [ ERROR ]  加载iReport面单模板出现异常：Error printing report.
+2016-10-12 19:43:47  [ Thread-6:49618 ] - [ INFO ]  打印多品面单出现了异常，，波次编号是：W1603020129，订单编号是：GS160124038549      ，异常详细信息是：Error printing report.
+2016-10-12 19:43:48  [ Thread-6:50406 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_EUB_JIETE_%.jasper

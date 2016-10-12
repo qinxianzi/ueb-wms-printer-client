@@ -3,23 +3,36 @@ package com.ueb.wms.printer.client.view;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusAdapter;
+import java.awt.event.FocusEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.util.List;
+import java.util.Vector;
 
 import javax.swing.Box;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-import org.apache.commons.codec.digest.Md5Crypt;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.ueb.wms.printer.client.constants.WmsConstants;
-import com.ueb.wms.printer.client.service.IPrinterService;
+import com.ueb.wms.printer.client.service.IUserService;
+import com.ueb.wms.printer.client.util.LoginUtil;
 import com.ueb.wms.printer.client.util.PrintViewUtil;
+import com.ueb.wms.printer.client.util.UebMd5Util;
+import com.ueb.wms.printer.client.vo.BeforeLoginVO;
+import com.ueb.wms.printer.client.vo.ComboBoxItemVO;
+import com.ueb.wms.printer.client.vo.LoginUserVO;
+import com.ueb.wms.printer.client.vo.WarehouseVO;
 
 @SuppressWarnings("serial")
 @Component("loginPanel")
 public class LoginPanel extends JPanel implements IBaseView {
+
+	@Autowired
+	private LoginUtil loginUtil;
 
 	private LoginView parent;
 
@@ -28,7 +41,7 @@ public class LoginPanel extends JPanel implements IBaseView {
 	}
 
 	@Autowired
-	private IPrinterService printerService;
+	private IUserService userService;
 
 	@Autowired
 	private MainView mainView;
@@ -38,6 +51,8 @@ public class LoginPanel extends JPanel implements IBaseView {
 
 	@Autowired
 	private JTextFieldUser tfUser;
+
+	private JComboBoxExt<ComboBoxItemVO> warehouseCmb;
 
 	@Override
 	public void displayUI() {
@@ -53,31 +68,68 @@ public class LoginPanel extends JPanel implements IBaseView {
 		Box vbox = Box.createVerticalBox();
 		vbox.add(Box.createVerticalStrut(20));
 		vbox.add(this.createBoxPanel());
-		// vbox.add(Box.createVerticalStrut(20));
 
 		this.add(vbox, BorderLayout.NORTH);
 		this.add(new JPanel(), BorderLayout.CENTER);
 	}
 
 	private JPanel createBoxPanel() {
-		Box accountBox = PrintViewUtil.createSingleBox("登陆账号:", null, this.tfUser);
-		Box passwordBox = PrintViewUtil.createSingleBox("登陆密码:", null, this.tfPassword);
+		this.tfUser.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e) {
+				if (KeyEvent.VK_ENTER == e.getKeyCode()) {
+					LoginPanel.this.readyToLogin();
+				}
+			}
+		});
+		this.tfUser.addFocusListener(new FocusAdapter() {
+			@Override
+			public void focusLost(FocusEvent e) {
+				LoginPanel.this.readyToLogin();
+			}
+		});
+		this.tfPassword.addKeyListener(new KeyAdapter() {
+			public void keyPressed(KeyEvent e) {
+				if (KeyEvent.VK_ENTER == e.getKeyCode()) {
+					LoginPanel.this.userLogin();
+				}
+			}
+		});
+		warehouseCmb = new JComboBoxExt<ComboBoxItemVO>();
 
-		Box[] boies = { accountBox, passwordBox };
-		// ActionListener okBtnListener = new ActionListener() {
-		// @Override
-		// public void actionPerformed(ActionEvent e) {
-		// LoginPanel.this.userLogin();
-		// }
-		// };
+		Box accountBox = PrintViewUtil.createSingleBox("用户名称:", null, this.tfUser);
+		Box passwordBox = PrintViewUtil.createSingleBox("用户密码:", null, this.tfPassword);
+		Box contextBox = PrintViewUtil.createSingleBox("业务仓库:", null, warehouseCmb);
+		Box[] boies = { accountBox, passwordBox, contextBox };
 
 		JButton[] btns = this.createBtns();
 		JPanel btnPanel = PrintViewUtil.createButtonBoxPanel(btns);
-		// JPanel btnPanel = this.createButtonPanel(okBtnListener);
 
-		JPanel boxPanel = PrintViewUtil.createSingleBoxPanel(15, boies, btnPanel);
-		// JPanel boxPanel = this.createSingleBoxPanel(boies, btnPanel);
+		JPanel boxPanel = PrintViewUtil.createSingleBoxPanel(5, boies, btnPanel);
 		return boxPanel;
+	}
+
+	private void readyToLogin() {
+		String account = this.tfUser.getText();
+		if (StringUtils.isBlank(account)) {
+			this.tfUser.requestFocus();
+			PrintViewUtil.showErrorMsg("登陆账号不能为空");
+			return;
+		}
+		try {
+			BeforeLoginVO resVo = this.userService.readyToLogin(account);
+			List<WarehouseVO> warehouseList = resVo.getWarehouse();
+			Vector<ComboBoxItemVO> model = new Vector<ComboBoxItemVO>();
+			for (WarehouseVO warehouse : warehouseList) {
+				model.add(warehouse.adapt2ComboBoxItemVO());
+			}
+			warehouseCmb.updateData(model);
+			this.tfPassword.requestFocus();
+		} catch (Exception e) {
+			logger.info("用户登陆系统--获取业务仓库信息失败，用户账号是：{}，异常详细信息是：{}", account, e.getMessage());
+			PrintViewUtil.showErrorMsg("获取业务仓库信息失败");
+			this.tfUser.selectAll();
+			this.tfUser.requestFocus();
+		}
 	}
 
 	private void userLogin() {
@@ -93,14 +145,26 @@ public class LoginPanel extends JPanel implements IBaseView {
 			PrintViewUtil.showErrorMsg("登陆密码不能为空");
 			return;
 		}
-		String md5Password = Md5Crypt.md5Crypt(password.getBytes(WmsConstants.UTF8));
+		// String md5Password = DigestUtils.md5Hex(password);
 		try {
-			// this.printerService.userLogin(account, md5Password);
+			// AccountVO accountVo = this.userService.userLogin(account,
+			// md5Password);
+			// loginUtil.setLoginAccount(accountVo);
+			LoginUserVO loginUserVo = this.userService.findUuser(account);
+			String md5Pwd = UebMd5Util.getMd5(password, loginUserVo.getSalt());
+			if (!StringUtils.equals(md5Pwd, loginUserVo.getPassword())) {
+				PrintViewUtil.showErrorMsg("登陆密码错误");
+				return;
+			}
+			loginUtil.setLoginUserVo(loginUserVo);
+			String warehouse = warehouseCmb.getSelectedKey();
+			loginUtil.setWarehouse(warehouse);
+
 			this.parent.exit();
 			this.mainView.displayUI();
 		} catch (Exception e) {
 			logger.info("用户登陆系统出现异常，用户账号是：{}，异常详细信息是：{}", account, e.getMessage());
-			PrintViewUtil.showErrorMsg("登陆系统出现异常");
+			PrintViewUtil.showErrorMsg("用户登陆系统失败");
 		}
 	}
 

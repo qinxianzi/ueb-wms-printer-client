@@ -130,8 +130,8 @@ public class PrinterServiceImpl implements IPrinterService {
 	}
 
 	@Override
-	public void updateHttpServerInfo(String url, String port, String context) throws Exception {
-		this.httpService.updateHttpClientConfig(url, port, context);
+	public void updateHttpServerInfo(String url, String port, String context, String pdfTpl) throws Exception {
+		this.httpService.updateHttpClientConfig(url, port, context, pdfTpl);
 	}
 
 	@Override
@@ -139,13 +139,59 @@ public class PrinterServiceImpl implements IPrinterService {
 		return this.httpService.getConfigValues();
 	}
 
+	// @Override
+	// public void userLogin(String account, String password) throws Exception {
+	// try {
+	// Map<String, String> params = new HashMap<String, String>(10);
+	// params.put("account", account);
+	// params.put("password", password);
+	// this.httpService.sendPostRequest("userLogin", params);
+	// } catch (Exception e) {
+	// logger.info(e.getMessage());
+	// throw e;
+	// }
+	// }
+
 	@Override
-	public void userLogin(String account, String password) throws Exception {
+	public List<ReportDataVO> findSingleProductFirst(String waveNO, String sku) throws Exception {
 		try {
 			Map<String, String> params = new HashMap<String, String>(10);
-			params.put("account", account);
-			params.put("password", password);
-			this.httpService.sendPostRequest("userLogin", params);
+			params.put("waveNO", waveNO);
+			params.put("sku", sku);
+			String response = this.httpService.sendPostRequest("findSingleProductFirst", params);
+			List<ReportDataVO> reportDataVO = JSON.parseArray(response, ReportDataVO.class);
+			return reportDataVO;
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+			throw e;
+		}
+	}
+
+	@Override
+	public boolean beforePrint(String orderNO) throws Exception {
+		try {
+			Map<String, String> params = new HashMap<String, String>(10);
+			params.put("orderNO", orderNO);
+			this.httpService.sendPostRequest("beforePrint", params);
+			return true;
+		} catch (Exception e) {
+			logger.info(e.getMessage());
+			throw e;
+		}
+	}
+
+	@Override
+	public boolean afterPrint(String orderNO, boolean isPrintSuccess) throws Exception {
+		try {
+			Map<String, String> params = new HashMap<String, String>(10);
+			params.put("orderNO", orderNO);
+			if (isPrintSuccess) {
+				params.put("success", "1"); // 面单打印成功
+			} else {
+				params.put("success", "2"); // 面单打印失败
+			}
+			this.httpService.sendPostRequest("afterPrint", params);
+			return true;
 		} catch (Exception e) {
 			logger.info(e.getMessage());
 			throw e;

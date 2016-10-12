@@ -49,7 +49,7 @@ public class WaveView extends JPanel implements IBaseView {
 		((TabView) this.getParent()).activationReportView(orderNO);
 	}
 
-	public void fastPrintIReport(ReportDataVO reportDataVo) {
+	public void fastPrintIReport(ReportDataVO reportDataVo) throws Exception {
 		((TabView) this.getParent()).fastPrintIReport(reportDataVo);
 	}
 

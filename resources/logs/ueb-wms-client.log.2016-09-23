@@ -1,0 +1,420 @@
+2016-09-23 09:14:20  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 264 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:14:20  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:14:20  [ main:377 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f3ad507: startup date [Fri Sep 23 09:14:20 CST 2016]; root of context hierarchy
+2016-09-23 09:14:23  [ main:2944 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:14:23  [ main:2956 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:14:23  [ main:2957 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:14:23  [ main:2959 ] - [ INFO ]  Started Application in 3.326 seconds (JVM running for 6.006)
+2016-09-23 09:14:42  [ Thread-4:22607 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:18:29  [ Thread-7:249478 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:18:43  [ Thread-2:263586 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f3ad507: startup date [Fri Sep 23 09:14:20 CST 2016]; root of context hierarchy
+2016-09-23 09:18:43  [ Thread-2:263588 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 09:18:50  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 2808 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:18:50  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:18:50  [ main:348 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5f9e02d4: startup date [Fri Sep 23 09:18:50 CST 2016]; root of context hierarchy
+2016-09-23 09:18:53  [ main:2794 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:18:53  [ main:2809 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:18:53  [ main:2809 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:18:53  [ main:2813 ] - [ INFO ]  Started Application in 3.288 seconds (JVM running for 7.598)
+2016-09-23 09:19:04  [ Thread-4:14258 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:21:04  [ Thread-7:134617 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:21:08  [ AWT-EventQueue-0:138486 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:21:23  [ Thread-8:152866 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:22:41  [ Thread-9:231430 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:25:35  [ Thread-10:405548 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:28:00  [ Thread-11:550047 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:31:31  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4824 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:31:31  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:31:31  [ main:307 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4ababf2d: startup date [Fri Sep 23 09:31:31 CST 2016]; root of context hierarchy
+2016-09-23 09:31:34  [ main:2750 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:31:34  [ main:2763 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:31:34  [ main:2764 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:31:34  [ main:2765 ] - [ INFO ]  Started Application in 3.195 seconds (JVM running for 6.429)
+2016-09-23 09:31:50  [ Thread-4:18782 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:33:18  [ Thread-7:107644 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:35:27  [ Thread-8:236481 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:40:43  [ Thread-9:552038 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:45:35  [ Thread-2:844319 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4ababf2d: startup date [Fri Sep 23 09:31:31 CST 2016]; root of context hierarchy
+2016-09-23 09:45:35  [ Thread-2:844333 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 09:45:41  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4260 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:45:41  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:45:41  [ main:309 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42b92a61: startup date [Fri Sep 23 09:45:41 CST 2016]; root of context hierarchy
+2016-09-23 09:45:43  [ main:2837 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:45:43  [ main:2853 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:45:43  [ main:2853 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:45:43  [ main:2855 ] - [ INFO ]  Started Application in 3.305 seconds (JVM running for 6.541)
+2016-09-23 09:45:52  [ Thread-4:10962 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:45:52  [ Thread-4:11653 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:46:03  [ Thread-4:22652 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:46:25  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4500 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:46:25  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:46:25  [ main:298 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@46a084ee: startup date [Fri Sep 23 09:46:25 CST 2016]; root of context hierarchy
+2016-09-23 09:46:28  [ main:2863 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:46:28  [ main:2879 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:46:28  [ main:2879 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:46:28  [ main:2884 ] - [ INFO ]  Started Application in 3.275 seconds (JVM running for 6.55)
+2016-09-23 09:46:43  [ Thread-4:18596 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:46:44  [ Thread-4:19291 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:47:01  [ Thread-4:35746 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 09:47:10  [ Thread-4:44793 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 09:49:35  [ Thread-2:189788 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@46a084ee: startup date [Fri Sep 23 09:46:25 CST 2016]; root of context hierarchy
+2016-09-23 09:49:35  [ Thread-2:189796 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 09:49:42  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4728 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:49:42  [ main:4 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:49:42  [ main:311 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@22ba0dac: startup date [Fri Sep 23 09:49:42 CST 2016]; root of context hierarchy
+2016-09-23 09:49:44  [ main:2792 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:49:44  [ main:2808 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:49:44  [ main:2808 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:49:44  [ main:2811 ] - [ INFO ]  Started Application in 3.281 seconds (JVM running for 6.69)
+2016-09-23 09:49:52  [ Thread-4:10898 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:49:53  [ Thread-4:11544 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:49:56  [ Thread-4:14384 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 09:50:13  [ Thread-4:30997 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 09:50:13  [ Thread-2:31222 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@22ba0dac: startup date [Fri Sep 23 09:49:42 CST 2016]; root of context hierarchy
+2016-09-23 09:50:13  [ Thread-2:31226 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 09:50:34  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4400 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:50:34  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:50:34  [ main:341 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@49983dcf: startup date [Fri Sep 23 09:50:34 CST 2016]; root of context hierarchy
+2016-09-23 09:50:37  [ main:2977 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:50:37  [ main:2992 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:50:37  [ main:2992 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:50:37  [ main:2995 ] - [ INFO ]  Started Application in 3.472 seconds (JVM running for 6.833)
+2016-09-23 09:50:44  [ Thread-4:10222 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:50:45  [ Thread-4:10895 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:52:18  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 2956 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 09:52:18  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 09:52:19  [ main:283 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c97884b: startup date [Fri Sep 23 09:52:19 CST 2016]; root of context hierarchy
+2016-09-23 09:52:21  [ main:2742 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 09:52:21  [ main:2757 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:52:21  [ main:2757 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 09:52:21  [ main:2760 ] - [ INFO ]  Started Application in 3.22 seconds (JVM running for 6.583)
+2016-09-23 09:52:28  [ Thread-4:10105 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 09:52:29  [ Thread-4:10790 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 09:52:41  [ Thread-4:22627 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 09:53:04  [ Thread-4:45520 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:00:29  [ Thread-2:491176 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4c97884b: startup date [Fri Sep 23 09:52:19 CST 2016]; root of context hierarchy
+2016-09-23 10:00:29  [ Thread-2:491181 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 10:01:14  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 156 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 10:01:15  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 10:01:15  [ main:176 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7916a953: startup date [Fri Sep 23 10:01:15 CST 2016]; root of context hierarchy
+2016-09-23 10:01:16  [ main:1645 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 10:01:16  [ main:1656 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:01:16  [ main:1656 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:01:16  [ main:1658 ] - [ INFO ]  Started Application in 2.372 seconds (JVM running for 5.392)
+2016-09-23 10:05:05  [ Thread-4:230034 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:05:05  [ Thread-4:230760 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:05:06  [ Thread-4:231092 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:05:06  [ Thread-4:231275 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:25:04  [ Thread-2:1429981 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@7916a953: startup date [Fri Sep 23 10:01:15 CST 2016]; root of context hierarchy
+2016-09-23 10:25:04  [ Thread-2:1429985 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 10:25:11  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 2196 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 10:25:11  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 10:25:11  [ main:529 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@553395c: startup date [Fri Sep 23 10:25:11 CST 2016]; root of context hierarchy
+2016-09-23 10:25:14  [ main:3237 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 10:25:14  [ main:3252 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:25:14  [ main:3253 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:25:14  [ main:3260 ] - [ INFO ]  Started Application in 3.594 seconds (JVM running for 7.227)
+2016-09-23 10:25:41  [ Thread-4:30674 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:25:42  [ Thread-4:31337 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:25:58  [ Thread-4:47181 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:26:14  [ Thread-4:62885 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:26:22  [ Thread-6:71589 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:26:22  [ Thread-6:71639 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:28:46  [ Thread-6:214865 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:28:59  [ Thread-6:227730 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:29:56  [ Thread-7:285238 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:29:56  [ Thread-7:285300 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:30:08  [ Thread-7:297165 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:30:10  [ Thread-7:299140 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:30:44  [ Thread-2:333372 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@553395c: startup date [Fri Sep 23 10:25:11 CST 2016]; root of context hierarchy
+2016-09-23 10:30:44  [ Thread-2:333377 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 10:30:49  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 936 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 10:30:49  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 10:30:49  [ main:317 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@553395c: startup date [Fri Sep 23 10:30:49 CST 2016]; root of context hierarchy
+2016-09-23 10:30:51  [ main:2910 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 10:30:52  [ main:2934 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:30:52  [ main:2935 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:30:52  [ main:2940 ] - [ INFO ]  Started Application in 3.436 seconds (JVM running for 6.906)
+2016-09-23 10:31:04  [ Thread-4:15529 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:31:05  [ Thread-4:16295 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:31:28  [ Thread-4:38931 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:36:01  [ Thread-4:312670 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:36:10  [ Thread-2:321501 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@553395c: startup date [Fri Sep 23 10:30:49 CST 2016]; root of context hierarchy
+2016-09-23 10:36:10  [ Thread-2:321505 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 10:36:21  [ main:1 ] - [ INFO ]  Starting Application on UEB473 with PID 4796 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 10:36:21  [ main:4 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 10:36:21  [ main:282 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@1ac31413: startup date [Fri Sep 23 10:36:21 CST 2016]; root of context hierarchy
+2016-09-23 10:36:24  [ main:2876 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 10:36:24  [ main:2891 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:36:24  [ main:2892 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:36:24  [ main:2895 ] - [ INFO ]  Started Application in 3.488 seconds (JVM running for 7.769)
+2016-09-23 10:36:34  [ Thread-4:13565 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:36:35  [ Thread-4:14278 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:40:05  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4916 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 10:40:05  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 10:40:05  [ main:251 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@633c0b90: startup date [Fri Sep 23 10:40:05 CST 2016]; root of context hierarchy
+2016-09-23 10:40:06  [ main:1813 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 10:40:06  [ main:1822 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:40:06  [ main:1822 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 10:40:06  [ main:1824 ] - [ INFO ]  Started Application in 2.257 seconds (JVM running for 5.287)
+2016-09-23 10:40:14  [ Thread-4:9466 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:40:16  [ Thread-4:11044 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:40:16  [ Thread-4:11328 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:40:16  [ Thread-4:11405 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:44:14  [ Thread-7:249863 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SY_MY_%.jasper
+2016-09-23 10:44:15  [ Thread-7:250315 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 10:44:15  [ Thread-7:250365 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:44:15  [ Thread-7:250419 ] - [ INFO ]  ==============测试PDF打印==============================
+2016-09-23 10:47:12  [ Thread-2:427290 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@633c0b90: startup date [Fri Sep 23 10:40:05 CST 2016]; root of context hierarchy
+2016-09-23 10:47:12  [ Thread-2:427293 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 14:36:02  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4912 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 14:36:02  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 14:36:02  [ main:227 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@42121e79: startup date [Fri Sep 23 14:36:02 CST 2016]; root of context hierarchy
+2016-09-23 14:36:04  [ main:1934 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 14:36:04  [ main:1945 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:36:04  [ main:1945 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:36:04  [ main:1948 ] - [ INFO ]  Started Application in 2.227 seconds (JVM running for 4.928)
+2016-09-23 14:36:28  [ Thread-2:26296 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@42121e79: startup date [Fri Sep 23 14:36:02 CST 2016]; root of context hierarchy
+2016-09-23 14:36:28  [ Thread-2:26300 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-23 14:37:21  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 3188 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 14:37:21  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 14:37:22  [ main:285 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@60559de9: startup date [Fri Sep 23 14:37:22 CST 2016]; root of context hierarchy
+2016-09-23 14:37:24  [ main:2466 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 14:37:24  [ main:2482 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:37:24  [ main:2482 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:37:24  [ main:2485 ] - [ INFO ]  Started Application in 3.074 seconds (JVM running for 6.148)
+2016-09-23 14:37:30  [ Thread-4:8384 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9153 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9153 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9211 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9211 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9273 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9273 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9455 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9455 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9569 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9569 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9605 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:37:31  [ Thread-4:9606 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:37:31  [ Thread-4:9644 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:38:23  [ Thread-4:61512 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:38:23  [ Thread-4:61642 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:38:29  [ Thread-4:67532 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:38:29  [ Thread-4:67564 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:38:39  [ Thread-4:78063 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:38:39  [ Thread-4:78086 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:40:42  [ Thread-4:200824 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:40:42  [ Thread-4:200844 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:40:45  [ Thread-4:203654 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:40:45  [ Thread-4:203673 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:40:46  [ Thread-4:204839 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_SF_%.jasper
+2016-09-23 14:40:46  [ Thread-4:204911 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:46  [ Thread-4:204912 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:40:46  [ Thread-4:204980 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:46  [ Thread-4:204981 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:40:46  [ Thread-4:205018 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:46  [ Thread-4:205018 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:40:46  [ Thread-4:205054 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:46  [ Thread-4:205054 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:40:46  [ Thread-4:205098 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:46  [ Thread-4:205098 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:40:47  [ Thread-4:205148 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:47  [ Thread-4:205148 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:40:47  [ Thread-4:205176 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:47  [ Thread-4:205176 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:40:47  [ Thread-4:205196 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:40:47  [ Thread-4:205997 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:40:47  [ Thread-4:206014 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:47  [ Thread-4:206014 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:40:47  [ Thread-4:206114 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:40:47  [ Thread-4:206114 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:40:48  [ Thread-4:206184 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:41:31  [ Thread-4:249447 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:41:31  [ Thread-4:249448 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:42:23  [ Thread-4:302102 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923032333      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:00  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4124 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 14:44:00  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 14:44:00  [ main:277 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@77fe2573: startup date [Fri Sep 23 14:44:00 CST 2016]; root of context hierarchy
+2016-09-23 14:44:02  [ main:2673 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 14:44:02  [ main:2689 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:44:02  [ main:2689 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:44:02  [ main:2693 ] - [ INFO ]  Started Application in 3.08 seconds (JVM running for 6.323)
+2016-09-23 14:44:29  [ Thread-4:29167 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:44:30  [ Thread-4:29871 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:29871 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:30  [ Thread-4:29907 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:29908 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:44:30  [ Thread-4:29962 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:29962 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:44:30  [ Thread-4:30019 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:30019 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:44:30  [ Thread-4:30056 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:30057 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:30  [ Thread-4:30082 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:30  [ Thread-4:30082 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:30  [ Thread-4:30126 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:31  [ Thread-4:31660 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:44:31  [ Thread-4:31691 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:31  [ Thread-4:31691 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:31  [ Thread-4:31719 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:32  [ Thread-4:32289 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:32  [ Thread-4:32305 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:33  [ Thread-4:32909 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:33  [ Thread-4:32925 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:49  [ Thread-4:48850 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:49  [ Thread-4:48868 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:50  [ Thread-4:50447 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_SF_%.jasper
+2016-09-23 14:44:50  [ Thread-4:50504 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:50  [ Thread-4:50504 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:44:50  [ Thread-4:50566 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:50  [ Thread-4:50567 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:44:50  [ Thread-4:50603 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:50  [ Thread-4:50603 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:44:50  [ Thread-4:50644 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:50  [ Thread-4:50644 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:44:50  [ Thread-4:50680 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:50  [ Thread-4:50680 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:44:51  [ Thread-4:50725 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:51  [ Thread-4:50725 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:51  [ Thread-4:50747 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:51  [ Thread-4:50748 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:51  [ Thread-4:50771 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:53  [ Thread-4:53006 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:53  [ Thread-4:53023 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:53  [ Thread-4:53024 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:53  [ Thread-4:53063 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:53  [ Thread-4:53063 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:53  [ Thread-4:53087 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:53  [ Thread-4:53222 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:53  [ Thread-4:53224 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:53  [ Thread-4:53224 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923032333      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:54  [ Thread-4:54319 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:54  [ Thread-4:54319 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:54  [ Thread-4:54319 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923032374      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:55  [ Thread-4:54845 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:55  [ Thread-4:54886 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:54886 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:44:55  [ Thread-4:54906 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:54906 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:55  [ Thread-4:54939 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:54939 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:44:55  [ Thread-4:54975 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:54975 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55010 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:55010 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55043 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:55043 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55143 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:55143 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55172 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:55173 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55200 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:55  [ Thread-4:55200 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YD_HLYZ_%.jasper
+2016-09-23 14:44:55  [ Thread-4:55227 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-23 14:44:56  [ Thread-4:55756 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:56  [ Thread-4:55811 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:55811 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:56  [ Thread-4:55882 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:55882 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56000 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56000 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56040 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56041 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56092 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56092 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56111 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56111 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56123 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56124 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56142 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:44:56  [ Thread-4:56584 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56608 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56609 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56629 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56629 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:44:56  [ Thread-4:56652 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:56  [ Thread-4:56652 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:44:57  [ Thread-4:56752 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:44:57  [ Thread-4:56787 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:57  [ Thread-4:56788 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:57  [ Thread-4:56788 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923033063      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:57  [ Thread-4:57274 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:57  [ Thread-4:57274 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:57  [ Thread-4:57274 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923033080      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58069 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58069 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58069 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923033086      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58574 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58574 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:58  [ Thread-4:58574 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923033094      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:59  [ Thread-4:59021 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:44:59  [ Thread-4:59021 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:44:59  [ Thread-4:59021 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923033124      ，异常详细信息是：PDF header signature not found.
+2016-09-23 14:44:59  [ Thread-4:59464 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:44:59  [ Thread-4:59479 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:45:00  [ Thread-4:59852 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:45:00  [ Thread-4:59870 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:45:00  [ Thread-4:60230 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:45:00  [ Thread-4:60265 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:45:00  [ Thread-4:60265 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:45:00  [ Thread-4:60295 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:45:00  [ Thread-4:60296 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:45:00  [ Thread-4:60342 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:45:00  [ Thread-4:60342 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:45:00  [ Thread-4:60372 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:51:30  [ main:0 ] - [ INFO ]  Starting Application on UEB473 with PID 4388 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-23 14:51:30  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-23 14:51:30  [ main:310 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78f46633: startup date [Fri Sep 23 14:51:30 CST 2016]; root of context hierarchy
+2016-09-23 14:51:32  [ main:2759 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-23 14:51:32  [ main:2776 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:51:32  [ main:2776 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-23 14:51:32  [ main:2779 ] - [ INFO ]  Started Application in 3.252 seconds (JVM running for 6.346)
+2016-09-23 14:51:59  [ Thread-4:29190 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30046 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30046 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30091 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30091 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30137 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30137 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30203 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30204 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30244 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30245 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30273 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:00  [ Thread-4:30273 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:00  [ Thread-4:30317 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:02  [ Thread-4:32738 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_DGYZ_%.jasper
+2016-09-23 14:52:02  [ Thread-4:32768 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:02  [ Thread-4:32768 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:03  [ Thread-4:32793 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:03  [ Thread-4:33746 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:03  [ Thread-4:33763 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:04  [ Thread-4:34387 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:04  [ Thread-4:34403 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:05  [ Thread-4:34916 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:34934 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:05  [ Thread-4:35435 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_SF_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35482 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35482 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35528 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35529 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35564 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35564 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YW_TEQXB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35596 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35596 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_ZX_SYB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35629 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35629 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_SF_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35672 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35672 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35695 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:05  [ Thread-4:35695 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_PTXB_%.jasper
+2016-09-23 14:52:05  [ Thread-4:35714 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo4.jpg
+2016-09-23 14:52:06  [ Thread-4:36235 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_HKXB_JHD_%.jasper
+2016-09-23 14:52:06  [ Thread-4:36250 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:06  [ Thread-4:36251 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:52:06  [ Thread-4:36289 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:52:06  [ Thread-4:36289 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_CM_YO_EST_%.jasper
+2016-09-23 14:52:06  [ Thread-4:36343 ] - [ INFO ]  ==============测试iReport打印==============================
+2016-09-23 14:54:14  [ Thread-4:163885 ] - [ ERROR ]  处理pdf文件出现异常，异常信息是：{}PDF header signature not found.
+2016-09-23 14:54:16  [ Thread-4:165962 ] - [ INFO ]  PDF header signature not found.
+2016-09-23 14:54:16  [ Thread-4:165962 ] - [ INFO ]  快速快递面单出现了异常，订单号是：GS160923032333      ，异常详细信息是：PDF header signature not found.

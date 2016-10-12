@@ -1,0 +1,119 @@
+2016-09-29 09:17:12  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3820 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 09:17:12  [ main:30 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 09:17:12  [ main:476 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@6756613e: startup date [Thu Sep 29 09:17:12 CST 2016]; root of context hierarchy
+2016-09-29 09:17:16  [ main:3803 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 09:17:16  [ main:3815 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 09:17:16  [ main:3815 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 09:17:16  [ main:3818 ] - [ INFO ]  Started Application in 4.066 seconds (JVM running for 9.701)
+2016-09-29 09:17:28  [ AWT-EventQueue-0:15758 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:syntax error, expect {, actual error, pos 0
+2016-09-29 09:17:28  [ AWT-EventQueue-0:15759 ] - [ INFO ]  syntax error, expect {, actual error, pos 0
+2016-09-29 09:17:28  [ AWT-EventQueue-0:15760 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：a，异常详细信息是：syntax error, expect {, actual error, pos 0
+2016-09-29 10:13:42  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 936 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 10:13:42  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 10:13:42  [ main:221 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a0d442d: startup date [Thu Sep 29 10:13:42 CST 2016]; root of context hierarchy
+2016-09-29 10:13:44  [ main:2004 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 10:13:44  [ main:2015 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:13:44  [ main:2015 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:13:44  [ main:2017 ] - [ INFO ]  Started Application in 2.364 seconds (JVM running for 5.141)
+2016-09-29 10:13:48  [ Thread-2:6193 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@4a0d442d: startup date [Thu Sep 29 10:13:42 CST 2016]; root of context hierarchy
+2016-09-29 10:13:48  [ Thread-2:6195 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-29 10:13:53  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4216 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 10:13:53  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 10:13:53  [ main:279 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@78457260: startup date [Thu Sep 29 10:13:53 CST 2016]; root of context hierarchy
+2016-09-29 10:13:55  [ main:2622 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 10:13:55  [ main:2635 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:13:55  [ main:2635 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:13:55  [ main:2637 ] - [ INFO ]  Started Application in 3.0 seconds (JVM running for 6.159)
+2016-09-29 10:14:04  [ AWT-EventQueue-0:11260 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:syntax error, expect {, actual error, pos 0
+2016-09-29 10:14:04  [ AWT-EventQueue-0:11260 ] - [ INFO ]  syntax error, expect {, actual error, pos 0
+2016-09-29 10:14:04  [ AWT-EventQueue-0:11261 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：syntax error, expect {, actual error, pos 0
+2016-09-29 10:14:31  [ AWT-EventQueue-0:38036 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:syntax error, expect {, actual error, pos 0
+2016-09-29 10:14:31  [ AWT-EventQueue-0:38036 ] - [ INFO ]  syntax error, expect {, actual error, pos 0
+2016-09-29 10:14:31  [ AWT-EventQueue-0:38037 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：syntax error, expect {, actual error, pos 0
+2016-09-29 10:15:36  [ Thread-2:103626 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@78457260: startup date [Thu Sep 29 10:13:53 CST 2016]; root of context hierarchy
+2016-09-29 10:15:36  [ Thread-2:103630 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-29 10:15:43  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 4888 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 10:15:43  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 10:15:44  [ main:264 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@36c87067: startup date [Thu Sep 29 10:15:44 CST 2016]; root of context hierarchy
+2016-09-29 10:15:46  [ main:2608 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 10:15:46  [ main:2623 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:15:46  [ main:2623 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:15:46  [ main:2625 ] - [ INFO ]  Started Application in 2.96 seconds (JVM running for 6.16)
+2016-09-29 10:16:07  [ AWT-EventQueue-0:23762 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:admin用户的登陆密码不正确
+2016-09-29 10:16:07  [ AWT-EventQueue-0:23762 ] - [ INFO ]  admin用户的登陆密码不正确
+2016-09-29 10:16:07  [ AWT-EventQueue-0:23762 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：admin用户的登陆密码不正确
+2016-09-29 10:16:21  [ Thread-2:37706 ] - [ INFO ]  Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@36c87067: startup date [Thu Sep 29 10:15:44 CST 2016]; root of context hierarchy
+2016-09-29 10:16:21  [ Thread-2:37710 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2016-09-29 10:16:26  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 3216 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 10:16:26  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 10:16:26  [ main:286 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@71dbe977: startup date [Thu Sep 29 10:16:26 CST 2016]; root of context hierarchy
+2016-09-29 10:16:28  [ main:2737 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 10:16:28  [ main:2753 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:16:28  [ main:2754 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 10:16:28  [ main:2757 ] - [ INFO ]  Started Application in 3.066 seconds (JVM running for 6.279)
+2016-09-29 10:17:23  [ AWT-EventQueue-0:56905 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:admin用户的登陆密码不正确
+2016-09-29 10:17:23  [ AWT-EventQueue-0:56906 ] - [ INFO ]  admin用户的登陆密码不正确
+2016-09-29 10:17:23  [ AWT-EventQueue-0:56906 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：admin，异常详细信息是：admin用户的登陆密码不正确
+2016-09-29 15:09:38  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 5996 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 15:09:38  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 15:09:38  [ main:266 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@63c387d6: startup date [Thu Sep 29 15:09:38 CST 2016]; root of context hierarchy
+2016-09-29 15:09:40  [ main:2827 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 15:09:40  [ main:2845 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:09:40  [ main:2845 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:09:40  [ main:2847 ] - [ INFO ]  Started Application in 3.097 seconds (JVM running for 8.989)
+2016-09-29 15:10:14  [ AWT-EventQueue-0:36186 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有a用户
+2016-09-29 15:10:14  [ AWT-EventQueue-0:36186 ] - [ INFO ]  系统没有a用户
+2016-09-29 15:10:14  [ AWT-EventQueue-0:36187 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：a，异常详细信息是：系统没有a用户
+2016-09-29 15:10:18  [ AWT-EventQueue-0:40793 ] - [ INFO ]  请求后台userLogin接口出现异常，异常详细信息是:系统没有a用户
+2016-09-29 15:10:18  [ AWT-EventQueue-0:40794 ] - [ INFO ]  系统没有a用户
+2016-09-29 15:10:18  [ AWT-EventQueue-0:40794 ] - [ INFO ]  用户登陆系统出现异常，用户账号是：a，异常详细信息是：系统没有a用户
+2016-09-29 15:13:36  [ AWT-EventQueue-0:238123 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:13:36  [ AWT-EventQueue-0:238142 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:13:36  [ AWT-EventQueue-0:238142 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:13:46  [ AWT-EventQueue-0:248725 ] - [ INFO ]  请求后台beforePrint接口出现异常，异常详细信息是:获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:13:46  [ AWT-EventQueue-0:248726 ] - [ INFO ]  获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:32:22  [ main:1 ] - [ INFO ]  Starting Application on UEB526 with PID 5300 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 15:32:22  [ main:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 15:32:22  [ main:286 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@d589bb6: startup date [Thu Sep 29 15:32:22 CST 2016]; root of context hierarchy
+2016-09-29 15:32:25  [ main:2854 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 15:32:25  [ main:2866 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:32:25  [ main:2866 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:32:25  [ main:2869 ] - [ INFO ]  Started Application in 3.328 seconds (JVM running for 6.595)
+2016-09-29 15:34:59  [ AWT-EventQueue-0:156817 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:34:59  [ AWT-EventQueue-0:156817 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:34:59  [ AWT-EventQueue-0:156818 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:40:40  [ AWT-EventQueue-0:498708 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:40:40  [ AWT-EventQueue-0:498709 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:40:40  [ AWT-EventQueue-0:498709 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:41:25  [ AWT-EventQueue-0:543411 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:41:25  [ AWT-EventQueue-0:543413 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:41:25  [ AWT-EventQueue-0:543414 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:41:49  [ main:0 ] - [ INFO ]  Starting Application on UEB526 with PID 2952 (D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client\target\classes started by liangxf in D:\tools\code\workspace\workspace\wms\ueb-wms-printer-client)
+2016-09-29 15:41:49  [ main:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2016-09-29 15:41:49  [ main:399 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@493b1572: startup date [Thu Sep 29 15:41:49 CST 2016]; root of context hierarchy
+2016-09-29 15:41:54  [ main:5919 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2016-09-29 15:41:55  [ main:6066 ] - [ INFO ]  路径是：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:41:55  [ main:6067 ] - [ INFO ]  路径是22：/D:/tools/code/workspace/workspace/wms/ueb-wms-printer-client/target/classes/
+2016-09-29 15:41:55  [ main:6162 ] - [ INFO ]  Started Application in 6.898 seconds (JVM running for 13.659)
+2016-09-29 15:42:12  [ AWT-EventQueue-0:23467 ] - [ INFO ]  请求后台beforePrint接口出现异常，异常详细信息是:获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:42:12  [ AWT-EventQueue-0:23468 ] - [ INFO ]  获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:42:28  [ AWT-EventQueue-0:39439 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YD_HLYZ_%.jasper
+2016-09-29 15:42:29  [ AWT-EventQueue-0:40053 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-29 15:42:29  [ AWT-EventQueue-0:40054 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925037706      异常详细信息是：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-29 15:43:16  [ AWT-EventQueue-0:87430 ] - [ INFO ]  请求后台beforePrint接口出现异常，异常详细信息是:获取订单GS160925037706      的锁失败，该订单的锁正被使用
+2016-09-29 15:43:16  [ AWT-EventQueue-0:87431 ] - [ INFO ]  获取订单GS160925037706      的锁失败，该订单的锁正被使用
+2016-09-29 15:43:23  [ AWT-EventQueue-0:94407 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-29 15:44:29  [ AWT-EventQueue-0:160577 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:45:16  [ AWT-EventQueue-0:207096 ] - [ INFO ]  请求后台beforePrint接口出现异常，异常详细信息是:获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:45:16  [ AWT-EventQueue-0:207097 ] - [ INFO ]  获取订单GS160925026736      的锁失败，该订单的锁正被使用
+2016-09-29 15:45:29  [ AWT-EventQueue-0:220907 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_YD_HLYZ_%.jasper
+2016-09-29 15:45:31  [ AWT-EventQueue-0:222040 ] - [ ERROR ]  加载iReport面单模板出现异常：Byte data not found at : D:\FLUX_WMS_V4R3M0\plugins\com.flux.wms.print_3.0.0\ReportModelCustom\flux\logo20.jpg
+2016-09-29 15:46:29  [ AWT-EventQueue-0:280323 ] - [ INFO ]  请求后台beforePrint接口出现异常，异常详细信息是:GS160925037706      ：该订单已经打印面单，不能重复打印，若需重复打印，请使用重复打印功能
+2016-09-29 15:46:29  [ AWT-EventQueue-0:280324 ] - [ INFO ]  GS160925037706      ：该订单已经打印面单，不能重复打印，若需重复打印，请使用重复打印功能
+2016-09-29 15:46:35  [ AWT-EventQueue-0:286566 ] - [ INFO ]  最后一条则提醒该波次复核完成
+2016-09-29 15:47:29  [ AWT-EventQueue-0:340342 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:47:31  [ AWT-EventQueue-0:342698 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:47:42  [ AWT-EventQueue-0:353270 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:53:39  [ AWT-EventQueue-0:710280 ] - [ INFO ]  ===========report==================resources/report/Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper
+2016-09-29 15:53:42  [ AWT-EventQueue-0:713020 ] - [ ERROR ]  加载iReport面单模板出现异常：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)
+2016-09-29 15:53:47  [ AWT-EventQueue-0:718449 ] - [ INFO ]  快速打印快递面单出现了异常，，波次编号是：W1609260058，产品代码是：99043，订单编号是：GS160925026736      异常详细信息是：resources\report\Document_SO_快递面单_%_%_GHXB_QZYZ_%.jasper (系统找不到指定的文件。)

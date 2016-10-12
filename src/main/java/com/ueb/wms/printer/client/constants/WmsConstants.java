@@ -31,4 +31,6 @@ public class WmsConstants {
 	public static final int RESPONSE_CODE_FAILED = 101;
 
 	public static final int ONE_K = 1024;
+
+	public static final String SERIAL_FILE_PATH = "resources/serial.properties";
 }

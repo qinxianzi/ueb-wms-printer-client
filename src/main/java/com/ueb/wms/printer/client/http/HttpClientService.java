@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.fluent.Request;
 import org.slf4j.Logger;
@@ -48,10 +49,13 @@ public class HttpClientService extends HttpClientBaseService {
 		}
 	}
 
-	public void updateHttpClientConfig(String url, String port, String context) throws Exception {
+	public void updateHttpClientConfig(String url, String port, String context, String pdfTpl) throws Exception {
 		this.config.setUrl(url);
 		this.config.setPort(port);
 		this.config.setContext(context);
+		if (StringUtils.isNotBlank(pdfTpl)) {
+			this.config.setPdfTpl(pdfTpl);
+		}
 		this.saveHttpClientConfig2properties();
 	}
 

@@ -465,10 +465,16 @@ public class ReportDataVO {
 		Vector<String> rowData = new Vector<String>();
 		rowData.add(COLUMNNAME1);
 		rowData.add(COLUMNNAME2);
+
+		rowData.add(COLUMNNAME6);
+		rowData.add(COLUMNNAME19);
+		rowData.add(COLUMNNAME20);
+		rowData.add(COLUMNNAME23);
+
 		rowData.add(COLUMNNAME3);
 		rowData.add(COLUMNNAME4);
 		rowData.add(COLUMNNAME5);
-		rowData.add(COLUMNNAME6);
+		// rowData.add(COLUMNNAME6);
 
 		rowData.add(COLUMNNAME8);
 		rowData.add(COLUMNNAME9);
@@ -481,18 +487,18 @@ public class ReportDataVO {
 		rowData.add(COLUMNNAME16);
 		rowData.add(COLUMNNAME17);
 
-		rowData.add(COLUMNNAME19);
-		rowData.add(COLUMNNAME20);
-
-		rowData.add(COLUMNNAME23);
+		// rowData.add(COLUMNNAME19);
+		// rowData.add(COLUMNNAME20);
+		//
+		// rowData.add(COLUMNNAME23);
 		rowData.add(COLUMNNAME24);
 
 		rowData.add(COLUMNNAME26);
 
 		rowData.add(COLUMNNAME33);
 
-		rowData.add(COLUMNNAME46);
-		rowData.add(COLUMNNAME47);
+//		rowData.add(COLUMNNAME46);
+//		rowData.add(COLUMNNAME47);
 		return rowData;
 	}
 

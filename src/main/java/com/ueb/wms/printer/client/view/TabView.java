@@ -23,6 +23,9 @@ public class TabView extends JTabbedPane implements IBaseView {
 	@Autowired
 	private HomePageView homePageView;
 
+	@Autowired
+	private SingleProductView singleProductView;
+
 	public TabView() {
 		this(TOP, WRAP_TAB_LAYOUT);
 	}
@@ -40,14 +43,17 @@ public class TabView extends JTabbedPane implements IBaseView {
 	}
 
 	private void showResource() {
-		this.addTab("首页", this.homePageView);
+		this.addTab("系统配置", this.homePageView);
 		this.homePageView.displayUI();
 
-		this.addTab("打印", this.printView);
-		this.printView.displayUI();
+		// this.addTab("打印", this.printView);
+		// this.printView.displayUI();
 
-		this.addTab("波次", this.waveView);
+		this.addTab("多品面单", this.waveView);
 		this.waveView.displayUI();
+
+		this.addTab("单品复核", this.singleProductView);
+		this.singleProductView.displayUI();
 	}
 
 	@Override
@@ -74,9 +80,8 @@ public class TabView extends JTabbedPane implements IBaseView {
 		this.printView.activation(orderNO);
 	}
 
-	public void fastPrintIReport(ReportDataVO reportDataVo) {
+	public void fastPrintIReport(ReportDataVO reportDataVo) throws Exception {
 		// this.setSelectedComponent(this.printView);
 		this.printView.fastPrintReport(reportDataVo);
 	}
-
 }
